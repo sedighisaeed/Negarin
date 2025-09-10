@@ -37,3 +37,9 @@ class AddMissingReblogOfIdTypesToStatusesTable extends Migration
 
 
 
+
+
+
+
+
+

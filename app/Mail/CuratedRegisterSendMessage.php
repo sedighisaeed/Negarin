@@ -60,3 +60,9 @@ class CuratedRegisterSendMessage extends Mailable
 
 
 
+
+
+
+
+
+

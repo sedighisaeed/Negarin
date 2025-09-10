@@ -37,3 +37,9 @@ class AddMoreSettingsToUserSettingsTable extends Migration
 
 
 
+
+
+
+
+
+

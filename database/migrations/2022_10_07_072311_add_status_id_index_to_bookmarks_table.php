@@ -36,3 +36,9 @@ class AddStatusIdIndexToBookmarksTable extends Migration
 
 
 
+
+
+
+
+
+

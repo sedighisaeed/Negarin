@@ -34,3 +34,9 @@ class AddLdapColumnsToUsersTable extends Migration
 
 
 
+
+
+
+
+
+

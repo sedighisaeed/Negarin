@@ -183,7 +183,7 @@
 
 		methods: {
 			fetchNotifications() {
-				axios.get('/api/pixelfed/v1/notifications?pg=true')
+				axios.get('/api/negarin/v1/notifications?pg=true')
 				.then(res => {
 					let data = res.data.filter(n => {
 						if(n.type == 'share' && !n.status) {
@@ -219,7 +219,7 @@
 					$state.complete();
 					return;
 				}
-				axios.get('/api/pixelfed/v1/notifications', {
+				axios.get('/api/negarin/v1/notifications', {
 					params: {
 						max_id: this.notificationMaxId
 					}
@@ -279,7 +279,7 @@
 				let interval = this.notifications.length > 5 ? 15000 : 120000;
 				let self = this;
 				setInterval(function() {
-					axios.get('/api/pixelfed/v1/notifications')
+					axios.get('/api/negarin/v1/notifications')
 					.then(res => {
 						let data = res.data.filter(n => {
 							if(n.type == 'share' || self.notificationMaxId >= n.id) {
@@ -349,3 +349,8 @@
 		}
 	}
 </script>
+
+
+
+
+

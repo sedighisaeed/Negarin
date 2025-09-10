@@ -153,3 +153,9 @@ class AvatarOptimize implements ShouldQueue
 
 
 
+
+
+
+
+
+

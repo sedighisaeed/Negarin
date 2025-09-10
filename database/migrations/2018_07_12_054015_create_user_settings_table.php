@@ -55,3 +55,9 @@ class CreateUserSettingsTable extends Migration
 
 
 
+
+
+
+
+
+

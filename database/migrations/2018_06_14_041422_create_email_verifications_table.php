@@ -40,3 +40,9 @@ class CreateEmailVerificationsTable extends Migration
 
 
 
+
+
+
+
+
+

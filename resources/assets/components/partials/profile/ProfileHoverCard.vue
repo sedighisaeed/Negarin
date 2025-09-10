@@ -114,7 +114,7 @@
 			this.rewriteLinks();
 			this.relationship = this.$store.getters.getRelationship(this.profile.id);
 			if(!this.relationship && this.profile.id != this.user.id) {
-				axios.get('/api/pixelfed/v1/accounts/relationships', {
+				axios.get('/api/negarin/v1/accounts/relationships', {
 					params: {
 						'id[]': this.profile.id
 					}
@@ -345,3 +345,8 @@
 		}
 	}
 </style>
+
+
+
+
+

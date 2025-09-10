@@ -56,3 +56,9 @@ class HashtagFollowObserver implements ShouldHandleEventsAfterCommit
 
 
 
+
+
+
+
+
+

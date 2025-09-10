@@ -38,3 +38,9 @@ class AddIndexesToReportsTable extends Migration
 
 
 
+
+
+
+
+
+

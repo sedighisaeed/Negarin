@@ -41,3 +41,9 @@ class UpdateMediaAddAltText extends Migration
 
 
 
+
+
+
+
+
+

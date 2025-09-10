@@ -353,7 +353,7 @@
                 this.modalData = entry;
                 this.detailsModalShow = true;
                 setTimeout(() => {
-                    pixelfed.readmore();
+                    negarin.readmore();
                 }, 500);
             },
 
@@ -666,3 +666,8 @@
         }
     }
 </style>
+
+
+
+
+

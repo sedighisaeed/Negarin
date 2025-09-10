@@ -68,7 +68,7 @@ export default {
 			let self = this;
 			let key = 'metro-tips-closed';
 			let cached = JSON.parse(window.localStorage.getItem(key));
-			axios.get('/api/pixelfed/v1/newsroom/timeline')
+			axios.get('/api/negarin/v1/newsroom/timeline')
 			.then(res => {
 				self.announcements = res.data.filter(p => {
 					if(cached) {
@@ -138,7 +138,7 @@ export default {
 
 		markAsRead() {
 			let vm = this;
-			axios.post('/api/pixelfed/v1/newsroom/markasread', {
+			axios.post('/api/negarin/v1/newsroom/markasread', {
 				id: this.announcement.id
 			})
 			.then(res => {
@@ -156,3 +156,7 @@ export default {
 	}
 }
 </script>
+
+
+
+

@@ -60,3 +60,9 @@ class CuratedRegisterNotifyAdmin extends Mailable
 
 
 
+
+
+
+
+
+

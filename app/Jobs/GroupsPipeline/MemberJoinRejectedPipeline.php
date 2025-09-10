@@ -47,3 +47,9 @@ class MemberJoinRejectedPipeline implements ShouldQueue
 
 
 
+
+
+
+
+
+

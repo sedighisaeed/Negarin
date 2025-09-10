@@ -163,7 +163,7 @@
 
                             <div>
                                 <p class="lead font-weight-bold mb-n1">@{{username}}</p>
-                                <p class="small font-weight-light text-muted mb-1">{{username}}@pixelfed.test</p>
+                                <p class="small font-weight-light text-muted mb-1">{{username}}@negarin.test</p>
                                 <p class="text-xs mb-0 text-lighter">{{ form.bio.slice(0, 80) + '...' }}</p>
                             </div>
                         </div>
@@ -798,3 +798,8 @@
 }
 
 </style>
+
+
+
+
+

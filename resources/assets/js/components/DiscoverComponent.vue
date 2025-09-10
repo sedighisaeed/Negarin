@@ -166,7 +166,7 @@
 			this.loadTrending();
 			if($('body').hasClass('loggedIn') == true) {
 				this.fetchData();
-				axios.get('/api/pixelfed/v1/accounts/verify_credentials').then(res => {
+				axios.get('/api/negarin/v1/accounts/verify_credentials').then(res => {
 					window._sharedData.curUser = res.data;
 					window.App.util.navatar();
 				});
@@ -200,7 +200,7 @@
 					this.trending = this.trendingMonthly;
 					this.trendingLoading = false;
 				}
-				axios.get('/api/pixelfed/v2/discover/posts/trending', {
+				axios.get('/api/negarin/v2/discover/posts/trending', {
 					params: {
 						range: this.trendingRange
 					}
@@ -232,3 +232,8 @@
 		}
 	}
 </script>
+
+
+
+
+

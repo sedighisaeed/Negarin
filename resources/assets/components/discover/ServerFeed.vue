@@ -90,7 +90,7 @@ export default {
 
 	methods: {
 		fetchConfig() {
-			axios.get('/api/pixelfed/v2/discover/meta')
+			axios.get('/api/negarin/v2/discover/meta')
 			.then(res => {
 				this.config = res.data;
 				if(this.config.server.enabled == false) {
@@ -104,7 +104,7 @@ export default {
 
 		fetchFeed(domain) {
 			this.isLoading = true;
-			axios.get('/api/pixelfed/v2/discover/server-timeline', {
+			axios.get('/api/negarin/v2/discover/server-timeline', {
 				params: {
 					domain: domain
 				}
@@ -147,3 +147,8 @@ export default {
 		}
 	}
 </style>
+
+
+
+
+

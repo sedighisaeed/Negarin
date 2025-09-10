@@ -152,3 +152,9 @@ class VideoThumbnailToCloudPipeline implements ShouldQueue, ShouldBeUniqueUntilP
 
 
 
+
+
+
+
+
+

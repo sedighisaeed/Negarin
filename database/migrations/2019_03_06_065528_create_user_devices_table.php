@@ -44,3 +44,9 @@ class CreateUserDevicesTable extends Migration
 
 
 
+
+
+
+
+
+

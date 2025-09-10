@@ -63,3 +63,9 @@ class DeleteCommentPipeline implements ShouldQueue
 
 
 
+
+
+
+
+
+

@@ -81,3 +81,9 @@ class StatusHashtagObserver implements ShouldHandleEventsAfterCommit
 
 
 
+
+
+
+
+
+

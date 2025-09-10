@@ -41,3 +41,9 @@ class RemoveOldCompoundIndexFromStatusesTable extends Migration
 
 
 
+
+
+
+
+
+

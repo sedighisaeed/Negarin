@@ -46,3 +46,9 @@ class CreateUserFiltersTable extends Migration
 
 
 
+
+
+
+
+
+

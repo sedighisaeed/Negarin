@@ -193,7 +193,7 @@
             },
 
             fetchPost() {
-                axios.get('/api/pixelfed/v1/statuses/'+this.$route.params.id)
+                axios.get('/api/negarin/v1/statuses/'+this.$route.params.id)
                 .then(res => {
                     if(!res.data || !res.data.hasOwnProperty('id')) {
                         this.$router.push('/i/web/404');
@@ -224,7 +224,7 @@
             },
 
             fetchReply() {
-                axios.get('/api/pixelfed/v1/statuses/' + this.post.in_reply_to_id)
+                axios.get('/api/negarin/v1/statuses/' + this.post.in_reply_to_id)
                 .then(res => {
                     this.reply = res.data;
                     this.isReply = true;
@@ -242,7 +242,7 @@
                     return;
                 }
 
-                axios.get('/api/pixelfed/v1/accounts/relationships', {
+                axios.get('/api/negarin/v1/accounts/relationships', {
                     params: {
                         'id[]': this.profile.id
                     }
@@ -455,3 +455,8 @@
         }
     }
 </script>
+
+
+
+
+

@@ -226,7 +226,7 @@
 					this.ctxMenuRelationship = false;
 					this.$refs.ctxModal.show();
 				} else {
-					axios.get('/api/pixelfed/v1/accounts/relationships', {
+					axios.get('/api/negarin/v1/accounts/relationships', {
 						params: {
 							'id[]': this.status.account.id
 						}
@@ -670,7 +670,7 @@
 					return;
 				}
 
-				axios.post('/api/pixelfed/v2/status/' + status.id + '/archive')
+				axios.post('/api/negarin/v2/status/' + status.id + '/archive')
 				.then(res => {
 					this.$emit('status-delete', status.id);
 					this.closeModals();
@@ -682,7 +682,7 @@
 					return;
 				}
 
-				axios.post('/api/pixelfed/v2/status/' + status.id + '/unarchive')
+				axios.post('/api/negarin/v2/status/' + status.id + '/unarchive')
 				.then(res => {
 					this.closeModals();
 				});
@@ -690,3 +690,8 @@
 		}
 	}
 </script>
+
+
+
+
+

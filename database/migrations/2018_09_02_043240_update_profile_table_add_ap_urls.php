@@ -38,3 +38,9 @@ class UpdateProfileTableAddApUrls extends Migration
 
 
 
+
+
+
+
+
+

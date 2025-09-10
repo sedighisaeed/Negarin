@@ -131,7 +131,7 @@
 
 		methods: {
 			fetchProfile() {
-				axios.get('/api/pixelfed/v1/accounts/verify_credentials').then(res => {
+				axios.get('/api/negarin/v1/accounts/verify_credentials').then(res => {
 					this.profile = res.data;
 				});
 				this.fetchComments();
@@ -284,3 +284,8 @@
 		}
 	}
 </style>
+
+
+
+
+

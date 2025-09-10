@@ -50,3 +50,9 @@ class CreateNewsroomTable extends Migration
 
 
 
+
+
+
+
+
+

@@ -41,3 +41,9 @@ class CreateAvatarsTable extends Migration
 
 
 
+
+
+
+
+
+

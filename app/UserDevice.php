@@ -39,3 +39,9 @@ class UserDevice extends Model
 
 
 
+
+
+
+
+
+

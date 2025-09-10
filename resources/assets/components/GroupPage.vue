@@ -220,19 +220,19 @@
                                                 <div class="card shadow-none border rounded-0">
                                                     <div class="card-body pb-0">
                                                         <div class="media">
-                                                            <img src="https://pixelfed.test/storage/avatars/321493203255693312/5a6nqo.jpg?v=2" width="42px" height="42px" onerror="this.onerror=null;this.src='/storage/avatars/default.png?v=2'" alt="avatar" class="rounded-circle box-shadow mr-2">
+                                                            <img src="https://negarin.test/storage/avatars/321493203255693312/5a6nqo.jpg?v=2" width="42px" height="42px" onerror="this.onerror=null;this.src='/storage/avatars/default.png?v=2'" alt="avatar" class="rounded-circle box-shadow mr-2">
 
                                                             <div class="media-body">
                                                                 <div class="pl-2 d-flex align-items-top">
                                                                     <div>
                                                                         <p class="mb-0">
-                                                                            <a href="https://pixelfed.test/dansup" class="username font-weight-bold text-dark text-decoration-none text-break">
+                                                                            <a href="https://negarin.test/dansup" class="username font-weight-bold text-dark text-decoration-none text-break">
                                                                                 dansup
                                                                             </a>
                                                                         </p>
 
                                                                         <p class="mb-0">
-                                                                            <a href="https://pixelfed.test/groups/328821658771132416/329186991407239168" class="font-weight-light text-muted small">13h</a>
+                                                                            <a href="https://negarin.test/groups/328821658771132416/329186991407239168" class="font-weight-light text-muted small">13h</a>
 
                                                                             <span class="text-lighter" style="padding-left: 2px; padding-right: 2px;">·</span>
 
@@ -299,19 +299,19 @@
                                                 <div class="card shadow-none border rounded-0">
                                                     <div class="card-body pb-0">
                                                         <div class="media">
-                                                            <img src="https://pixelfed.test/storage/avatars/321493203255693312/5a6nqo.jpg?v=2" width="42px" height="42px" onerror="this.onerror=null;this.src='/storage/avatars/default.png?v=2'" alt="avatar" class="rounded-circle box-shadow mr-2">
+                                                            <img src="https://negarin.test/storage/avatars/321493203255693312/5a6nqo.jpg?v=2" width="42px" height="42px" onerror="this.onerror=null;this.src='/storage/avatars/default.png?v=2'" alt="avatar" class="rounded-circle box-shadow mr-2">
 
                                                             <div class="media-body">
                                                                 <div class="pl-2 d-flex align-items-top">
                                                                     <div>
                                                                         <p class="mb-0">
-                                                                            <a href="https://pixelfed.test/dansup" class="username font-weight-bold text-dark text-decoration-none text-break">
+                                                                            <a href="https://negarin.test/dansup" class="username font-weight-bold text-dark text-decoration-none text-break">
                                                                                 dansup
                                                                             </a>
                                                                         </p>
 
                                                                         <p class="mb-0">
-                                                                            <a href="https://pixelfed.test/groups/328821658771132416/329186991407239168" class="font-weight-light text-muted small">13h</a>
+                                                                            <a href="https://negarin.test/groups/328821658771132416/329186991407239168" class="font-weight-light text-muted small">13h</a>
 
                                                                             <span class="text-lighter" style="padding-left: 2px; padding-right: 2px;">·</span>
 
@@ -374,19 +374,19 @@
                                                 <div class="card shadow-none border rounded-0">
                                                     <div class="card-body pb-0">
                                                         <div class="media">
-                                                            <img src="https://pixelfed.test/storage/avatars/321493203255693312/5a6nqo.jpg?v=2" width="42px" height="42px" onerror="this.onerror=null;this.src='/storage/avatars/default.png?v=2'" alt="avatar" class="rounded-circle box-shadow mr-2">
+                                                            <img src="https://negarin.test/storage/avatars/321493203255693312/5a6nqo.jpg?v=2" width="42px" height="42px" onerror="this.onerror=null;this.src='/storage/avatars/default.png?v=2'" alt="avatar" class="rounded-circle box-shadow mr-2">
 
                                                             <div class="media-body">
                                                                 <div class="pl-2 d-flex align-items-top">
                                                                     <div>
                                                                         <p class="mb-0">
-                                                                            <a href="https://pixelfed.test/dansup" class="username font-weight-bold text-dark text-decoration-none text-break">
+                                                                            <a href="https://negarin.test/dansup" class="username font-weight-bold text-dark text-decoration-none text-break">
                                                                                 dansup
                                                                             </a>
                                                                         </p>
 
                                                                         <p class="mb-0">
-                                                                            <a href="https://pixelfed.test/groups/328821658771132416/329186991407239168" class="font-weight-light text-muted small">13h</a>
+                                                                            <a href="https://negarin.test/groups/328821658771132416/329186991407239168" class="font-weight-light text-muted small">13h</a>
 
                                                                             <span class="text-lighter" style="padding-left: 2px; padding-right: 2px;">·</span>
 
@@ -448,19 +448,19 @@
                                                 <div class="card shadow-none border rounded-0">
                                                     <div class="card-body pb-0">
                                                         <div class="media">
-                                                            <img src="https://pixelfed.test/storage/avatars/321493203255693312/5a6nqo.jpg?v=2" width="42px" height="42px" onerror="this.onerror=null;this.src='/storage/avatars/default.png?v=2'" alt="avatar" class="rounded-circle box-shadow mr-2">
+                                                            <img src="https://negarin.test/storage/avatars/321493203255693312/5a6nqo.jpg?v=2" width="42px" height="42px" onerror="this.onerror=null;this.src='/storage/avatars/default.png?v=2'" alt="avatar" class="rounded-circle box-shadow mr-2">
 
                                                             <div class="media-body">
                                                                 <div class="pl-2 d-flex align-items-top">
                                                                     <div>
                                                                         <p class="mb-0">
-                                                                            <a href="https://pixelfed.test/dansup" class="username font-weight-bold text-dark text-decoration-none text-break">
+                                                                            <a href="https://negarin.test/dansup" class="username font-weight-bold text-dark text-decoration-none text-break">
                                                                                 dansup
                                                                             </a>
                                                                         </p>
 
                                                                         <p class="mb-0">
-                                                                            <a href="https://pixelfed.test/groups/328821658771132416/329186991407239168" class="font-weight-light text-muted small">13h</a>
+                                                                            <a href="https://negarin.test/groups/328821658771132416/329186991407239168" class="font-weight-light text-muted small">13h</a>
 
                                                                             <span class="text-lighter" style="padding-left: 2px; padding-right: 2px;">·</span>
 
@@ -522,19 +522,19 @@
                                                 <div class="card shadow-none border rounded-0">
                                                     <div class="card-body pb-0">
                                                         <div class="media">
-                                                            <img src="https://pixelfed.test/storage/avatars/321493203255693312/5a6nqo.jpg?v=2" width="42px" height="42px" onerror="this.onerror=null;this.src='/storage/avatars/default.png?v=2'" alt="avatar" class="rounded-circle box-shadow mr-2">
+                                                            <img src="https://negarin.test/storage/avatars/321493203255693312/5a6nqo.jpg?v=2" width="42px" height="42px" onerror="this.onerror=null;this.src='/storage/avatars/default.png?v=2'" alt="avatar" class="rounded-circle box-shadow mr-2">
 
                                                             <div class="media-body">
                                                                 <div class="pl-2 d-flex align-items-top">
                                                                     <div>
                                                                         <p class="mb-0">
-                                                                            <a href="https://pixelfed.test/dansup" class="username font-weight-bold text-dark text-decoration-none text-break">
+                                                                            <a href="https://negarin.test/dansup" class="username font-weight-bold text-dark text-decoration-none text-break">
                                                                                 dansup
                                                                             </a>
                                                                         </p>
 
                                                                         <p class="mb-0">
-                                                                            <a href="https://pixelfed.test/groups/328821658771132416/329186991407239168" class="font-weight-light text-muted small">13h</a>
+                                                                            <a href="https://negarin.test/groups/328821658771132416/329186991407239168" class="font-weight-light text-muted small">13h</a>
 
                                                                             <span class="text-lighter" style="padding-left: 2px; padding-right: 2px;">·</span>
 
@@ -564,19 +564,19 @@
 
                                                                     <div class="mb-1 row px-3">
                                                                         <div class="col px-0">
-                                                                            <img src="https://pixelfed.test/img/sample-post.jpeg" class="img-fluid border rounded-lg">
+                                                                            <img src="https://negarin.test/img/sample-post.jpeg" class="img-fluid border rounded-lg">
                                                                         </div>
                                                                         <div class="col px-0">
-                                                                            <img src="https://pixelfed.test/img/sample-post.jpeg" class="img-fluid border rounded-lg">
+                                                                            <img src="https://negarin.test/img/sample-post.jpeg" class="img-fluid border rounded-lg">
                                                                         </div>
                                                                     </div>
 
                                                                     <div class="mb-3 row px-3">
                                                                         <div class="col px-0">
-                                                                            <img src="https://pixelfed.test/img/sample-post.jpeg" class="img-fluid border rounded-lg">
+                                                                            <img src="https://negarin.test/img/sample-post.jpeg" class="img-fluid border rounded-lg">
                                                                         </div>
                                                                         <div class="col px-0">
-                                                                            <img src="https://pixelfed.test/img/sample-post.jpeg" class="img-fluid border rounded-lg">
+                                                                            <img src="https://negarin.test/img/sample-post.jpeg" class="img-fluid border rounded-lg">
                                                                         </div>
                                                                     </div>
 
@@ -798,7 +798,7 @@
         },
 
         mounted() {
-            axios.get('/api/pixelfed/v1/accounts/verify_credentials')
+            axios.get('/api/negarin/v1/accounts/verify_credentials')
             .then(res => {
                 this.profile = res.data;
                 this.fetchGroup();
@@ -1188,3 +1188,8 @@
         }
     }
 </style>
+
+
+
+
+

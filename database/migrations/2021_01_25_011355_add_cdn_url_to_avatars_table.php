@@ -41,3 +41,9 @@ class AddCdnUrlToAvatarsTable extends Migration
 
 
 
+
+
+
+
+
+

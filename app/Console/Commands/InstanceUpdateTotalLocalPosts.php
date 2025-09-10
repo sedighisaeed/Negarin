@@ -95,3 +95,9 @@ class InstanceUpdateTotalLocalPosts extends Command
 
 
 
+
+
+
+
+
+

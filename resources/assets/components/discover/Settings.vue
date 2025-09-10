@@ -177,7 +177,7 @@ export default {
 
 	methods: {
 		fetchConfig() {
-			axios.get('/api/pixelfed/v2/discover/meta')
+			axios.get('/api/negarin/v2/discover/meta')
 			.then(res => {
 				this.original = res.data;
 				this.storeOriginal(res.data);
@@ -230,7 +230,7 @@ export default {
 		},
 
 		saveFeatures() {
-			axios.post('/api/pixelfed/v2/discover/admin/features', {
+			axios.post('/api/negarin/v2/discover/admin/features', {
 				features: {
 					friends: this.friends,
 					hashtags: this.hashtags,
@@ -278,3 +278,8 @@ export default {
 		}
 	}
 </style>
+
+
+
+
+

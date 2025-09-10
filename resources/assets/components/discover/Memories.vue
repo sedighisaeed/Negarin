@@ -112,7 +112,7 @@
         			}
         			return;
         		}
-				axios.get('/api/pixelfed/v2/discover/meta')
+				axios.get('/api/negarin/v2/discover/meta')
 				.then(res => {
 					this.config = res.data;
 					this.isLoaded = true;
@@ -126,7 +126,7 @@
 			},
 
 			fetchMemories() {
-				axios.get('/api/pixelfed/v2/discover/memories')
+				axios.get('/api/negarin/v2/discover/memories')
 				.then(res => {
 					this.feed = res.data;
 					this.feedLoaded = true;
@@ -134,7 +134,7 @@
 			},
 
 			fetchLiked() {
-				axios.get('/api/pixelfed/v2/discover/memories?type=liked')
+				axios.get('/api/negarin/v2/discover/memories?type=liked')
 				.then(res => {
 					this.liked = res.data;
 					this.likedLoaded = true;
@@ -170,3 +170,8 @@
 		}
 	}
 </style>
+
+
+
+
+

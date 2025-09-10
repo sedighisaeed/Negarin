@@ -37,3 +37,9 @@ class AddTextColumnToMediaTable extends Migration
 
 
 
+
+
+
+
+
+

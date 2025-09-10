@@ -197,3 +197,9 @@ Route::domain(config('negarin.domain.admin'))->prefix('i/admin')->group(function
 
 
 
+
+
+
+
+
+

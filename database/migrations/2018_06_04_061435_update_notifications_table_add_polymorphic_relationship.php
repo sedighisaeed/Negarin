@@ -36,3 +36,9 @@ class UpdateNotificationsTableAddPolymorphicRelationship extends Migration
 
 
 
+
+
+
+
+
+

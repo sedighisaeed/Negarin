@@ -46,3 +46,9 @@ class CreateDiscoverCategoriesTable extends Migration
 
 
 
+
+
+
+
+
+

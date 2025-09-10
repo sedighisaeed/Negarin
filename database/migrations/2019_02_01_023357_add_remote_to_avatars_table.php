@@ -38,3 +38,9 @@ class AddRemoteToAvatarsTable extends Migration
 
 
 
+
+
+
+
+
+

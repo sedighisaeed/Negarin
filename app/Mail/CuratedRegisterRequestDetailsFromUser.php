@@ -63,3 +63,9 @@ class CuratedRegisterRequestDetailsFromUser extends Mailable
 
 
 
+
+
+
+
+
+

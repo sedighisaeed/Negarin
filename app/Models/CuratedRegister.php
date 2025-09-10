@@ -72,3 +72,9 @@ class CuratedRegister extends Model
 
 
 
+
+
+
+
+
+

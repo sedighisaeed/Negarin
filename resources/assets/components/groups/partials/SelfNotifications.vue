@@ -114,7 +114,7 @@
 
 		methods: {
 			fetchNotifications() {
-				axios.get('/api/pixelfed/v1/accounts/verify_credentials').then(res => {
+				axios.get('/api/negarin/v1/accounts/verify_credentials').then(res => {
 						window._sharedData.curUser = res.data;
 						window.App.util.navatar();
 				});
@@ -151,7 +151,7 @@
 			// 		$state.complete();
 			// 		return;
 			// 	}
-			// 	axios.get('/api/pixelfed/v1/notifications', {
+			// 	axios.get('/api/negarin/v1/notifications', {
 			// 		params: {
 			// 			max_id: this.notificationMaxId
 			// 		}
@@ -307,3 +307,8 @@
 		}
 	}
 </style>
+
+
+
+
+

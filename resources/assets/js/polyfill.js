@@ -815,3 +815,10 @@ if (HTMLCanvasElement && (!canvas_proto.toBlob || !canvas_proto.toBlobHD)) {
 
 
 
+
+
+
+
+
+
+

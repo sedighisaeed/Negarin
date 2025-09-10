@@ -1266,7 +1266,7 @@
                 this.showReportModal = true;
                 window.history.pushState(null, null, '/i/admin/reports?tab=report&id=' + report.id);
                 setTimeout(() => {
-                    pixelfed.readmore()
+                    negarin.readmore()
                 }, 1000)
             },
 
@@ -1391,7 +1391,7 @@
                 this.showSpamReportModal = true;
                 window.history.pushState(null, null, '/i/admin/reports?tab=autospam&id=' + report.id);
                 setTimeout(() => {
-                    pixelfed.readmore()
+                    negarin.readmore()
                 }, 1000)
             },
 
@@ -1684,3 +1684,8 @@
         }
     }
 </style>
+
+
+
+
+

@@ -56,3 +56,9 @@ class RegenerateThumbnails extends Command
 
 
 
+
+
+
+
+
+

@@ -40,3 +40,9 @@ class Add2faToUsersTable extends Migration
 
 
 
+
+
+
+
+
+

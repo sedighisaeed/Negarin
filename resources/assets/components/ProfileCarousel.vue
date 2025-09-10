@@ -84,7 +84,7 @@
 
         methods: {
             async init() {
-                await axios.get(`/api/pixelfed/v1/accounts/${this.profileId}/statuses?media_type=photo&limit=10`)
+                await axios.get(`/api/negarin/v1/accounts/${this.profileId}/statuses?media_type=photo&limit=10`)
                 .then(res => {
                     if(!res || !res.data || !res.data.length) {
                         this.emptyFeed = true;
@@ -116,7 +116,7 @@
             },
 
             async fetchMore() {
-                await axios.get(`/api/pixelfed/v1/accounts/${this.profileId}/statuses?media_type=photo&limit=10&max_id=${this.maxId}`)
+                await axios.get(`/api/negarin/v1/accounts/${this.profileId}/statuses?media_type=photo&limit=10&max_id=${this.maxId}`)
                 .then(res => {
                     this.maxId = this.arrayMinId(res.data);
                     const posts = res.data.flatMap(post =>
@@ -195,3 +195,8 @@
         background: #000;
     }
 </style>
+
+
+
+
+

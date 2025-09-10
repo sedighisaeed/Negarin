@@ -229,7 +229,7 @@
 					clearTimeout(this.retryTimeout);
 					return;
 				}
-				axios.get('/api/pixelfed/v1/notifications', {
+				axios.get('/api/negarin/v1/notifications', {
 					params: {
 						limit: 9,
 					}
@@ -295,7 +295,7 @@
 
 				this.isIntersecting = true;
 
-				axios.get('/api/pixelfed/v1/notifications', {
+				axios.get('/api/negarin/v1/notifications', {
 					params: {
 						limit: 9,
 						max_id: this.maxId
@@ -451,3 +451,8 @@
 		}
 	}
 </style>
+
+
+
+
+

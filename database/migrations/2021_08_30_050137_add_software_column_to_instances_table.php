@@ -51,3 +51,9 @@ class AddSoftwareColumnToInstancesTable extends Migration
 
 
 
+
+
+
+
+
+

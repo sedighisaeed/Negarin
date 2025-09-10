@@ -37,3 +37,9 @@ class UpdateProfilesTableUseTextForBio extends Migration
 
 
 
+
+
+
+
+
+

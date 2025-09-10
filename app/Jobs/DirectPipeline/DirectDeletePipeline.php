@@ -47,3 +47,9 @@ class DirectDeletePipeline implements ShouldQueue
 
 
 
+
+
+
+
+
+

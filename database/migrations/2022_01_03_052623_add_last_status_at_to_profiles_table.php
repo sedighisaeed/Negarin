@@ -37,3 +37,9 @@ class AddLastStatusAtToProfilesTable extends Migration
 
 
 
+
+
+
+
+
+

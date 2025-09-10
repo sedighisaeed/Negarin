@@ -87,3 +87,9 @@ class UserRegistrationMagicLink extends Command
 
 
 
+
+
+
+
+
+

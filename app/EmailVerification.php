@@ -26,3 +26,9 @@ class EmailVerification extends Model
 
 
 
+
+
+
+
+
+

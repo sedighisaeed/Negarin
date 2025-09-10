@@ -35,3 +35,9 @@ class UpdateStatusTableChangeCaptionToText extends Migration
 
 
 
+
+
+
+
+
+

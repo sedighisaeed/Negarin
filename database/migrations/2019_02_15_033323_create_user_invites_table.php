@@ -44,3 +44,9 @@ class CreateUserInvitesTable extends Migration
 
 
 
+
+
+
+
+
+

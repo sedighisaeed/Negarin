@@ -849,7 +849,7 @@
             	this.viewingSpamReport = report;
             	this.showSpamReportModal = true;
             	setTimeout(() => {
-            		pixelfed.readmore()
+            		negarin.readmore()
             	}, 500)
             },
 
@@ -1104,3 +1104,8 @@
         }
     }
 </script>
+
+
+
+
+

@@ -20,19 +20,19 @@
 						<div class="col-7 d-flex justify-content-between">
 							<div class="text-center mr-4">
 								<h5 class="font-default mb-2">@dansup</h5>
-								<img src="https://pixelfed.test/storage/avatars/321493203255693312/skvft7.jpg?v=33" draggable="false" onerror="this.onerror=null;this.src='/storage/avatars/default.png?v=0';" class="avatar shadow cursor-pointer" width="160" height="160">
+								<img src="https://negarin.test/storage/avatars/321493203255693312/skvft7.jpg?v=33" draggable="false" onerror="this.onerror=null;this.src='/storage/avatars/default.png?v=0';" class="avatar shadow cursor-pointer" width="160" height="160">
 								<button class="btn btn-outline-light btn-sm rounded-pill py-1 mt-2 font-default">View Profile</button>
 							</div>
 
 							<div class="text-center mr-4">
 								<h5 class="font-default mb-2">@dansup</h5>
-								<img src="https://pixelfed.test/storage/avatars/321493203255693312/skvft7.jpg?v=33" draggable="false" onerror="this.onerror=null;this.src='/storage/avatars/default.png?v=0';" class="avatar shadow cursor-pointer" width="160" height="160">
+								<img src="https://negarin.test/storage/avatars/321493203255693312/skvft7.jpg?v=33" draggable="false" onerror="this.onerror=null;this.src='/storage/avatars/default.png?v=0';" class="avatar shadow cursor-pointer" width="160" height="160">
 								<button class="btn btn-outline-light btn-sm rounded-pill py-1 mt-2 font-default">View Profile</button>
 							</div>
 
 							<div class="text-center">
 								<h5 class="font-default mb-2">@dansup</h5>
-								<img src="https://pixelfed.test/storage/avatars/321493203255693312/skvft7.jpg?v=33" draggable="false" onerror="this.onerror=null;this.src='/storage/avatars/default.png?v=0';" class="avatar shadow cursor-pointer" width="160" height="160">
+								<img src="https://negarin.test/storage/avatars/321493203255693312/skvft7.jpg?v=33" draggable="false" onerror="this.onerror=null;this.src='/storage/avatars/default.png?v=0';" class="avatar shadow cursor-pointer" width="160" height="160">
 								<button class="btn btn-outline-light btn-sm rounded-pill py-1 mt-2 font-default">View Profile</button>
 							</div>
 						</div>
@@ -95,3 +95,8 @@
 	}
 }
 </style>
+
+
+
+
+

@@ -72,3 +72,9 @@ class ImageS3DeletePipeline implements ShouldQueue
 
 
 
+
+
+
+
+
+

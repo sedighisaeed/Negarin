@@ -579,7 +579,7 @@
 				}
 
 				if(this.scope != 'home') {
-					axios.get('/api/pixelfed/v2/filters')
+					axios.get('/api/negarin/v2/filters')
 					.then(res => {
 						this.filters = res.data;
 						this.fetchTimelineApi();
@@ -592,13 +592,13 @@
 
 		updated() {
 			if(this.showReadMore == true) {
-				pixelfed.readmore();
+				negarin.readmore();
 			}
 		},
 
 		methods: {
 			fetchProfile() {
-				axios.get('/api/pixelfed/v1/accounts/verify_credentials').then(res => {
+				axios.get('/api/negarin/v1/accounts/verify_credentials').then(res => {
 					this.profile = res.data;
 					if(this.profile.is_admin == true) {
 						this.modes.mod = true;
@@ -618,15 +618,15 @@
 				let apiUrl = false;
 				switch(this.scope) {
 					case 'home':
-					apiUrl = '/api/pixelfed/v1/timelines/home';
+					apiUrl = '/api/negarin/v1/timelines/home';
 					break;
 
 					case 'local':
-					apiUrl = '/api/pixelfed/v1/timelines/public';
+					apiUrl = '/api/negarin/v1/timelines/public';
 					break;
 
 					case 'network':
-					apiUrl = '/api/pixelfed/v1/timelines/network';
+					apiUrl = '/api/negarin/v1/timelines/network';
 					break;
 				}
 				axios.get(apiUrl, {
@@ -688,15 +688,15 @@
 
 				switch(this.scope) {
 					case 'home':
-					apiUrl = '/api/pixelfed/v1/timelines/home';
+					apiUrl = '/api/negarin/v1/timelines/home';
 					break;
 
 					case 'local':
-					apiUrl = '/api/pixelfed/v1/timelines/public';
+					apiUrl = '/api/negarin/v1/timelines/public';
 					break;
 
 					case 'network':
-					apiUrl = '/api/pixelfed/v1/timelines/network';
+					apiUrl = '/api/negarin/v1/timelines/network';
 					break;
 				}
 
@@ -950,15 +950,15 @@
 					}
 					switch(this.scope) {
 						case 'home':
-						apiUrl = '/api/pixelfed/v1/timelines/home';
+						apiUrl = '/api/negarin/v1/timelines/home';
 						break;
 
 						case 'local':
-						apiUrl = '/api/pixelfed/v1/timelines/public';
+						apiUrl = '/api/negarin/v1/timelines/public';
 						break;
 
 						case 'network':
-						apiUrl = '/api/pixelfed/v1/timelines/network';
+						apiUrl = '/api/negarin/v1/timelines/network';
 						break;
 					}
 					axios.get(apiUrl, {
@@ -1152,3 +1152,8 @@
 		box-shadow: none;
 	}
 </style>
+
+
+
+
+

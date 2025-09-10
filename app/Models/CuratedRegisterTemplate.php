@@ -24,3 +24,9 @@ class CuratedRegisterTemplate extends Model
 
 
 
+
+
+
+
+
+

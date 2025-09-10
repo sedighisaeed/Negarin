@@ -60,3 +60,9 @@ class CuratedRegisterRejectUser extends Mailable
 
 
 
+
+
+
+
+
+

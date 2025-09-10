@@ -60,3 +60,9 @@ class InAppRegisterEmailVerify extends Mailable
 
 
 
+
+
+
+
+
+

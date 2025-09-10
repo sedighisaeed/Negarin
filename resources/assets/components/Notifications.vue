@@ -332,7 +332,7 @@
         methods: {
             fetchNotifications() {
                 this.notificationRetries++;
-                axios.get('/api/pixelfed/v1/notifications?pg=true')
+                axios.get('/api/negarin/v1/notifications?pg=true')
                 .then(res => {
                     if(!res || !res.data || !res.data.length) {
                         if(this.notificationRetries >= 2) {
@@ -394,7 +394,7 @@
 
                 this.isIntersecting = true;
 
-                axios.get('/api/pixelfed/v1/notifications', {
+                axios.get('/api/negarin/v1/notifications', {
                     params: {
                         max_id: this.max_id
                     }
@@ -511,7 +511,7 @@
 
                 this.filteredIsIntersecting = true;
 
-                axios.get('/api/pixelfed/v1/notifications', {
+                axios.get('/api/negarin/v1/notifications', {
                     params: {
                         max_id: this.filteredMaxId,
                         limit: 40
@@ -631,3 +631,8 @@
         }
     }
 </style>
+
+
+
+
+

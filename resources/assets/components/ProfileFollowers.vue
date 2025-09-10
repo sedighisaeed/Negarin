@@ -83,7 +83,7 @@
 
             fetchProfile() {
                 let id = this.profileId ? this.profileId : this.id;
-                axios.get('/api/pixelfed/v1/accounts/' + id)
+                axios.get('/api/negarin/v1/accounts/' + id)
                 .then(res => {
                     this.profile = res.data;
                     if(res.data.id == this.curUser.id) {
@@ -125,3 +125,8 @@
         }
     }
 </script>
+
+
+
+
+

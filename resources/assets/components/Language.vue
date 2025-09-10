@@ -98,7 +98,7 @@
         	},
 
         	loadLang(lang) {
-        		axios.post('/api/pixelfed/web/change-language.json', {
+        		axios.post('/api/negarin/web/change-language.json', {
         			v: 0.1,
         			l: lang
         		})
@@ -109,3 +109,8 @@
         }
 	}
 </script>
+
+
+
+
+

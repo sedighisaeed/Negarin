@@ -37,3 +37,9 @@ class AddLanguageToUsersTable extends Migration
 
 
 
+
+
+
+
+
+

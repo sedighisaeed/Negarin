@@ -147,8 +147,8 @@ ENV APT_PACKAGES_EXTRA=${APT_PACKAGES_EXTRA}
 # Install and configure base layer
 COPY docker/shared/root/docker/install/base.sh /docker/install/base.sh
 
-RUN --mount=type=cache,id=pixelfed-apt-${PHP_VERSION}-${PHP_DEBIAN_RELEASE}-${TARGETPLATFORM},sharing=locked,target=/var/lib/apt \
-    --mount=type=cache,id=pixelfed-apt-cache-${PHP_VERSION}-${PHP_DEBIAN_RELEASE}-${TARGETPLATFORM},sharing=locked,target=/var/cache/apt \
+RUN --mount=type=cache,id=negarin-apt-${PHP_VERSION}-${PHP_DEBIAN_RELEASE}-${TARGETPLATFORM},sharing=locked,target=/var/lib/apt \
+    --mount=type=cache,id=negarin-apt-cache-${PHP_VERSION}-${PHP_DEBIAN_RELEASE}-${TARGETPLATFORM},sharing=locked,target=/var/cache/apt \
     /docker/install/base.sh
 
 #######################################################
@@ -170,9 +170,9 @@ COPY --from=php-extension-installer /usr/bin/install-php-extensions /usr/local/b
 
 COPY docker/shared/root/docker/install/php-extensions.sh /docker/install/php-extensions.sh
 
-RUN --mount=type=cache,id=pixelfed-pear-${PHP_VERSION}-${PHP_DEBIAN_RELEASE}-${TARGETPLATFORM},sharing=locked,target=/tmp/pear  \
-    --mount=type=cache,id=pixelfed-apt-${PHP_VERSION}-${PHP_DEBIAN_RELEASE}-${TARGETPLATFORM},sharing=locked,target=/var/lib/apt \
-    --mount=type=cache,id=pixelfed-apt-cache-${PHP_VERSION}-${PHP_DEBIAN_RELEASE}-${TARGETPLATFORM},sharing=locked,target=/var/cache/apt \
+RUN --mount=type=cache,id=negarin-pear-${PHP_VERSION}-${PHP_DEBIAN_RELEASE}-${TARGETPLATFORM},sharing=locked,target=/tmp/pear  \
+    --mount=type=cache,id=negarin-apt-${PHP_VERSION}-${PHP_DEBIAN_RELEASE}-${TARGETPLATFORM},sharing=locked,target=/var/lib/apt \
+    --mount=type=cache,id=negarin-apt-cache-${PHP_VERSION}-${PHP_DEBIAN_RELEASE}-${TARGETPLATFORM},sharing=locked,target=/var/cache/apt \
     PHP_EXTENSIONS=${PHP_EXTENSIONS} \
     PHP_EXTENSIONS_DATABASE=${PHP_EXTENSIONS_DATABASE} \
     PHP_EXTENSIONS_EXTRA=${PHP_EXTENSIONS_EXTRA} \
@@ -188,7 +188,7 @@ RUN --mount=type=cache,id=pixelfed-pear-${PHP_VERSION}-${PHP_DEBIAN_RELEASE}-${T
 # we only want to build once and cache it for other architectures.
 # We force the (CPU) [--platform] here to be architecture
 # of the "builder"/"server" and not the *target* CPU architecture
-# (e.g.) building the ARM version of Pixelfed on AMD64.
+# (e.g.) building the ARM version of negarin on AMD64.
 FROM --platform=${BUILDARCH} node:lts AS frontend-build
 
 ARG BUILDARCH
@@ -204,7 +204,7 @@ WORKDIR /var/www/
 SHELL [ "/usr/bin/bash", "-c" ]
 
 # Install NPM dependencies
-RUN --mount=type=cache,id=pixelfed-node-${BUILDARCH},sharing=locked,target=/tmp/cache \
+RUN --mount=type=cache,id=negarin-node-${BUILDARCH},sharing=locked,target=/tmp/cache \
     --mount=type=bind,source=package.json,target=/var/www/package.json \
     --mount=type=bind,source=package-lock.json,target=/var/www/package-lock.json \
 <<EOF
@@ -260,7 +260,7 @@ USER ${RUNTIME_UID}:${RUNTIME_GID}
 
 # Install composer dependencies
 # NOTE: we skip the autoloader generation here since we don't have all files avaliable (yet)
-RUN --mount=type=cache,id=pixelfed-composer-${PHP_VERSION},sharing=locked,uid=${RUNTIME_UID},gid=${RUNTIME_GID},target=/cache/composer \
+RUN --mount=type=cache,id=negarin-composer-${PHP_VERSION},sharing=locked,uid=${RUNTIME_UID},gid=${RUNTIME_GID},target=/cache/composer \
     --mount=type=bind,source=composer.json,target=/var/www/composer.json \
     --mount=type=bind,source=composer.lock,target=/var/www/composer.lock \
     set -ex \
@@ -298,7 +298,7 @@ COPY --link --from=frontend-build --chown=${RUNTIME_UID}:${RUNTIME_GID} /var/www
 
 USER root
 
-# for detail why storage is copied this way, pls refer to https://github.com/pixelfed/pixelfed/pull/2137#discussion_r434468862
+# for detail why storage is copied this way, pls refer to https://github.com/negarin/negarin/pull/2137#discussion_r434468862
 RUN set -ex \
     && cp --recursive --link --preserve=all storage storage.skel \
     && rm -rf html && ln -s public html
@@ -345,8 +345,8 @@ ARG PHP_VERSION
 ARG TARGETPLATFORM
 
 # Install nginx dependencies
-RUN --mount=type=cache,id=pixelfed-apt-lists-${PHP_VERSION}-${PHP_DEBIAN_RELEASE}-${TARGETPLATFORM},sharing=locked,target=/var/lib/apt/lists \
-    --mount=type=cache,id=pixelfed-apt-cache-${PHP_VERSION}-${PHP_DEBIAN_RELEASE}-${TARGETPLATFORM},sharing=locked,target=/var/cache/apt \
+RUN --mount=type=cache,id=negarin-apt-lists-${PHP_VERSION}-${PHP_DEBIAN_RELEASE}-${TARGETPLATFORM},sharing=locked,target=/var/lib/apt/lists \
+    --mount=type=cache,id=negarin-apt-cache-${PHP_VERSION}-${PHP_DEBIAN_RELEASE}-${TARGETPLATFORM},sharing=locked,target=/var/cache/apt \
     set -ex \
     && gpg1 --keyserver "hkp://keyserver.ubuntu.com:80" --keyserver-options timeout=10 --recv-keys "${NGINX_GPGKEY}" \
     && gpg1 --export "$NGINX_GPGKEY" > "$NGINX_GPGKEY_PATH" \
@@ -362,3 +362,4 @@ COPY docker/nginx/Procfile .
 STOPSIGNAL SIGQUIT
 
 CMD ["forego", "start", "-r"]
+

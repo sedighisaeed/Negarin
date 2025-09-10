@@ -111,7 +111,7 @@
 
         methods: {
             fetchData() {
-                axios.get('/api/pixelfed/v2/discover/posts')
+                axios.get('/api/negarin/v2/discover/posts')
                 .then((res) => {
                     this.posts = res.data.posts.filter(r => r != null);
                     this.recommendedLoading = false;
@@ -121,7 +121,7 @@
             loadTrending() {
                 this.loading = true;
 
-                axios.get('/api/pixelfed/v2/discover/posts/trending', {
+                axios.get('/api/negarin/v2/discover/posts/trending', {
                     params: {
                         range: this.range
                     }
@@ -202,3 +202,8 @@
         }
     }
 </style>
+
+
+
+
+

@@ -69,3 +69,9 @@ class ImageThumbnail implements ShouldQueue
 
 
 
+
+
+
+
+
+

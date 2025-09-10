@@ -97,3 +97,9 @@ class AvatarDefaultMigration extends Command
 
 
 
+
+
+
+
+
+

@@ -59,3 +59,9 @@ class JoinApproved implements ShouldQueue
 
 
 
+
+
+
+
+
+

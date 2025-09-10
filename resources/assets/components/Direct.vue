@@ -96,7 +96,7 @@
                             ref="autocomplete"
                         >
                         </autocomplete>
-                        <p class="small text-muted">Search by username, or webfinger (@dansup@pixelfed.social)</p>
+                        <p class="small text-muted">Search by username, or webfinger (@dansup@negarin.social)</p>
                         <div style="width:300px;"></div>
                     </div>
                     <div>
@@ -314,3 +314,8 @@
     }
 
 </style>
+
+
+
+
+

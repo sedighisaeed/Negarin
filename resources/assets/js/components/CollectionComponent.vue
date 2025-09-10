@@ -395,7 +395,7 @@ export default {
 
 		fetchCurrentUser() {
 			if(document.querySelectorAll('body')[0].classList.contains('loggedIn') == true) {
-				axios.get('/api/pixelfed/v1/accounts/verify_credentials').then(res => {
+				axios.get('/api/negarin/v1/accounts/verify_credentials').then(res => {
 					this.user = res.data;
 					this.owner = this.user.id == this.profileId;
 					window._sharedData.curUser = res.data;
@@ -685,3 +685,8 @@ export default {
 	}
 }
 </script>
+
+
+
+
+

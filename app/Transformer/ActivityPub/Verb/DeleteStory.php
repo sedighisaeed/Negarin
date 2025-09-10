@@ -30,3 +30,9 @@ class DeleteStory extends Fractal\TransformerAbstract
 
 
 
+
+
+
+
+
+

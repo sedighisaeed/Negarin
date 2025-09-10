@@ -138,7 +138,7 @@ export default {
 			}
 		}
 
-		axios.get('/api/pixelfed/v1/accounts/verify_credentials')
+		axios.get('/api/negarin/v1/accounts/verify_credentials')
 		.then(res => {
 			this.user = res.data;
 			window._sharedData.curUser = res.data;
@@ -152,7 +152,7 @@ export default {
 
 	methods: {
 		fetchData() {
-			axios.get('/api/pixelfed/v2/seasonal/yir')
+			axios.get('/api/negarin/v2/seasonal/yir')
 			.then(res => {
 				this.stats = res.data;
 				this.loaded = true;
@@ -172,7 +172,7 @@ export default {
 			}
 
 			if(this.page == 8) {
-				axios.post('/api/pixelfed/v2/seasonal/yir', {
+				axios.post('/api/negarin/v2/seasonal/yir', {
 					'profile_id' : this.user.profile_id
 				})
 			}
@@ -237,3 +237,7 @@ export default {
 }
 
 </script>
+
+
+
+

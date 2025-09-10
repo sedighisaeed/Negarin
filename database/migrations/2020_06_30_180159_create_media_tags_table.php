@@ -43,3 +43,9 @@ class CreateMediaTagsTable extends Migration
 
 
 
+
+
+
+
+
+

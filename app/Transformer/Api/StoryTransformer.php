@@ -36,3 +36,9 @@ class StoryTransformer extends Fractal\TransformerAbstract
 
 
 
+
+
+
+
+
+

@@ -56,7 +56,7 @@
             },
 
             fetchProfile() {
-                axios.get('/api/pixelfed/v1/accounts/verify_credentials')
+                axios.get('/api/negarin/v1/accounts/verify_credentials')
                 .then(res => {
                     this.profile = res.data;
                     this.init();
@@ -77,3 +77,8 @@
         font-family: var(--font-family-sans-serif);
     }
 </style>
+
+
+
+
+

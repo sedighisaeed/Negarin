@@ -42,3 +42,9 @@ class CreateContactsTable extends Migration
 
 
 
+
+
+
+
+
+

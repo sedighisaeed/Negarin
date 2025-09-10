@@ -79,7 +79,7 @@ export default {
 
 	methods: {
 		fetchConfig() {
-			axios.get('/api/pixelfed/v2/discover/meta')
+			axios.get('/api/negarin/v2/discover/meta')
 			.then(res => {
 				if(res.data.friends.enabled == false) {
 					this.$router.push('/i/web/discover');
@@ -93,7 +93,7 @@ export default {
 		},
 
 		fetchPopular() {
-			axios.get('/api/pixelfed/v2/discover/account-insights')
+			axios.get('/api/negarin/v2/discover/account-insights')
 			.then(res => {
 				this.popular = res.data;
 				this.popularLoaded = true;
@@ -113,7 +113,7 @@ export default {
 		},
 
 		fetchPopularAccounts() {
-			axios.get('/api/pixelfed/discover/accounts/popular')
+			axios.get('/api/negarin/discover/accounts/popular')
 			.then(res => {
 				this.popularAccounts = res.data;
 				this.isLoading = false;
@@ -180,3 +180,8 @@ export default {
 		}
 	}
 </style>
+
+
+
+
+

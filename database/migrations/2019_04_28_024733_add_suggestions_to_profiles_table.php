@@ -37,3 +37,9 @@ class AddSuggestionsToProfilesTable extends Migration
 
 
 
+
+
+
+
+
+

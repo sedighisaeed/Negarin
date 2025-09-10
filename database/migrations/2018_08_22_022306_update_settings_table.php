@@ -40,3 +40,9 @@ class UpdateSettingsTable extends Migration
 
 
 
+
+
+
+
+
+

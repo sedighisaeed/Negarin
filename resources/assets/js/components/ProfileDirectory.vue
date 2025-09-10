@@ -73,7 +73,7 @@
 
 		methods: {
 			fetchData() {
-				axios.get('/api/pixelfed/v2/discover/profiles', {
+				axios.get('/api/negarin/v2/discover/profiles', {
 					params: {
 						page: this.page
 					}
@@ -106,3 +106,7 @@
 		}
 	}
 </script>
+
+
+
+

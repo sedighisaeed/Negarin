@@ -124,3 +124,9 @@ class ImageResizePipeline implements ShouldQueue
 
 
 
+
+
+
+
+
+

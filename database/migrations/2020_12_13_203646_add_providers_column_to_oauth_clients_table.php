@@ -41,3 +41,9 @@ class AddProvidersColumnToOauthClientsTable extends Migration
 
 
 
+
+
+
+
+
+

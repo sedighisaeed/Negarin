@@ -64,3 +64,9 @@ class ImageOptimize implements ShouldQueue
 
 
 
+
+
+
+
+
+

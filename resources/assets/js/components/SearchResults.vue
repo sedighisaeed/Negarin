@@ -361,7 +361,7 @@ export default {
 			let lexer = this.searchLexer();
 			this.analysis = lexer;
 			this.fetchSearchResults();
-			axios.get('/api/pixelfed/v1/accounts/verify_credentials').then(res => {
+			axios.get('/api/negarin/v1/accounts/verify_credentials').then(res => {
 				window._sharedData.curUser = res.data;
 				window.App.util.navatar();
 			});
@@ -586,3 +586,8 @@ export default {
 
 }
 </script>
+
+
+
+
+

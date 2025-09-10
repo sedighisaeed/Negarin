@@ -229,7 +229,7 @@
             },
 
             fetchSettings() {
-                axios.get('/api/pixelfed/v1/web/settings')
+                axios.get('/api/negarin/v1/web/settings')
                 .then(res => {
                     this.settings = res.data;
 
@@ -771,7 +771,7 @@
             enableReblogs() {
                 this.enablingReblogs = true;
 
-                axios.post('/api/pixelfed/v1/web/settings', {
+                axios.post('/api/negarin/v1/web/settings', {
                     field: 'enable_reblogs',
                     value: true
                 })
@@ -784,7 +784,7 @@
 
             hideReblogs() {
                 this.showReblogBanner = false;
-                axios.post('/api/pixelfed/v1/web/settings', {
+                axios.post('/api/negarin/v1/web/settings', {
                     field: 'hide_reblog_banner',
                     value: true
                 })
@@ -817,3 +817,8 @@
         }
     }
 </script>
+
+
+
+
+

@@ -127,3 +127,9 @@ class VideoThumbnail implements ShouldQueue, ShouldBeUniqueUntilProcessing
 
 
 
+
+
+
+
+
+

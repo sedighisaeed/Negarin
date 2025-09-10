@@ -108,7 +108,7 @@ export default {
 
 	methods: {
 		fetchConfig() {
-			axios.get('/api/pixelfed/v2/discover/meta')
+			axios.get('/api/negarin/v2/discover/meta')
 			.then(res => {
 				if(res.data.insights.enabled == false) {
 					this.$router.push('/i/web/discover');
@@ -118,7 +118,7 @@ export default {
 		},
 
 		fetchPopular() {
-			axios.get('/api/pixelfed/v2/discover/account-insights')
+			axios.get('/api/negarin/v2/discover/account-insights')
 			.then(res => {
 				this.popular = res.data.filter(p => {
 					return p.favourites_count;
@@ -188,3 +188,8 @@ export default {
 		}
 	}
 </style>
+
+
+
+
+

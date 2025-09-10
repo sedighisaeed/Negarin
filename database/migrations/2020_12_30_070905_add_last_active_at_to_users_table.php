@@ -37,3 +37,9 @@ class AddLastActiveAtToUsersTable extends Migration
 
 
 
+
+
+
+
+
+

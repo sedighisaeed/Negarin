@@ -72,3 +72,9 @@ class ImageResize implements ShouldQueue
 
 
 
+
+
+
+
+
+

@@ -345,3 +345,9 @@ class AdminCuratedRegisterController extends Controller
 
 
 
+
+
+
+
+
+

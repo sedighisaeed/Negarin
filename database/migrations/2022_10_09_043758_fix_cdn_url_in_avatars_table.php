@@ -46,3 +46,9 @@ class FixCdnUrlInAvatarsTable extends Migration
 
 
 
+
+
+
+
+
+

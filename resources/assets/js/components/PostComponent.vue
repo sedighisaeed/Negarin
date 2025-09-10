@@ -589,7 +589,7 @@ import CommentFeed from './partials/CommentFeed.vue';
 import StatusCard from './partials/StatusCard.vue';
 import { parseLinkHeader } from '@web3-storage/parse-link-header';
 
-pixelfed.postComponent = {};
+negarin.postComponent = {};
 
 export default {
 
@@ -734,7 +734,7 @@ export default {
 			$('.carousel').carousel();
 			$('[data-toggle="tooltip"]').tooltip();
 			if(this.showReadMore == true) {
-				window.pixelfed.readmore();
+				window.negarin.readmore();
 			}
 		},
 
@@ -1267,7 +1267,7 @@ export default {
 					this.fetchData();
 					return;
 				} else {
-					axios.get('/api/pixelfed/v1/accounts/relationships', {
+					axios.get('/api/negarin/v1/accounts/relationships', {
 						params: {
 							'id[]': this.statusProfileId
 						}
@@ -1354,7 +1354,7 @@ export default {
 					return;
 				}
 				let self = this;
-				let apiUrl = '/api/pixelfed/v1/accounts/' + this.statusProfileId + '/statuses';
+				let apiUrl = '/api/negarin/v1/accounts/' + this.statusProfileId + '/statuses';
 				axios.get(apiUrl, {
 					params: {
 						only_media: true,
@@ -1569,7 +1569,7 @@ export default {
 					return;
 				}
 
-				axios.post('/api/pixelfed/v2/status/' + status.id + '/archive')
+				axios.post('/api/negarin/v2/status/' + status.id + '/archive')
 				.then(res => {
 					this.$refs.ctxModal.hide();
 					window.location.href = '/';
@@ -1581,7 +1581,7 @@ export default {
 					return;
 				}
 
-				axios.post('/api/pixelfed/v2/status/' + status.id + '/unarchive')
+				axios.post('/api/negarin/v2/status/' + status.id + '/unarchive')
 				.then(res => {
 					this.$refs.ctxModal.hide();
 				});
@@ -1599,3 +1599,8 @@ export default {
 		},
 }
 </script>
+
+
+
+
+

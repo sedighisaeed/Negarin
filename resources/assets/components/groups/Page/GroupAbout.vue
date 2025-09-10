@@ -114,7 +114,7 @@
         methods: {
             init() {
                 this.initialLoad = false;
-                axios.get('/api/pixelfed/v1/accounts/verify_credentials')
+                axios.get('/api/negarin/v1/accounts/verify_credentials')
                 .then(res => {
                     this.profile = res.data;
                     this.fetchGroup();
@@ -166,3 +166,8 @@
         }
     }
 </style>
+
+
+
+
+

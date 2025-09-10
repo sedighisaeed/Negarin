@@ -113,3 +113,9 @@ class NewPostPipeline implements ShouldQueue
 
 
 
+
+
+
+
+
+

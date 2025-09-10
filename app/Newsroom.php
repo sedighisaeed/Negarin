@@ -34,3 +34,9 @@ class Newsroom extends Model
 
 
 
+
+
+
+
+
+

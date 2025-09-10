@@ -380,7 +380,7 @@
 
         data() {
             return {
-                brandName: 'pixelfed',
+                brandName: 'negarin',
                 user: window._sharedData.user,
                 profileLayoutModel: 'grid',
                 hasLocalTimeline: true,
@@ -885,3 +885,8 @@
         }
     }
 </style>
+
+
+
+
+

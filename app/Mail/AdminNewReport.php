@@ -105,3 +105,9 @@ class AdminNewReport extends Mailable
 
 
 
+
+
+
+
+
+

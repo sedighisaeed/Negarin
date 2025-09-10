@@ -245,7 +245,7 @@
             },
 
             fetchSelfProfile() {
-                axios.get('/api/pixelfed/v1/accounts/verify_credentials')
+                axios.get('/api/negarin/v1/accounts/verify_credentials')
                 .then(res => {
                     this.currentProfile = res.data;
                 })
@@ -441,3 +441,8 @@
         }
     }
 </style>
+
+
+
+
+

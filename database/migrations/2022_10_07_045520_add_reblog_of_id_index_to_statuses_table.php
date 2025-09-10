@@ -39,3 +39,9 @@ class AddReblogOfIdIndexToStatusesTable extends Migration
 
 
 
+
+
+
+
+
+

@@ -38,3 +38,9 @@ class AddFiltersToMediaTable extends Migration
 
 
 
+
+
+
+
+
+

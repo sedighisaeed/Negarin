@@ -20,3 +20,9 @@ class ReportLog extends Model
 
 
 
+
+
+
+
+
+

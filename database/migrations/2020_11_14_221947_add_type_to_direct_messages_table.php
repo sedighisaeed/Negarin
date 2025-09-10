@@ -39,3 +39,9 @@ class AddTypeToDirectMessagesTable extends Migration
 
 
 
+
+
+
+
+
+

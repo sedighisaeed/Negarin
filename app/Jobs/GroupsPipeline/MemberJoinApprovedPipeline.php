@@ -52,3 +52,9 @@ class MemberJoinApprovedPipeline implements ShouldQueue
 
 
 
+
+
+
+
+
+

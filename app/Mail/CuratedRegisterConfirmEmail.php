@@ -60,3 +60,9 @@ class CuratedRegisterConfirmEmail extends Mailable
 
 
 
+
+
+
+
+
+

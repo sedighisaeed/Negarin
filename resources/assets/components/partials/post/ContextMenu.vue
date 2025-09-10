@@ -857,7 +857,7 @@
                     return;
                 }
 
-                axios.post('/api/pixelfed/v2/status/' + status.id + '/archive')
+                axios.post('/api/negarin/v2/status/' + status.id + '/archive')
                 .then(res => {
                     this.$emit('delete', status.id);
                     this.$emit('archived', status.id);
@@ -870,7 +870,7 @@
                     return;
                 }
 
-                axios.post('/api/pixelfed/v2/status/' + status.id + '/unarchive')
+                axios.post('/api/negarin/v2/status/' + status.id + '/unarchive')
                 .then(res => {
                     this.$emit('unarchived', status.id);
                     this.closeModals();
@@ -999,7 +999,7 @@
 
                 this.closeModals();
 
-                axios.post('/api/pixelfed/v1/statuses/' + status.id.toString() + '/pin')
+                axios.post('/api/negarin/v1/statuses/' + status.id.toString() + '/pin')
                 .then(res => {
                     const data = res.data;
                     if(data.id && data.pinned) {
@@ -1023,7 +1023,7 @@
                 }
                 this.closeModals();
 
-                axios.post('/api/pixelfed/v1/statuses/' + status.id.toString() + '/unpin')
+                axios.post('/api/negarin/v1/statuses/' + status.id.toString() + '/unpin')
                 .then(res => {
                     const data = res.data;
                     if(data.id) {
@@ -1085,3 +1085,8 @@
         }
     }
 </style>
+
+
+
+
+

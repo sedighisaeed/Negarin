@@ -42,3 +42,9 @@ class CreateCollectionsTable extends Migration
 
 
 
+
+
+
+
+
+

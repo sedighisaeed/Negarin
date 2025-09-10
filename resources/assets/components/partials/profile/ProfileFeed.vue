@@ -610,7 +610,7 @@
             },
 
             fetchFeed() {
-                axios.get('/api/pixelfed/v1/accounts/' + this.profile.id + '/statuses', {
+                axios.get('/api/negarin/v1/accounts/' + this.profile.id + '/statuses', {
                     params: {
                         limit: 9,
                         only_media: true,
@@ -652,7 +652,7 @@
                 }
                 this.isIntersecting = true;
 
-                axios.get('/api/pixelfed/v1/accounts/' + this.profile.id + '/statuses', {
+                axios.get('/api/negarin/v1/accounts/' + this.profile.id + '/statuses', {
                     params: {
                         limit: 9,
                         only_media: true,
@@ -776,7 +776,7 @@
 
             fetchFavourites() {
                 this.tabIndex = 0;
-                axios.get('/api/pixelfed/v1/favourites')
+                axios.get('/api/negarin/v1/favourites')
                 .then(res => {
                     this.tabIndex = 3;
                     this.favourites = res.data;
@@ -795,7 +795,7 @@
                 }
                 this.isIntersecting = true;
 
-                axios.get('/api/pixelfed/v1/favourites', {
+                axios.get('/api/negarin/v1/favourites', {
                     params: {
                         page: this.favouritesPage,
                     }
@@ -868,7 +868,7 @@
 
             fetchArchives() {
                 this.tabIndex = 0;
-                axios.get('/api/pixelfed/v2/statuses/archives')
+                axios.get('/api/negarin/v2/statuses/archives')
                 .then(res => {
                     this.tabIndex = 'archives';
                     this.archives = res.data;
@@ -1136,7 +1136,7 @@
                 }
                 this.isIntersecting = true;
 
-                axios.get('/api/pixelfed/v2/statuses/archives', {
+                axios.get('/api/negarin/v2/statuses/archives', {
                     params: {
                         page: this.archivesPage
                     }
@@ -1285,3 +1285,8 @@
         }
     }
 </style>
+
+
+
+
+

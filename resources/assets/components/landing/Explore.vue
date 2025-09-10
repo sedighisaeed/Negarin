@@ -74,7 +74,7 @@
 
 		methods: {
 			init() {
-				axios.get('/api/pixelfed/v2/discover/posts/trending?range=daily')
+				axios.get('/api/negarin/v2/discover/posts/trending?range=daily')
 				.then(res => {
 					if(res && res.data.length > 3) {
 						this.feed = res.data;
@@ -92,7 +92,7 @@
 				}
 				this.isFetching = true;
 
-				axios.get('/api/pixelfed/v2/discover/posts/trending', {
+				axios.get('/api/negarin/v2/discover/posts/trending', {
 					params: {
 						range: this.ranges[this.rangeIndex]
 					}
@@ -117,3 +117,8 @@
 		}
 	}
 </script>
+
+
+
+
+

@@ -237,3 +237,9 @@ class DeleteWorker implements ShouldQueue
 
 
 
+
+
+
+
+
+

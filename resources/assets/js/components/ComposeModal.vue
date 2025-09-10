@@ -506,7 +506,7 @@
                         <autocomplete
                             v-show="taggedUsernames.length < 10"
                             :search="tagSearch"
-                            placeholder="@pixelfed"
+                            placeholder="@negarin"
                             aria-label="Search usernames"
                             :get-result-value="getTagResultValue"
                             @submit="onTagSubmitLocation"
@@ -1121,7 +1121,7 @@ export default {
                     this.visibilityTag = 'Followers Only';
                 }
             } else {
-                axios.get('/api/pixelfed/v1/accounts/verify_credentials').then(res => {
+                axios.get('/api/negarin/v1/accounts/verify_credentials').then(res => {
                     window._sharedData.currentUser = res.data;
                     this.profile = res.data;
                     if(this.composeSettings && this.composeSettings.hasOwnProperty('default_scope') && this.composeSettings.default_scope) {
@@ -1744,7 +1744,7 @@ export default {
         },
 
         fetchCameraRollDrafts() {
-            axios.get('/api/pixelfed/local/drafts')
+            axios.get('/api/negarin/local/drafts')
             .then(res => {
                 this.cameraRollMedia = res.data;
             });
@@ -2028,3 +2028,8 @@ export default {
         }
     }
 </style>
+
+
+
+
+

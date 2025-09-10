@@ -690,7 +690,7 @@
                 }
 
                 if(this.mode == 'archives') {
-                    axios.get('/api/pixelfed/v2/statuses/archives')
+                    axios.get('/api/negarin/v2/statuses/archives')
                     .then(res => {
                         this.archives = res.data;
                     }).catch(err => {
@@ -710,7 +710,7 @@
                 this.followingModal();
             }
             if(document.querySelectorAll('body')[0].classList.contains('loggedIn') == true) {
-                axios.get('/api/pixelfed/v1/accounts/verify_credentials').then(res => {
+                axios.get('/api/negarin/v1/accounts/verify_credentials').then(res => {
                     this.user = res.data;
                     window._sharedData.curUser = res.data;
                     window.App.util.navatar();
@@ -725,7 +725,7 @@
 
         methods: {
             fetchProfile() {
-                axios.get('/api/pixelfed/v1/accounts/' + this.profileId).then(res => {
+                axios.get('/api/negarin/v1/accounts/' + this.profileId).then(res => {
                     this.profile = res.data;
                 }).then(res => {
                     this.fetchPosts();
@@ -733,7 +733,7 @@
             },
 
             fetchPosts() {
-                let apiUrl = '/api/pixelfed/v1/accounts/' + this.profileId + '/statuses';
+                let apiUrl = '/api/negarin/v1/accounts/' + this.profileId + '/statuses';
                 axios.get(apiUrl, {
                     params: {
                         limit: 9,
@@ -783,7 +783,7 @@
                     // $state.complete();
                     return;
                 }
-                let apiUrl = '/api/pixelfed/v1/accounts/' + this.profileId + '/statuses';
+                let apiUrl = '/api/negarin/v1/accounts/' + this.profileId + '/statuses';
                 axios.get(apiUrl, {
                     params: {
                         limit: 9,
@@ -963,7 +963,7 @@
                 if(document.querySelectorAll('body')[0].classList.contains('loggedIn') == false) {
                     return;
                 }
-                axios.get('/api/pixelfed/v1/accounts/relationships', {
+                axios.get('/api/negarin/v1/accounts/relationships', {
                     params: {
                         'id[]': this.profileId
                     }
@@ -1271,9 +1271,9 @@
             momentBackground() {
                 let c = 'w-100 h-100 mt-n3 ';
                 if(this.profile.header_bg) {
-                    c += this.profile.header_bg == 'default' ? 'bg-pixelfed' : 'bg-moment-' + this.profile.header_bg;
+                    c += this.profile.header_bg == 'default' ? 'bg-negarin' : 'bg-moment-' + this.profile.header_bg;
                 } else {
-                    c += 'bg-pixelfed';
+                    c += 'bg-negarin';
                 }
                 return c;
             },
@@ -1379,7 +1379,7 @@
             },
 
             archivesInfiniteLoader($state) {
-                axios.get('/api/pixelfed/v2/statuses/archives', {
+                axios.get('/api/negarin/v2/statuses/archives', {
                     params: {
                         page: this.archivesPage
                     }
@@ -1397,3 +1397,8 @@
         }
     }
 </script>
+
+
+
+
+
