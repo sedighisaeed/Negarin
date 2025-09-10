@@ -26,10 +26,10 @@ services:
       DOCKER_SERVICE_NAME: "proxy"
     volumes:
       - "${DOCKER_PROXY_HOST_DOCKER_SOCKET_PATH}:/tmp/docker.sock:ro"
-      - "${DOCKER_ALL_HOST_CONFIG_ROOT_PATH}/proxy/conf.d:/etc/nginx/conf.d"
-      - "${DOCKER_ALL_HOST_CONFIG_ROOT_PATH}/proxy/vhost.d:/etc/nginx/vhost.d"
-      - "${DOCKER_ALL_HOST_CONFIG_ROOT_PATH}/proxy/certs:/etc/nginx/certs"
-      - "${DOCKER_ALL_HOST_DATA_ROOT_PATH}/proxy/html:/usr/share/nginx/html"
+      - "./docker-compose-state/config/proxy/conf.d:/etc/nginx/conf.d"
+      - "./docker-compose-state/config/proxy/vhost.d:/etc/nginx/vhost.d"
+      - "./docker-compose-state/config/proxy/certs:/etc/nginx/certs:rw"
+      - "./docker-compose-state/data/proxy/html:/usr/share/nginx/html"
     ports:
       - 80:80
       - 443:443
@@ -58,11 +58,11 @@ services:
     depends_on:
       - proxy
     volumes:
-      - "${DOCKER_ALL_HOST_CONFIG_ROOT_PATH}/proxy-acme:/etc/acme.sh"
-      - "${DOCKER_ALL_HOST_CONFIG_ROOT_PATH}/proxy/certs:/etc/nginx/certs"
-      - "${DOCKER_ALL_HOST_CONFIG_ROOT_PATH}/proxy/conf.d:/etc/nginx/conf.d"
-      - "${DOCKER_ALL_HOST_CONFIG_ROOT_PATH}/proxy/vhost.d:/etc/nginx/vhost.d"
-      - "${DOCKER_ALL_HOST_DATA_ROOT_PATH}/proxy/html:/usr/share/nginx/html"
+      - "./docker-compose-state/config/proxy-acme:/etc/acme.sh"
+      - "./docker-compose-state/config/proxy/certs:/etc/nginx/certs"
+      - "./docker-compose-state/config/proxy/conf.d:/etc/nginx/conf.d"
+      - "./docker-compose-state/config/proxy/vhost.d:/etc/nginx/vhost.d"
+      - "./docker-compose-state/data/proxy/html:/usr/share/nginx/html"
       - "${DOCKER_PROXY_HOST_DOCKER_SOCKET_PATH}:/var/run/docker.sock:ro"
 
   web:
@@ -97,10 +97,10 @@ services:
       VIRTUAL_PORT: "80"
     volumes:
       - "./.env:/var/www/.env"
-      - "${DOCKER_ALL_HOST_CONFIG_ROOT_PATH}/proxy/conf.d:/shared/proxy/conf.d"
-      - "${DOCKER_APP_HOST_CACHE_PATH}:/var/www/bootstrap/cache"
-      - "${DOCKER_APP_HOST_OVERRIDES_PATH}:/docker/overrides:ro"
-      - "${DOCKER_APP_HOST_STORAGE_PATH}:/var/www/storage"
+      - "./docker-compose-state/config/proxy/conf.d:/shared/proxy/conf.d"
+      - "./docker-compose-state/data/negarin/cache:/var/www/bootstrap/cache"
+      - "./docker-compose-state/overrides:/docker/overrides:ro"
+      - "./docker-compose-state/data/negarin/storage:/var/www/storage"
     labels:
       com.github.nginx-proxy.nginx-proxy.keepalive: 30
       com.github.nginx-proxy.nginx-proxy.http2.enable: true
@@ -144,10 +144,10 @@ services:
       ENTRYPOINT_SKIP_SCRIPTS: ${ENTRYPOINT_SKIP_SCRIPTS:-}
     volumes:
       - "./.env:/var/www/.env"
-      - "${DOCKER_ALL_HOST_CONFIG_ROOT_PATH}/proxy/conf.d:/shared/proxy/conf.d"
-      - "${DOCKER_APP_HOST_CACHE_PATH}:/var/www/bootstrap/cache"
-      - "${DOCKER_APP_HOST_OVERRIDES_PATH}:/docker/overrides:ro"
-      - "${DOCKER_APP_HOST_STORAGE_PATH}:/var/www/storage"
+      - "./docker-compose-state/config/proxy/conf.d:/shared/proxy/conf.d"
+      - "./docker-compose-state/data/negarin/cache:/var/www/bootstrap/cache"
+      - "./docker-compose-state/overrides:/docker/overrides:ro"
+      - "./docker-compose-state/data/negarin/storage:/var/www/storage"
     depends_on:
       - db
       - redis
@@ -181,7 +181,7 @@ services:
       POSTGRES_PASSWORD: "${DB_PASSWORD:?error}"
       POSTGRES_DB: "${DB_DATABASE:?error}"
     volumes:
-      - "${DOCKER_DB_HOST_DATA_PATH:?error}:${DOCKER_DB_CONTAINER_DATA_PATH:?error}"
+      - "./docker-compose-state/data/db:/var/lib/mysql"
     ports:
       - 3306:3306
     healthcheck:
@@ -208,8 +208,8 @@ services:
       TZ: "${TZ:?error}"
       REDISCLI_AUTH: ${REDIS_PASSWORD:-}
     volumes:
-      - "${DOCKER_ALL_HOST_CONFIG_ROOT_PATH}/redis:/etc/redis"
-      - "${DOCKER_REDIS_HOST_DATA_PATH}:/data"
+      - "./docker-compose-state/config/redis:/etc/redis"
+      - "./docker-compose-state/data/redis:/data"
     ports:
       - 6379:6379
     healthcheck:
