@@ -31,11 +31,11 @@ services:
       - "${DOCKER_ALL_HOST_CONFIG_ROOT_PATH}/proxy/certs:/etc/nginx/certs"
       - "${DOCKER_ALL_HOST_DATA_ROOT_PATH}/proxy/html:/usr/share/nginx/html"
     ports:
-      - "${DOCKER_PROXY_HOST_PORT_HTTP}:80"
-      - "${DOCKER_PROXY_HOST_PORT_HTTPS}:443"
+      - 80:80
+      - 443:443
     healthcheck:
       test: "curl --fail https://${APP_DOMAIN}/api/service/health-check"
-      interval: "${DOCKER_PROXY_HEALTHCHECK_INTERVAL}"
+      interval: "30s"
       retries: 2
       timeout: 5s
 
@@ -106,13 +106,13 @@ services:
       com.github.nginx-proxy.nginx-proxy.http2.enable: true
       com.github.nginx-proxy.nginx-proxy.http3.enable: true
     ports:
-      - "${DOCKER_WEB_PORT_EXTERNAL_HTTP}:80"
+      - 8080:80
     depends_on:
       - db
       - redis
     healthcheck:
       test: 'curl --header "Host: ${APP_DOMAIN}" --fail http://localhost/api/service/health-check'
-      interval: "${DOCKER_WEB_HEALTHCHECK_INTERVAL}"
+      interval: "30s"
       retries: 2
       timeout: 5s
 
@@ -153,7 +153,7 @@ services:
       - redis
     healthcheck:
       test: gosu www-data php artisan horizon:status | grep running
-      interval: "${DOCKER_WORKER_HEALTHCHECK_INTERVAL:?error}"
+      interval: "30s"
       timeout: 5s
       retries: 2
 
