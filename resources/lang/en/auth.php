@@ -43,6 +43,28 @@ return [
 
     'signInMastodon'  => 'Sign-in with Mastodon',
 
+    // OTP Login
+    'otpLoginTitle' => 'Login with OTP',
+    'phoneNumber' => 'Phone Number',
+    'enterPhoneNumber' => 'Enter phone number',
+    'sendOtp' => 'Send OTP',
+    'sending' => 'Sending...',
+    'enterOtp' => 'Enter OTP',
+    'enterOtpCode' => 'Enter 6-digit code',
+    'verifyLogin' => 'Verify & Login',
+    'verifying' => 'Verifying...',
+    'changePhoneNumber' => 'Change Phone Number',
+    'otpSent' => 'OTP sent successfully.',
+    'loginSuccessful' => 'Login successful.',
+    'invalidOtp' => 'Invalid OTP.',
+    'otpExpired' => 'OTP has expired. Please request a new one.',
+    'otpSessionExpired' => 'OTP session expired. Please request a new one.',
+    'failedToSendOtp' => 'Failed to send OTP. Please try again.',
+    'networkIssue' => 'Network issue. Please check your connection.',
+    'invalidPhoneNumber' => 'Please enter a valid phone number',
+    'invalidOtpLength' => 'Please enter a valid 6-digit OTP',
+    'loginWithOtp' => 'Login with OTP',
+    'loginWithEmailPassword' => 'Login with Email & Password',
 
 ];
 

@@ -39,6 +39,7 @@ class User extends Authenticatable
         'name',
         'username',
         'email',
+        'phone',
         'password',
         'app_register_ip',
         'email_verified_at',

@@ -126,7 +126,7 @@
                     <hr>
 
                     <p class="text-center font-weight-bold mb-0">
-                        <a href="/register">{{ __("auth.register")}}</a>
+                        <a href="{{ route('login.otp') }}">{{ __('auth.loginWithOtp') }}</a> | <a href="/register">{{ __("auth.register")}}</a>
                     </p>
                     @endif
                 </div>

@@ -9,6 +9,11 @@ Route::domain(config('negarin.domain.app'))->middleware(['validemail', 'twofacto
 
     Auth::routes();
 
+    // OTP Login Routes
+    Route::get('login/otp', 'Auth\OtpLoginController@showOtpLoginForm')->name('login.otp');
+    Route::post('login/otp/send', 'Auth\OtpLoginController@sendOtp')->name('login.otp.send');
+    Route::post('login/otp/verify', 'Auth\OtpLoginController@verifyOtp')->name('login.otp.verify');
+
     Route::get('auth/oidc/start', 'RemoteOidcController@start');
     Route::get('auth/oidc/callback', 'RemoteOidcController@handleCallback');
 
