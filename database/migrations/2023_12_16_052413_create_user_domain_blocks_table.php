@@ -27,3 +27,10 @@ return new class extends Migration
         Schema::dropIfExists('user_domain_blocks');
     }
 };
+
+
+
+
+
+
+

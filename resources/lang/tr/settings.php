@@ -125,3 +125,10 @@ return [
     // some language outside the blades (in app/Http/Controllers/Settings/LabsSettings.php)
     'labs.use_dark_mode_theme' =>                                               'Karanlık mod temasını kullan',
 ];
+
+
+
+
+
+
+

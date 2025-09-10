@@ -13,3 +13,10 @@ class UserSetting extends Model
 		'other' => 'json'
 	];
 }
+
+
+
+
+
+
+

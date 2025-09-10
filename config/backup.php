@@ -8,7 +8,7 @@ return [
          * The name of this application. You can use this name to monitor
          * the backups.
          */
-        'name' => env('APP_NAME', 'pixelfed-backup'),
+        'name' => env('APP_NAME', 'negarin-backup'),
 
         'source' => [
 
@@ -196,7 +196,7 @@ return [
      */
     'monitor_backups' => [
         [
-            'name' => env('APP_NAME', 'pixelfed-backup'),
+            'name' => env('APP_NAME', 'negarin-backup'),
             'disks' => ['local'],
             'health_checks' => [
                 \Spatie\Backup\Tasks\Monitor\HealthChecks\MaximumAgeInDays::class => 1,
@@ -253,3 +253,10 @@ return [
     ],
 
 ];
+
+
+
+
+
+
+

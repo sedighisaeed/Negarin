@@ -11,3 +11,10 @@ class ModeratedProfile extends Model
 
     public $guarded = [];
 }
+
+
+
+
+
+
+

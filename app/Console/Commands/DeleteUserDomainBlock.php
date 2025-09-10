@@ -63,7 +63,7 @@ class DeleteUserDomainBlock extends Command
             return;
         }
 
-        if($domain === config('pixelfed.domain.app')) {
+        if($domain === config('negarin.domain.app')) {
             return;
         }
 
@@ -94,3 +94,10 @@ class DeleteUserDomainBlock extends Command
         $domainBlock->deleteQuietly();
     }
 }
+
+
+
+
+
+
+

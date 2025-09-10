@@ -32,3 +32,10 @@ class DirectMessage extends Model
     	return Auth::user()->profile->id === $this->from_id;
     }
 }
+
+
+
+
+
+
+

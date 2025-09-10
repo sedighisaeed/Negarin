@@ -37,3 +37,10 @@ class StoryVerb extends Fractal\TransformerAbstract
 		];
 	}
 }
+
+
+
+
+
+
+

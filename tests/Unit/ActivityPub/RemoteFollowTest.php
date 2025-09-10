@@ -26,3 +26,10 @@ class RemoteFollowTest extends TestCase
         $this->assertTrue($mastodon);
     }
 }
+
+
+
+
+
+
+

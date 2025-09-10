@@ -69,3 +69,10 @@ class FollowerController extends Controller
         Helpers::sendSignedObject($user, $inbox, $payload);
     }
 }
+
+
+
+
+
+
+

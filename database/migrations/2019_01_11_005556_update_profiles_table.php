@@ -32,3 +32,10 @@ class UpdateProfilesTable extends Migration
         });
     }
 }
+
+
+
+
+
+
+

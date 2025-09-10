@@ -53,3 +53,10 @@ class ParentalControls extends Model
         return url('/auth/pci/' . $this->id . '/' . $this->verify_code);
     }
 }
+
+
+
+
+
+
+

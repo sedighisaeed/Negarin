@@ -8,3 +8,10 @@ class AppRegister extends Model
 {
     protected $guarded = [];
 }
+
+
+
+
+
+
+

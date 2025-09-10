@@ -30,3 +30,10 @@ class AddTextColumnToMediaTable extends Migration
         });
     }
 }
+
+
+
+
+
+
+

@@ -16,3 +16,10 @@ class UserInvite extends Model
     	return url("/i/invite/code/{$this->key}/{$this->token}");
     }
 }
+
+
+
+
+
+
+

@@ -17,3 +17,10 @@ return [
     'throttle' => 'För många inloggningsförsök. Var god försök igen om :seconds sekunder.',
 
 ];
+
+
+
+
+
+
+

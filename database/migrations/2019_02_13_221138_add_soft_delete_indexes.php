@@ -86,3 +86,10 @@ class AddSoftDeleteIndexes extends Migration
         });
     }
 }
+
+
+
+
+
+
+

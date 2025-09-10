@@ -57,3 +57,10 @@ class UpdateStoriesTable extends Migration
         Schema::dropIfExists('story_views');
     }
 }
+
+
+
+
+
+
+

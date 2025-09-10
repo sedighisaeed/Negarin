@@ -31,3 +31,10 @@ class UpdateFollowerTableAddRemoteFlags extends Migration
         });
     }
 }
+
+
+
+
+
+
+

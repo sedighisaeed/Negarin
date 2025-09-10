@@ -13,3 +13,10 @@ return [
     'failed'   => 'Aquestes dades d\'accés no coincideixen amb els nostres registres.',
     'throttle' => 'Massa intents d\'iniciar sessió. Si us plau, torneu-ho a provar d\'aquí a :seconds segons.',
 ];
+
+
+
+
+
+
+

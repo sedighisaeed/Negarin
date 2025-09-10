@@ -36,3 +36,10 @@ class DispatchChildInvitePipeline implements ShouldQueue
         Mail::to($pc->email)->send(new ParentChildInvite($pc));
     }
 }
+
+
+
+
+
+
+

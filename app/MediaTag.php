@@ -19,3 +19,10 @@ class MediaTag extends Model
         return $this->belongsTo(Status::class);
     }
 }
+
+
+
+
+
+
+

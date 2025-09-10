@@ -40,3 +40,10 @@ class StatusHashtag extends Model
         );
 	}
 }
+
+
+
+
+
+
+

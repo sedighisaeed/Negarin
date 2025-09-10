@@ -120,3 +120,10 @@ class VideoThumbnail implements ShouldQueue, ShouldBeUniqueUntilProcessing
         MediaStoragePipeline::dispatch($media);
     }
 }
+
+
+
+
+
+
+

@@ -5,3 +5,10 @@ return [
   'emptyPersonalTimeline' => 'Deine Timeline ist leer.',
 
 ];
+
+
+
+
+
+
+

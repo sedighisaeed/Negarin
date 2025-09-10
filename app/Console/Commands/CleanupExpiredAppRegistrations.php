@@ -29,3 +29,10 @@ class CleanupExpiredAppRegistrations extends Command
         AppRegister::where('created_at', '<', now()->subDays(90))->delete();
     }
 }
+
+
+
+
+
+
+

@@ -34,3 +34,10 @@ class CreateGroupActivityGraphsTable extends Migration
         Schema::dropIfExists('group_activity_graphs');
     }
 }
+
+
+
+
+
+
+

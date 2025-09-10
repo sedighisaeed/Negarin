@@ -8,3 +8,10 @@ class ImportData extends Model
 {
     protected $table = 'import_datas';
 }
+
+
+
+
+
+
+

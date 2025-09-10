@@ -18,3 +18,10 @@ return [
     'profiles'          => 'Profiloj',
 
 ];
+
+
+
+
+
+
+

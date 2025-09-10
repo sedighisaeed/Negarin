@@ -11,3 +11,10 @@ class GroupLike extends Model
 
     public $fillable = ['group_id', 'status_id', 'profile_id', 'comment_id'];
 }
+
+
+
+
+
+
+

@@ -1,11 +1,11 @@
 @extends('layouts.blank', [
-    'title' => $profile->name . ' (@' . $acct . ') - Pixelfed',
+    'title' => $profile->name . ' (@' . $acct . ') - negarin',
     'ogTitle' => $profile->name . ' (@' . $acct . ')',
     'ogType' => 'profile'
 ])
 
 @php
-$acct = $profile->username . '@' . config('pixelfed.domain.app');
+$acct = $profile->username . '@' . config('negarin.domain.app');
 $metaDescription = \App\Services\AccountService::getMetaDescription($profile->id);
 @endphp
 
@@ -27,10 +27,10 @@ $metaDescription = \App\Services\AccountService::getMetaDescription($profile->id
     <meta property="og:image:height" content="200">
     <meta property="twitter:card" content="summary">
     <meta property="profile:username" content="{{$acct}}">
-    <link href="{{$profile->permalink('.atom')}}" rel="alternate" title="{{$profile->username}} on Pixelfed" type="application/atom+xml">
+    <link href="{{$profile->permalink('.atom')}}" rel="alternate" title="{{$profile->username}} on negarin" type="application/atom+xml">
     <link href="{{$profile->permalink()}}" rel="alternate" type="application/activity+json">
-    <meta name="application-name" content="Pixelfed">
-    <meta name="generator" content="pixelfed">
+    <meta name="application-name" content="negarin">
+    <meta name="generator" content="negarin">
     <link href="{{ mix('css/profile.css') }}" rel="stylesheet">
     @if($profile->website)<link href="{{$profile->website}}" rel="me" type="text/html">
 @endif
@@ -40,3 +40,10 @@ $metaDescription = \App\Services\AccountService::getMetaDescription($profile->id
 @push('scripts')<script type="text/javascript" src="{{ mix('js/profile.js') }}"></script>
 <script type="text/javascript" defer>App.boot();</script>
 @endpush
+
+
+
+
+
+
+

@@ -67,3 +67,10 @@ class CircleController extends Controller
     	return view('account.circles.show', compact('circle'));
     }
 }
+
+
+
+
+
+
+

@@ -46,3 +46,10 @@ class UserAppSettingsController extends Controller
     	return new UserAppSettingsResource($res);
     }
 }
+
+
+
+
+
+
+

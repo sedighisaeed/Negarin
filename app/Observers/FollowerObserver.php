@@ -48,3 +48,10 @@ class FollowerObserver
         FollowerService::remove($follower->profile_id, (string) $follower->following_id);
     }
 }
+
+
+
+
+
+
+

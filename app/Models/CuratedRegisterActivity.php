@@ -36,3 +36,10 @@ class CuratedRegisterActivity extends Model
         return url($url);
     }
 }
+
+
+
+
+
+
+

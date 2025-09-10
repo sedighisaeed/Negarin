@@ -160,3 +160,10 @@ class UpdatePersonValidationTest extends TestCase
 		$this->assertTrue(UpdatePersonValidator::validate($activity));
 	}
 }
+
+
+
+
+
+
+

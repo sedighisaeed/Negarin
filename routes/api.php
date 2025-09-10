@@ -206,7 +206,7 @@ Route::group(['prefix' => 'api'], function () use ($middleware) {
             Route::post('change-password', 'Api\ApiV1Dot1Controller@accountChangePassword')->middleware($middleware);
             Route::get('login-activity', 'Api\ApiV1Dot1Controller@accountLoginActivity')->middleware($middleware);
             Route::get('two-factor', 'Api\ApiV1Dot1Controller@accountTwoFactor')->middleware($middleware);
-            Route::get('emails-from-pixelfed', 'Api\ApiV1Dot1Controller@accountEmailsFromPixelfed')->middleware($middleware);
+            Route::get('emails-from-negarin', 'Api\ApiV1Dot1Controller@accountEmailsFromnegarin')->middleware($middleware);
             Route::get('apps-and-applications', 'Api\ApiV1Dot1Controller@accountApps')->middleware($middleware);
             Route::get('mutuals/{id}', 'Api\ApiV1Dot1Controller@getMutualAccounts')->middleware($middleware);
             Route::get('username/{username}', 'Api\ApiV1Dot1Controller@accountUsernameToId')->middleware($middleware);
@@ -267,7 +267,7 @@ Route::group(['prefix' => 'api'], function () use ($middleware) {
         });
 
         Route::group(['prefix' => 'directory'], function () {
-            Route::get('listing', 'PixelfedDirectoryController@get');
+            Route::get('listing', 'negarinDirectoryController@get');
         });
 
         Route::group(['prefix' => 'auth'], function () {
@@ -344,7 +344,7 @@ Route::group(['prefix' => 'api'], function () use ($middleware) {
         Route::get('directory', 'LandingController@getDirectoryApi');
     });
 
-    Route::group(['prefix' => 'pixelfed'], function () use ($middleware) {
+    Route::group(['prefix' => 'negarin'], function () use ($middleware) {
         Route::group(['prefix' => 'v1'], function () use ($middleware) {
             Route::post('report', 'Api\ApiV1Dot1Controller@report')->middleware($middleware);
 
@@ -355,7 +355,7 @@ Route::group(['prefix' => 'api'], function () use ($middleware) {
                 Route::post('change-password', 'Api\ApiV1Dot1Controller@accountChangePassword')->middleware($middleware);
                 Route::get('login-activity', 'Api\ApiV1Dot1Controller@accountLoginActivity')->middleware($middleware);
                 Route::get('two-factor', 'Api\ApiV1Dot1Controller@accountTwoFactor')->middleware($middleware);
-                Route::get('emails-from-pixelfed', 'Api\ApiV1Dot1Controller@accountEmailsFromPixelfed')->middleware($middleware);
+                Route::get('emails-from-negarin', 'Api\ApiV1Dot1Controller@accountEmailsFromnegarin')->middleware($middleware);
                 Route::get('apps-and-applications', 'Api\ApiV1Dot1Controller@accountApps')->middleware($middleware);
             });
 
@@ -399,7 +399,7 @@ Route::group(['prefix' => 'api'], function () use ($middleware) {
             });
 
             Route::group(['prefix' => 'directory'], function () {
-                Route::get('listing', 'PixelfedDirectoryController@get');
+                Route::get('listing', 'negarinDirectoryController@get');
             });
 
             Route::group(['prefix' => 'places'], function () use ($middleware) {
@@ -424,3 +424,10 @@ Route::group(['prefix' => 'api'], function () use ($middleware) {
         });
     });
 });
+
+
+
+
+
+
+

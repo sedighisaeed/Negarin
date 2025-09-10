@@ -37,3 +37,10 @@ class Circle extends Model
         return url("/i/circle/show/{$this->id}");
     }
 }
+
+
+
+
+
+
+

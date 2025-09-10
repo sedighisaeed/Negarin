@@ -55,3 +55,10 @@ class GroupPost extends Model
         return '/groups/' . $this->group_id . '/p/' . $this->id;
 	}
 }
+
+
+
+
+
+
+

@@ -161,3 +161,10 @@ class StoryService
 		return (int) Redis::get($key) ?? 0;
 	}
 }
+
+
+
+
+
+
+

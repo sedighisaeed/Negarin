@@ -31,3 +31,10 @@
 	<script type="text/javascript" src="{{mix('js/collections.js')}}"></script>
 	<script type="text/javascript">App.boot()</script>
 @endpush	
+
+
+
+
+
+
+

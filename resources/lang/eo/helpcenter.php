@@ -25,3 +25,10 @@ return [
 
     'taggingPeople' => 'Etikedi Personoj'
 ];
+
+
+
+
+
+
+

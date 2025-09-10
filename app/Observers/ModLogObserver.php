@@ -71,3 +71,10 @@ class ModLogObserver
         ModLogService::boot()->load($modLog)->unfanout();
     }
 }
+
+
+
+
+
+
+

@@ -74,10 +74,10 @@ class MoveSendUndoFollowPipeline implements ShouldQueue
             return;
         }
 
-        $permalink = 'https://'.config('pixelfed.domain.app').'/users/'.$follower->username;
-        $version = config('pixelfed.version');
+        $permalink = 'https://'.config('negarin.domain.app').'/users/'.$follower->username;
+        $version = config('negarin.version');
         $appUrl = config('app.url');
-        $userAgent = "(Pixelfed/{$version}; +{$appUrl})";
+        $userAgent = "(negarin/{$version}; +{$appUrl})";
         $addlHeaders = [
             'Content-Type' => 'application/ld+json; profile="https://www.w3.org/ns/activitystreams"',
             'User-Agent' => $userAgent,
@@ -117,3 +117,10 @@ class MoveSendUndoFollowPipeline implements ShouldQueue
         }
     }
 }
+
+
+
+
+
+
+

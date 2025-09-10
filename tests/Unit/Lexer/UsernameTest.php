@@ -15,7 +15,7 @@ class UsernameTest extends TestCase
         $username = '@dansup';
         $entities = Extractor::create()->extract($username);
         $autolink = Autolink::create()->autolink($username);
-        $expectedAutolink = '<a class="u-url mention" href="https://pixelfed.dev/dansup" rel="external nofollow noopener" target="_blank">@dansup</a>';
+        $expectedAutolink = '<a class="u-url mention" href="https://negarin.dev/dansup" rel="external nofollow noopener" target="_blank">@dansup</a>';
         $expectedEntity = [
             'hashtags' => [],
             'urls' => [],
@@ -45,7 +45,7 @@ class UsernameTest extends TestCase
         $username = '@dansup.two';
         $autolink = Autolink::create()->autolink($username);
         $entities = Extractor::create()->extract($username);
-        $expectedAutolink = '<a class="u-url mention" href="https://pixelfed.dev/dansup.two" rel="external nofollow noopener" target="_blank">@dansup.two</a>';
+        $expectedAutolink = '<a class="u-url mention" href="https://negarin.dev/dansup.two" rel="external nofollow noopener" target="_blank">@dansup.two</a>';
         $expectedEntity = [
             'hashtags' => [],
             'urls' => [],
@@ -75,7 +75,7 @@ class UsernameTest extends TestCase
         $username = '@dansup-too';
         $autolink = Autolink::create()->autolink($username);
         $entities = Extractor::create()->extract($username);
-        $expectedAutolink = '<a class="u-url mention" href="https://pixelfed.dev/dansup-too" rel="external nofollow noopener" target="_blank">@dansup-too</a>';
+        $expectedAutolink = '<a class="u-url mention" href="https://negarin.dev/dansup-too" rel="external nofollow noopener" target="_blank">@dansup-too</a>';
         $expectedEntity = [
             'hashtags' => [],
             'urls' => [],
@@ -105,7 +105,7 @@ class UsernameTest extends TestCase
         $username = '@dansup_too';
         $autolink = Autolink::create()->autolink($username);
         $entities = Extractor::create()->extract($username);
-        $expectedAutolink = '<a class="u-url mention" href="https://pixelfed.dev/dansup_too" rel="external nofollow noopener" target="_blank">@dansup_too</a>';
+        $expectedAutolink = '<a class="u-url mention" href="https://negarin.dev/dansup_too" rel="external nofollow noopener" target="_blank">@dansup_too</a>';
         $expectedEntity = [
             'hashtags' => [],
             'urls' => [],
@@ -132,16 +132,16 @@ class UsernameTest extends TestCase
     #[Test]
     public function multipleMentions()
     {
-        $text = 'hello @dansup and @pixelfed.team from @username_underscore';
+        $text = 'hello @dansup and @negarin.team from @username_underscore';
         $autolink = Autolink::create()->autolink($text);
         $entities = Extractor::create()->extract($text);
-        $expectedAutolink = 'hello <a class="u-url mention" href="https://pixelfed.dev/dansup" rel="external nofollow noopener" target="_blank">@dansup</a> and <a class="u-url mention" href="https://pixelfed.dev/pixelfed.team" rel="external nofollow noopener" target="_blank">@pixelfed.team</a> from <a class="u-url mention" href="https://pixelfed.dev/username_underscore" rel="external nofollow noopener" target="_blank">@username_underscore</a>';
+        $expectedAutolink = 'hello <a class="u-url mention" href="https://negarin.dev/dansup" rel="external nofollow noopener" target="_blank">@dansup</a> and <a class="u-url mention" href="https://negarin.dev/negarin.team" rel="external nofollow noopener" target="_blank">@negarin.team</a> from <a class="u-url mention" href="https://negarin.dev/username_underscore" rel="external nofollow noopener" target="_blank">@username_underscore</a>';
         $expectedEntity = [
             'hashtags' => [],
             'urls' => [],
             'mentions' => [
                 'dansup',
-                'pixelfed.team',
+                'negarin.team',
                 'username_underscore',
             ],
             'replyto' => null,
@@ -156,7 +156,7 @@ class UsernameTest extends TestCase
                     ],
                 ],
                 [
-                    'screen_name' => 'pixelfed.team',
+                    'screen_name' => 'negarin.team',
                     'indices' => [
                         18,
                         32,
@@ -182,7 +182,7 @@ class UsernameTest extends TestCase
         $mentions = "@März and @königin and @Glück";
         $autolink = Autolink::create()->autolink($mentions);
 
-        $expectedAutolink = '<a class="u-url mention" href="https://pixelfed.dev/März" rel="external nofollow noopener" target="_blank">@März</a> and <a class="u-url mention" href="https://pixelfed.dev/königin" rel="external nofollow noopener" target="_blank">@königin</a> and <a class="u-url mention" href="https://pixelfed.dev/Glück" rel="external nofollow noopener" target="_blank">@Glück</a>';
+        $expectedAutolink = '<a class="u-url mention" href="https://negarin.dev/März" rel="external nofollow noopener" target="_blank">@März</a> and <a class="u-url mention" href="https://negarin.dev/königin" rel="external nofollow noopener" target="_blank">@königin</a> and <a class="u-url mention" href="https://negarin.dev/Glück" rel="external nofollow noopener" target="_blank">@Glück</a>';
         $this->assertEquals($expectedAutolink, $autolink);
     }
 
@@ -236,7 +236,14 @@ class UsernameTest extends TestCase
         $mentions = "hello @märz@example.org!";
         $autolink = Autolink::create()->autolink($mentions);
 
-        $expectedAutolink = 'hello <a class="u-url list-slug" href="https://pixelfed.dev/@märz@example.org" rel="external nofollow noopener" target="_blank">@märz@example.org</a>!';
+        $expectedAutolink = 'hello <a class="u-url list-slug" href="https://negarin.dev/@märz@example.org" rel="external nofollow noopener" target="_blank">@märz@example.org</a>!';
         $this->assertEquals($expectedAutolink, $autolink);
     }
 }
+
+
+
+
+
+
+

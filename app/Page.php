@@ -23,3 +23,10 @@ class Page extends Model
     	return url("/i/admin/settings/pages/edit?page=".urlencode($this->slug));
     }
 }
+
+
+
+
+
+
+

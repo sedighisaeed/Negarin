@@ -6,3 +6,10 @@ return [
   'emptyFollowing' => 'Erabiltzaile honek oraindik ez du inor jarraitzen',
   'savedWarning'   => 'Gordetakoa zuk bakarrik ikusi dezakezu',
 ];
+
+
+
+
+
+
+

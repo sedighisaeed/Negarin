@@ -5,7 +5,7 @@
     <div class="profile-header row mt-4">
         <div class="col-12 col-md-2">
             <div class="profile-avatar">
-                <div class="bg-pixelfed mb-3 d-flex align-items-center justify-content-center display-4 font-weight-bold text-white" style="width: 132px; height: 132px; border-radius: 100%"><i class="fal fa-map-pin"></i></div>
+                <div class="bg-negarin mb-3 d-flex align-items-center justify-content-center display-4 font-weight-bold text-white" style="width: 132px; height: 132px; border-radius: 100%"><i class="fal fa-map-pin"></i></div>
             </div>
         </div>
         <div class="col-12 col-md-9 d-flex align-items-center">
@@ -57,3 +57,10 @@
 <script type="text/javascript" src="{{ mix('js/compose.js') }}"></script>
 <script type="text/javascript">App.boot();</script>
 @endpush
+
+
+
+
+
+
+

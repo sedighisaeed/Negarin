@@ -36,3 +36,10 @@ class AddSnowflakeIdsToCollectionsTable extends Migration
         });
     }
 }
+
+
+
+
+
+
+

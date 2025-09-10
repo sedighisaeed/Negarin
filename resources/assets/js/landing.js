@@ -17,7 +17,7 @@ window.filesize = require('filesize');
 import swal from 'sweetalert';
 window._ = require('lodash');
 window.Popper = require('popper.js').default;
-window.pixelfed = window.pixelfed || {};
+window.negarin = window.negarin || {};
 window.$ = window.jQuery = require('jquery');
 require('bootstrap');
 window.axios = require('axios');
@@ -291,3 +291,11 @@ const App = new Vue({
 	router,
 	store
 });
+
+
+
+
+
+
+
+

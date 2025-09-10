@@ -7,3 +7,10 @@ return [
   'mentionedYou'        => 'us ha esmentat.',
   'shared'				=> 'ha compartit la vostra publicació.',
 ];
+
+
+
+
+
+
+

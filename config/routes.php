@@ -6,3 +6,10 @@ return [
       'search' => config('app.url').'/discover/tags/',
     ],
 ];
+
+
+
+
+
+
+

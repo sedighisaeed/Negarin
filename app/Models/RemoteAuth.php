@@ -17,3 +17,10 @@ class RemoteAuth extends Model
         'last_verify_credentials_at' => 'datetime'
     ];
 }
+
+
+
+
+
+
+

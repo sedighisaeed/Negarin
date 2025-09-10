@@ -12,3 +12,10 @@ services:
     - ".:/mnt/ddev_config"
     - "./redis:/usr/local/etc/redis"
     command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
+
+
+
+
+
+
+

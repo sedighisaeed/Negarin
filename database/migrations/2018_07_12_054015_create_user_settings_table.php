@@ -48,3 +48,10 @@ class CreateUserSettingsTable extends Migration
         Schema::dropIfExists('user_settings');
     }
 }
+
+
+
+
+
+
+

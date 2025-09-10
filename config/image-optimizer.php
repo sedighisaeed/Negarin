@@ -59,3 +59,10 @@ return [
      */
     'log_optimizer_activity' => false,
 ];
+
+
+
+
+
+
+

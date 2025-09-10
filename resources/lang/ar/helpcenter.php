@@ -26,3 +26,9 @@ return [
 	'taggingPeople' => 'وَسمُ الأشخَاص'
 
 ];
+
+
+
+
+
+

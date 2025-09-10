@@ -29,3 +29,10 @@ class BookmarkService
 		return Redis::zrem(self::CACHE_KEY . $profileId, $statusId);
 	}
 }
+
+
+
+
+
+
+

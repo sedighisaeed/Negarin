@@ -9,3 +9,10 @@
 <script type="text/javascript" src="/js/story-compose.js?v={{time()}}"></script>
 <script type="text/javascript">window.App.boot()</script>
 @endpush
+
+
+
+
+
+
+

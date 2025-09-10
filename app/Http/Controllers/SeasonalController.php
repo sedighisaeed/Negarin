@@ -237,3 +237,10 @@ class SeasonalController extends Controller
 		return response()->json(200);
 	}
 }
+
+
+
+
+
+
+

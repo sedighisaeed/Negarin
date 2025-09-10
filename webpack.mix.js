@@ -86,3 +86,11 @@ mix.webpackConfig({
 mix.autoload({
     jquery: ['$', 'jQuery', 'window.jQuery']
 });
+
+
+
+
+
+
+
+

@@ -31,3 +31,10 @@ class FollowedTagResource extends JsonResource
     	];
     }
 }
+
+
+
+
+
+
+

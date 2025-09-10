@@ -38,3 +38,10 @@ class CreateModLogsTable extends Migration
         Schema::dropIfExists('mod_logs');
     }
 }
+
+
+
+
+
+
+

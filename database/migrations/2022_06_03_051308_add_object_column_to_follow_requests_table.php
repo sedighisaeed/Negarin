@@ -32,3 +32,10 @@ class AddObjectColumnToFollowRequestsTable extends Migration
         });
     }
 }
+
+
+
+
+
+
+

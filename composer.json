@@ -1,7 +1,7 @@
 {
-    "name": "pixelfed/pixelfed",
+    "name": "negarin/negarin",
     "description": "Open and ethical photo sharing platform, powered by ActivityPub federation.",
-    "keywords": ["framework", "laravel", "pixelfed", "activitypub", "social", "network", "federation"],
+    "keywords": ["framework", "laravel", "negarin", "activitypub", "social", "network", "federation"],
     "license": "AGPL-3.0-only",
     "type": "project",
     "require": {
@@ -107,3 +107,10 @@
     },
     "prefer-stable": true
 }
+
+
+
+
+
+
+

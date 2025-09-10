@@ -82,3 +82,10 @@ return new class extends PulseMigration
         Schema::dropIfExists('pulse_aggregates');
     }
 };
+
+
+
+
+
+
+

@@ -22,3 +22,10 @@ class Activity extends Model
 		return $this->belongsTo(Profile::class, 'from_id');
 	}
 }
+
+
+
+
+
+
+

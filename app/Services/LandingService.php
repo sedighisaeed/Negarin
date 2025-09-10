@@ -44,18 +44,18 @@ class LandingService
                     ->toArray() : [];
         });
 
-        $openReg = (bool) config_cache('pixelfed.open_registration');
+        $openReg = (bool) config_cache('negarin.open_registration');
 
         $res = [
             'name' => config_cache('app.name'),
             'url' => config_cache('app.url'),
-            'domain' => config('pixelfed.domain.app'),
+            'domain' => config('negarin.domain.app'),
             'show_directory' => (bool) config_cache('instance.landing.show_directory'),
             'show_explore_feed' => (bool) config_cache('instance.landing.show_explore'),
             'show_legal_notice_link' => (bool) config('instance.has_legal_notice'),
             'open_registration' => (bool) $openReg,
             'curated_onboarding' => (bool) config_cache('instance.curated_registration.enabled'),
-            'version' => config('pixelfed.version'),
+            'version' => config('negarin.version'),
             'about' => [
                 'banner_image' => config_cache('app.banner_image') ?? url('/storage/headers/default.jpg'),
                 'short_description' => config_cache('app.short_description'),
@@ -72,15 +72,15 @@ class LandingService
             ],
             'rules' => $rules,
             'uploader' => [
-                'max_photo_size' => (int) (config_cache('pixelfed.max_photo_size') * 1024),
-                'max_caption_length' => (int) config_cache('pixelfed.max_caption_length'),
-                'max_altext_length' => (int) config_cache('pixelfed.max_altext_length', 150),
-                'album_limit' => (int) config_cache('pixelfed.max_album_length'),
-                'image_quality' => (int) config_cache('pixelfed.image_quality'),
-                'max_collection_length' => (int) config('pixelfed.max_collection_length', 18),
-                'optimize_image' => (bool) config_cache('pixelfed.optimize_image'),
-                'optimize_video' => (bool) config_cache('pixelfed.optimize_video'),
-                'media_types' => config_cache('pixelfed.media_types'),
+                'max_photo_size' => (int) (config_cache('negarin.max_photo_size') * 1024),
+                'max_caption_length' => (int) config_cache('negarin.max_caption_length'),
+                'max_altext_length' => (int) config_cache('negarin.max_altext_length', 150),
+                'album_limit' => (int) config_cache('negarin.max_album_length'),
+                'image_quality' => (int) config_cache('negarin.image_quality'),
+                'max_collection_length' => (int) config('negarin.max_collection_length', 18),
+                'optimize_image' => (bool) config_cache('negarin.optimize_image'),
+                'optimize_video' => (bool) config_cache('negarin.optimize_video'),
+                'media_types' => config_cache('negarin.media_types'),
             ],
             'features' => [
                 'federation' => (bool) config_cache('federation.activitypub.enabled'),
@@ -88,9 +88,9 @@ class LandingService
                     'local' => true,
                     'network' => (bool) config_cache('federation.network_timeline'),
                 ],
-                'mobile_apis' => (bool) config_cache('pixelfed.oauth_enabled'),
+                'mobile_apis' => (bool) config_cache('negarin.oauth_enabled'),
                 'stories' => (bool) config_cache('instance.stories.enabled'),
-                'video' => Str::contains(config_cache('pixelfed.media_types'), 'video/mp4'),
+                'video' => Str::contains(config_cache('negarin.media_types'), 'video/mp4'),
             ],
         ];
 
@@ -101,3 +101,10 @@ class LandingService
         return $res;
     }
 }
+
+
+
+
+
+
+

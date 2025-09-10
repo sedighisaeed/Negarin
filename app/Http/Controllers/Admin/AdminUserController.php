@@ -238,7 +238,7 @@ trait AdminUserController
         $user = User::findOrFail($id);
         $profile = $user->profile;
 
-        if (config('pixelfed.account_deletion') == false) {
+        if (config('negarin.account_deletion') == false) {
             abort(404);
         }
 
@@ -341,3 +341,10 @@ trait AdminUserController
         return redirect('/i/admin/users/modlogs/'.$user->id);
     }
 }
+
+
+
+
+
+
+

@@ -32,3 +32,10 @@ return new class extends Migration
         Schema::dropIfExists('autospam_custom_tokens');
     }
 };
+
+
+
+
+
+
+

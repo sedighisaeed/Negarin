@@ -8,7 +8,7 @@
 </p>
 
 <p class="ottext">
-    Thank you for signing up to {{config('pixelfed.domain.app')}}!
+    Thank you for signing up to {{config('negarin.domain.app')}}!
 </p>
 
 <p class="ottext">
@@ -29,3 +29,10 @@ This code will expire in 4 hours. If you didn't request this verification, pleas
 
 </div>
 @endcomponent
+
+
+
+
+
+
+

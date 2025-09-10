@@ -42,3 +42,10 @@ return new class extends Migration
         Schema::dropIfExists('curated_registers');
     }
 };
+
+
+
+
+
+
+

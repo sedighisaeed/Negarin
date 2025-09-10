@@ -27,3 +27,10 @@ class MobileController extends Controller
         return View::make('mobile.privacy')->with(compact('page'))->render();
     }
 }
+
+
+
+
+
+
+

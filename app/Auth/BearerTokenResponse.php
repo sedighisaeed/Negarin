@@ -22,3 +22,10 @@ class BearerTokenResponse extends \League\OAuth2\Server\ResponseTypes\BearerToke
         ];
     }
 }
+
+
+
+
+
+
+

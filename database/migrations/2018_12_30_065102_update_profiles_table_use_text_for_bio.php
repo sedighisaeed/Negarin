@@ -30,3 +30,10 @@ class UpdateProfilesTableUseTextForBio extends Migration
         });
     }
 }
+
+
+
+
+
+
+

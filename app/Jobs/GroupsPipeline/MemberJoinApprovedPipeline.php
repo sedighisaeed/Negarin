@@ -45,3 +45,10 @@ class MemberJoinApprovedPipeline implements ShouldQueue
         GroupService::delSelf($member->group_id, $member->profile_id);
     }
 }
+
+
+
+
+
+
+

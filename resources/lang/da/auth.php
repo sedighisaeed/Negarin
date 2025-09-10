@@ -17,3 +17,10 @@ return [
     'throttle' => 'For mange loginfors&oslash;g. V&aelig;r venlig at pr&oslash;ve igen om :seconds sekunder.',
 
 ];
+
+
+
+
+
+
+

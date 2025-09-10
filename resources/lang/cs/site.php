@@ -16,3 +16,10 @@ return [
     'places'            => 'Místa',
     'profiles'          => 'Profily',
 ];
+
+
+
+
+
+
+

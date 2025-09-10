@@ -40,3 +40,10 @@ class MemberJoinRejectedPipeline implements ShouldQueue
         $member->save();
     }
 }
+
+
+
+
+
+
+

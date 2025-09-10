@@ -50,3 +50,10 @@ class VideoThumbnail extends Command
         }
     }
 }
+
+
+
+
+
+
+

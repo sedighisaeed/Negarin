@@ -15,3 +15,10 @@ class PushNotificationService {
         return $user ? (bool) $user->{"notify_{$listId}"} : false;
     }
 }
+
+
+
+
+
+
+

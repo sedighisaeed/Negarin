@@ -31,3 +31,10 @@ class AddFiltersToMediaTable extends Migration
         });
     }
 }
+
+
+
+
+
+
+

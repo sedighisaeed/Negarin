@@ -70,3 +70,10 @@ class HashtagFollowService
 		return Redis::zadd(self::CACHE_WARMED, $hid, $hid);
 	}
 }
+
+
+
+
+
+
+

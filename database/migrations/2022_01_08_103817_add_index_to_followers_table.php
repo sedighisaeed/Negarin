@@ -31,3 +31,10 @@ class AddIndexToFollowersTable extends Migration
         });
     }
 }
+
+
+
+
+
+
+

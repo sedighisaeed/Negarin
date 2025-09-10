@@ -17,3 +17,10 @@ return [
 	'directMessages'	=> 'ダイレクトメッセージ',
 	'composePost'		=> '投稿',
 ];
+
+
+
+
+
+
+

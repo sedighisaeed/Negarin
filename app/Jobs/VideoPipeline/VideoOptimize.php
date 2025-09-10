@@ -32,3 +32,10 @@ class VideoOptimize implements ShouldQueue
         //
     }
 }
+
+
+
+
+
+
+

@@ -32,3 +32,10 @@ class AddItemIdAndItemTypeIndexesToNotificationsTable extends Migration
         });
     }
 }
+
+
+
+
+
+
+

@@ -20,3 +20,10 @@ return [
     'user'     => 'Kayıtlı eposta hesabınıza birkaç dakika içinde parola yenileme bağlantısı gelecektir. Eğer eposta ulaşmaz ise spam klasörünü kontrol ediniz.',
 
 ];
+
+
+
+
+
+
+

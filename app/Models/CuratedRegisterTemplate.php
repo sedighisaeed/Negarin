@@ -17,3 +17,10 @@ class CuratedRegisterTemplate extends Model
         'is_active' => 'boolean',
     ];
 }
+
+
+
+
+
+
+

@@ -36,3 +36,10 @@ class CreateDirectMessagesTable extends Migration
         Schema::dropIfExists('direct_messages');
     }
 }
+
+
+
+
+
+
+

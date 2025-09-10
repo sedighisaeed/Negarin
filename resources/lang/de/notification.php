@@ -10,3 +10,10 @@ return [
   'shared'              => 'hat deinen Beitrag geteilt.',
 
 ];
+
+
+
+
+
+
+

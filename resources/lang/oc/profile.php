@@ -12,3 +12,10 @@ return [
   'status.disabled.header' 	  => 'Perfil pas disponible',
   'status.disabled.body'	  => 'Aqueste perfil es pas disponible pel moment. Volgatz tornar ensajar mai tard.',
 ];
+
+
+
+
+
+
+

@@ -35,3 +35,10 @@ class AuthorizeInteractionController extends Controller
         return redirect('/i/web');
     }
 }
+
+
+
+
+
+
+

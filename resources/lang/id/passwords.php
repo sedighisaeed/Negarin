@@ -16,3 +16,10 @@ return [
     'token'    => 'Token reset password ini tidak valid.',
     'user'     => "Kami tidak menemukan user beralamat email tersebut.",
 ];
+
+
+
+
+
+
+

@@ -18,3 +18,10 @@ class FilterTransformer extends Fractal\TransformerAbstract
 		];
 	}
 }
+
+
+
+
+
+
+

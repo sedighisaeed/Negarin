@@ -17,3 +17,10 @@ return [
     'throttle' => 'Tròp d’ensages de connexion. Tornatz ensajar dins :seconds segondas.',
 
 ];
+
+
+
+
+
+
+

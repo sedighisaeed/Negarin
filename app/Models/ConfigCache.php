@@ -12,3 +12,10 @@ class ConfigCache extends Model
     protected $table = 'config_cache';
     public $guarded = [];
 }
+
+
+
+
+
+
+

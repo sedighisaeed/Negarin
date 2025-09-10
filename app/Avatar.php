@@ -34,3 +34,10 @@ class Avatar extends Model
     	return $this->belongsTo(Profile::class);
     }
 }
+
+
+
+
+
+
+

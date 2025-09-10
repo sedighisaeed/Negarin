@@ -9,3 +9,10 @@ class GroupRole extends Model
 {
     use HasFactory;
 }
+
+
+
+
+
+
+

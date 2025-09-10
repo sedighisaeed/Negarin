@@ -34,3 +34,10 @@ class RemoveOldCompoundIndexFromStatusesTable extends Migration
         });
     }
 }
+
+
+
+
+
+
+

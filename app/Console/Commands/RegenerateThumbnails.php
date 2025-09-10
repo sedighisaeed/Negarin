@@ -49,3 +49,10 @@ class RegenerateThumbnails extends Command
         });
     }
 }
+
+
+
+
+
+
+

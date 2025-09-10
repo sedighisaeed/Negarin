@@ -62,3 +62,9 @@ background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, F
 $(document).ready(function(){new Vue({el: '#content'});});
 </script>
 @endpush
+
+
+
+
+
+

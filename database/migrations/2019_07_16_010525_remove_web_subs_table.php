@@ -26,3 +26,10 @@ class RemoveWebSubsTable extends Migration
         Schema::dropIfExists('web_subs');
     }
 }
+
+
+
+
+
+
+

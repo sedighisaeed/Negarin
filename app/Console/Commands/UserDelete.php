@@ -84,3 +84,10 @@ class UserDelete extends Command
         DeleteAccountPipeline::dispatch($user)->onQueue('high');
     }
 }
+
+
+
+
+
+
+

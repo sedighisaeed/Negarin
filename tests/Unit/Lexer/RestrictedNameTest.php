@@ -18,3 +18,10 @@ class RestrictedNameTest extends TestCase
         $this->assertNotContains('earth', $names);
     }
 }
+
+
+
+
+
+
+

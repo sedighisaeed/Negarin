@@ -17,3 +17,10 @@ return [
     'next'     => 'Nächste »',
 
 ];
+
+
+
+
+
+
+

@@ -45,3 +45,10 @@ class CreateCustomEmojiTable extends Migration
 		Schema::dropIfExists('custom_emoji_categories');
 	}
 }
+
+
+
+
+
+
+

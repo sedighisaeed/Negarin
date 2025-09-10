@@ -85,7 +85,7 @@ class ApiV1Dot1Controller extends Controller
         $user = $request->user();
         abort_if($user->status != null, 403);
 
-        if (config('pixelfed.bouncer.cloud_ips.ban_signups')) {
+        if (config('negarin.bouncer.cloud_ips.ban_signups')) {
             abort_if(BouncerService::checkIp($request->ip()), 404);
         }
 
@@ -214,7 +214,7 @@ class ApiV1Dot1Controller extends Controller
         $user = $request->user();
         abort_if($user->status != null, 403);
 
-        if (config('pixelfed.bouncer.cloud_ips.ban_signups')) {
+        if (config('negarin.bouncer.cloud_ips.ban_signups')) {
             abort_if(BouncerService::checkIp($request->ip()), 404);
         }
 
@@ -255,7 +255,7 @@ class ApiV1Dot1Controller extends Controller
         $user = $request->user();
         abort_if($user->status != null, 403);
 
-        if (config('pixelfed.bouncer.cloud_ips.ban_signups')) {
+        if (config('negarin.bouncer.cloud_ips.ban_signups')) {
             abort_if(BouncerService::checkIp($request->ip()), 404);
         }
 
@@ -295,13 +295,13 @@ class ApiV1Dot1Controller extends Controller
 
         $user = $request->user();
         abort_if($user->status != null, 403);
-        if (config('pixelfed.bouncer.cloud_ips.ban_signups')) {
+        if (config('negarin.bouncer.cloud_ips.ban_signups')) {
             abort_if(BouncerService::checkIp($request->ip()), 404);
         }
 
         $this->validate($request, [
             'current_password' => 'bail|required|current_password',
-            'new_password' => 'required|min:'.config('pixelfed.min_password_length', 8),
+            'new_password' => 'required|min:'.config('negarin.min_password_length', 8),
             'confirm_password' => 'required|same:new_password',
         ], [
             'current_password' => 'The password you entered is incorrect',
@@ -338,7 +338,7 @@ class ApiV1Dot1Controller extends Controller
 
         $user = $request->user();
         abort_if($user->status != null, 403);
-        if (config('pixelfed.bouncer.cloud_ips.ban_signups')) {
+        if (config('negarin.bouncer.cloud_ips.ban_signups')) {
             abort_if(BouncerService::checkIp($request->ip()), 404);
         }
         $agent = new Agent;
@@ -382,7 +382,7 @@ class ApiV1Dot1Controller extends Controller
         $user = $request->user();
         abort_if($user->status != null, 403);
 
-        if (config('pixelfed.bouncer.cloud_ips.ban_signups')) {
+        if (config('negarin.bouncer.cloud_ips.ban_signups')) {
             abort_if(BouncerService::checkIp($request->ip()), 404);
         }
 
@@ -395,18 +395,18 @@ class ApiV1Dot1Controller extends Controller
     }
 
     /**
-     * GET /api/v1.1/accounts/emails-from-pixelfed
+     * GET /api/v1.1/accounts/emails-from-negarin
      *
      * @return array
      */
-    public function accountEmailsFromPixelfed(Request $request)
+    public function accountEmailsFromnegarin(Request $request)
     {
         abort_if(! $request->user() || ! $request->user()->token(), 403);
         abort_unless($request->user()->tokenCan('read'), 403);
 
         $user = $request->user();
         abort_if($user->status != null, 403);
-        if (config('pixelfed.bouncer.cloud_ips.ban_signups')) {
+        if (config('negarin.bouncer.cloud_ips.ban_signups')) {
             abort_if(BouncerService::checkIp($request->ip()), 404);
         }
         $from = config('mail.from.address');
@@ -484,7 +484,7 @@ class ApiV1Dot1Controller extends Controller
         $user = $request->user();
         abort_if($user->status != null, 403);
 
-        if (config('pixelfed.bouncer.cloud_ips.ban_signups')) {
+        if (config('negarin.bouncer.cloud_ips.ban_signups')) {
             abort_if(BouncerService::checkIp($request->ip()), 404);
         }
 
@@ -506,22 +506,22 @@ class ApiV1Dot1Controller extends Controller
     public function inAppRegistrationPreFlightCheck(Request $request)
     {
         return [
-            'open' => (bool) config_cache('pixelfed.open_registration'),
-            'iara' => (bool) config_cache('pixelfed.allow_app_registration'),
+            'open' => (bool) config_cache('negarin.open_registration'),
+            'iara' => (bool) config_cache('negarin.allow_app_registration'),
         ];
     }
 
     public function inAppRegistration(Request $request)
     {
         abort_if($request->user(), 404);
-        abort_unless((bool) config_cache('pixelfed.open_registration'), 404);
-        abort_unless((bool) config_cache('pixelfed.allow_app_registration'), 404);
-        abort_unless($request->hasHeader('X-PIXELFED-APP'), 403);
-        if (config('pixelfed.bouncer.cloud_ips.ban_signups')) {
+        abort_unless((bool) config_cache('negarin.open_registration'), 404);
+        abort_unless((bool) config_cache('negarin.allow_app_registration'), 404);
+        abort_unless($request->hasHeader('X-negarin-APP'), 403);
+        if (config('negarin.bouncer.cloud_ips.ban_signups')) {
             abort_if(BouncerService::checkIp($request->ip()), 404);
         }
 
-        $rl = RateLimiter::attempt('pf:apiv1.1:iar:'.$request->ip(), config('pixelfed.app_registration_rate_limit_attempts', 3), function () {}, config('pixelfed.app_registration_rate_limit_decay', 1800));
+        $rl = RateLimiter::attempt('pf:apiv1.1:iar:'.$request->ip(), config('negarin.app_registration_rate_limit_attempts', 3), function () {}, config('negarin.app_registration_rate_limit_decay', 1800));
         abort_if(! $rl, 400, 'Too many requests');
 
         $this->validate($request, [
@@ -633,10 +633,10 @@ class ApiV1Dot1Controller extends Controller
         $params = http_build_query([
             'ut' => $ut,
             'rt' => $rt,
-            'domain' => config('pixelfed.domain.app'),
+            'domain' => config('negarin.domain.app'),
             'ea' => $ea,
         ]);
-        $url = 'pixelfed://confirm-account/'.$ut.'?'.$params;
+        $url = 'negarin://confirm-account/'.$ut.'?'.$params;
 
         return redirect()->away($url);
     }
@@ -644,10 +644,10 @@ class ApiV1Dot1Controller extends Controller
     public function inAppRegistrationConfirm(Request $request)
     {
         abort_if($request->user(), 404);
-        abort_unless((bool) config_cache('pixelfed.open_registration'), 404);
-        abort_unless((bool) config_cache('pixelfed.allow_app_registration'), 404);
-        abort_unless($request->hasHeader('X-PIXELFED-APP'), 403);
-        if (config('pixelfed.bouncer.cloud_ips.ban_signups')) {
+        abort_unless((bool) config_cache('negarin.open_registration'), 404);
+        abort_unless((bool) config_cache('negarin.allow_app_registration'), 404);
+        abort_unless($request->hasHeader('X-negarin-APP'), 403);
+        if (config('negarin.bouncer.cloud_ips.ban_signups')) {
             abort_if(BouncerService::checkIp($request->ip()), 404);
         }
 
@@ -677,7 +677,7 @@ class ApiV1Dot1Controller extends Controller
         $user->last_active_at = now();
         $user->save();
 
-        $token = $user->createToken('Pixelfed', ['read', 'write', 'follow', 'push']);
+        $token = $user->createToken('negarin', ['read', 'write', 'follow', 'push']);
 
         return response()->json([
             'access_token' => $token->accessToken,
@@ -689,7 +689,7 @@ class ApiV1Dot1Controller extends Controller
         abort_if(! $request->user() || ! $request->user()->token(), 403);
         abort_unless($request->user()->tokenCan('write'), 403);
 
-        if (config('pixelfed.bouncer.cloud_ips.ban_signups')) {
+        if (config('negarin.bouncer.cloud_ips.ban_signups')) {
             abort_if(BouncerService::checkIp($request->ip()), 404);
         }
 
@@ -722,7 +722,7 @@ class ApiV1Dot1Controller extends Controller
         abort_if(! $request->user() || ! $request->user()->token(), 403);
         abort_unless($request->user()->tokenCan('write'), 403);
 
-        if (config('pixelfed.bouncer.cloud_ips.ban_signups')) {
+        if (config('negarin.bouncer.cloud_ips.ban_signups')) {
             abort_if(BouncerService::checkIp($request->ip()), 404);
         }
 
@@ -754,7 +754,7 @@ class ApiV1Dot1Controller extends Controller
         abort_if(! $request->user() || ! $request->user()->token(), 403);
         abort_unless($request->user()->tokenCan('read'), 403);
 
-        if (config('pixelfed.bouncer.cloud_ips.ban_signups')) {
+        if (config('negarin.bouncer.cloud_ips.ban_signups')) {
             abort_if(BouncerService::checkIp($request->ip()), 404);
         }
 
@@ -771,7 +771,7 @@ class ApiV1Dot1Controller extends Controller
         abort_if(! $request->user() || ! $request->user()->token(), 403);
         abort_unless($request->user()->tokenCan('read'), 403);
 
-        if (config('pixelfed.bouncer.cloud_ips.ban_signups')) {
+        if (config('negarin.bouncer.cloud_ips.ban_signups')) {
             abort_if(BouncerService::checkIp($request->ip()), 404);
         }
 
@@ -810,7 +810,7 @@ class ApiV1Dot1Controller extends Controller
         abort_if($request->user()->is_admin != true, 403);
         abort_unless($request->user()->tokenCan('admin:write'), 403);
 
-        if (config('pixelfed.bouncer.cloud_ips.ban_signups')) {
+        if (config('negarin.bouncer.cloud_ips.ban_signups')) {
             abort_if(BouncerService::checkIp($request->ip()), 404);
         }
 
@@ -1026,7 +1026,7 @@ class ApiV1Dot1Controller extends Controller
                 'X-Rate-Limit-Reset' => RateLimiter::availableIn($userKey),
             ];
         }
-        if (str_ends_with($username, config_cache('pixelfed.domain.app'))) {
+        if (str_ends_with($username, config_cache('negarin.domain.app'))) {
             $pre = str_starts_with($username, '@') ? substr($username, 1) : $username;
             $parts = explode('@', $pre);
             $username = $parts[0];
@@ -1042,7 +1042,7 @@ class ApiV1Dot1Controller extends Controller
 
     public function getPushState(Request $request)
     {
-        abort_unless($request->hasHeader('X-PIXELFED-APP'), 404, 'Not found');
+        abort_unless($request->hasHeader('X-negarin-APP'), 404, 'Not found');
         abort_if(! $request->user() || ! $request->user()->token(), 403);
         abort_unless($request->user()->tokenCan('push'), 403);
         abort_unless(NotificationAppGatewayService::enabled(), 404, 'Push notifications are not supported on this server.');
@@ -1065,7 +1065,7 @@ class ApiV1Dot1Controller extends Controller
 
     public function disablePush(Request $request)
     {
-        abort_unless($request->hasHeader('X-PIXELFED-APP'), 404, 'Not found');
+        abort_unless($request->hasHeader('X-negarin-APP'), 404, 'Not found');
         abort_if(! $request->user() || ! $request->user()->token(), 403);
         abort_unless($request->user()->tokenCan('push'), 403);
         abort_unless(NotificationAppGatewayService::enabled(), 404, 'Push notifications are not supported on this server.');
@@ -1097,7 +1097,7 @@ class ApiV1Dot1Controller extends Controller
 
     public function comparePush(Request $request)
     {
-        abort_unless($request->hasHeader('X-PIXELFED-APP'), 404, 'Not found');
+        abort_unless($request->hasHeader('X-negarin-APP'), 404, 'Not found');
         abort_if(! $request->user() || ! $request->user()->token(), 403);
         abort_unless($request->user()->tokenCan('push'), 403);
         abort_unless(NotificationAppGatewayService::enabled(), 404, 'Push notifications are not supported on this server.');
@@ -1136,7 +1136,7 @@ class ApiV1Dot1Controller extends Controller
 
     public function updatePush(Request $request)
     {
-        abort_unless($request->hasHeader('X-PIXELFED-APP'), 404, 'Not found');
+        abort_unless($request->hasHeader('X-negarin-APP'), 404, 'Not found');
         abort_if(! $request->user() || ! $request->user()->token(), 403);
         abort_unless($request->user()->tokenCan('push'), 403);
         abort_unless(NotificationAppGatewayService::enabled(), 404, 'Push notifications are not supported on this server.');
@@ -1203,12 +1203,12 @@ class ApiV1Dot1Controller extends Controller
         abort_unless($request->user()->tokenCan('write'), 403);
 
         $this->validate($request, [
-            'status' => 'nullable|string|max:'.(int) config_cache('pixelfed.max_caption_length'),
+            'status' => 'nullable|string|max:'.(int) config_cache('negarin.max_caption_length'),
             'file' => [
                 'required',
                 'file',
-                'mimetypes:'.config_cache('pixelfed.media_types'),
-                'max:'.config_cache('pixelfed.max_photo_size'),
+                'mimetypes:'.config_cache('negarin.media_types'),
+                'max:'.config_cache('negarin.max_photo_size'),
                 function ($attribute, $value, $fail) {
                     if (is_array($value) && count($value) > 1) {
                         $fail('Only one file can be uploaded at a time.');
@@ -1254,14 +1254,14 @@ class ApiV1Dot1Controller extends Controller
         abort_if($accountSize === -1, 403, 'Invalid request.');
         $updatedAccountSize = (int) $accountSize + (int) $sizeInKbs;
 
-        if ((bool) config_cache('pixelfed.enforce_account_limit') == true) {
-            $limit = (int) config_cache('pixelfed.max_account_size');
+        if ((bool) config_cache('negarin.enforce_account_limit') == true) {
+            $limit = (int) config_cache('negarin.max_account_size');
             if ($updatedAccountSize >= $limit) {
                 abort(403, 'Account size limit reached.');
             }
         }
 
-        $mimes = explode(',', config_cache('pixelfed.media_types'));
+        $mimes = explode(',', config_cache('negarin.media_types'));
         if (in_array($photo->getMimeType(), $mimes) == false) {
             abort(403, 'Invalid or unsupported mime type.');
         }
@@ -1369,10 +1369,17 @@ class ApiV1Dot1Controller extends Controller
 
     public function nagState(Request $request)
     {
-        abort_unless((bool) config_cache('pixelfed.oauth_enabled'), 404);
+        abort_unless((bool) config_cache('negarin.oauth_enabled'), 404);
 
         return [
             'active' => NotificationAppGatewayService::enabled(),
         ];
     }
 }
+
+
+
+
+
+
+

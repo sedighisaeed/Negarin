@@ -8,3 +8,10 @@
 <script type="text/javascript" src="{{ mix('js/group-status.js') }}"></script>
 <script type="text/javascript">App.boot();</script>
 @endpush
+
+
+
+
+
+
+

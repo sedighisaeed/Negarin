@@ -33,3 +33,10 @@ class CreateFollowRequestsTable extends Migration
         Schema::dropIfExists('follow_requests');
     }
 }
+
+
+
+
+
+
+

@@ -17,3 +17,10 @@ return [
     'throttle' => 'Demasiados intentos de conexión. Por favor, inténtao de novo en :seconds segundos.',
 
 ];
+
+
+
+
+
+
+

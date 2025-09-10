@@ -199,3 +199,10 @@ class HttpSignature
         return $headers;
     }
 }
+
+
+
+
+
+
+

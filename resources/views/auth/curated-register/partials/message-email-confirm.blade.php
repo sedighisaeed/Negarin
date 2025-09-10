@@ -21,3 +21,10 @@
 </form>
 <hr class="border-dark">
 <p class="text-muted small text-center">For additional information, please see our <a href="{{ route('help.curated-onboarding') }}" style="font-weight: 600;">Curated Onboarding</a> Help Center page.</p>
+
+
+
+
+
+
+

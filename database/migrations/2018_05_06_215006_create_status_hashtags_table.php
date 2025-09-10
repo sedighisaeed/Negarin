@@ -32,3 +32,10 @@ class CreateStatusHashtagsTable extends Migration
         Schema::dropIfExists('status_hashtags');
     }
 }
+
+
+
+
+
+
+

@@ -16,3 +16,10 @@ return [
     'throttle' => 'Gormod o ymdrechion mewngofnodi. Rhowch gynnig arall arni mewn :seconds eiliadau.',
     
 ];
+
+
+
+
+
+
+

@@ -63,25 +63,25 @@ class CreateNote extends Fractal\TransformerAbstract
                     'Hashtag' => 'as:Hashtag',
                     'sensitive' => 'as:sensitive',
                     'schema' => 'http://schema.org/',
-                    'pixelfed' => 'http://pixelfed.org/ns#',
+                    'negarin' => 'http://negarin.org/ns#',
                     'commentsEnabled' => [
-                        '@id' => 'pixelfed:commentsEnabled',
+                        '@id' => 'negarin:commentsEnabled',
                         '@type' => 'schema:Boolean',
                     ],
                     'capabilities' => [
-                        '@id' => 'pixelfed:capabilities',
+                        '@id' => 'negarin:capabilities',
                         '@container' => '@set',
                     ],
                     'announce' => [
-                        '@id' => 'pixelfed:canAnnounce',
+                        '@id' => 'negarin:canAnnounce',
                         '@type' => '@id',
                     ],
                     'like' => [
-                        '@id' => 'pixelfed:canLike',
+                        '@id' => 'negarin:canLike',
                         '@type' => '@id',
                     ],
                     'reply' => [
-                        '@id' => 'pixelfed:canReply',
+                        '@id' => 'negarin:canReply',
                         '@type' => '@id',
                     ],
                     'toot' => 'http://joinmastodon.org/ns#',
@@ -126,3 +126,10 @@ class CreateNote extends Fractal\TransformerAbstract
         ];
     }
 }
+
+
+
+
+
+
+

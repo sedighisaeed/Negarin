@@ -62,3 +62,10 @@ class BookmarkController extends Controller
         return $request->expectsJson() ? ['code' => 200, 'msg' => 'Bookmark saved!'] : redirect()->back();
     }
 }
+
+
+
+
+
+
+

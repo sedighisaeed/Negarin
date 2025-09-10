@@ -17,3 +17,10 @@ return [
     'throttle' => 'Çok fazla giriş denemesinde bulundunuz. Lütfen :seconds saniye sonra tekrar deneyiniz.',
 
 ];
+
+
+
+
+
+
+

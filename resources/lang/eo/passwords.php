@@ -20,3 +20,10 @@ return [
     'user'     => 'Se via retadreso ekzistas en nia datumbazo, tiam vi ricevos pasvort-reakiran ligilon en via retadreso post nelonge. Bonvolu, kontrolu vian spamujon se vi ne ricevis.',
 
 ];
+
+
+
+
+
+
+

@@ -45,3 +45,10 @@ class Portfolio extends Model
     	return config('app.url') . '/account/portfolio/' . $account['username'] . $suffix;
     }
 }
+
+
+
+
+
+
+

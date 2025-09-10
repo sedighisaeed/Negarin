@@ -106,3 +106,10 @@ class NewPostPipeline implements ShouldQueue
         // todo
     }
 }
+
+
+
+
+
+
+

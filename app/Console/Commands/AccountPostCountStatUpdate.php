@@ -79,3 +79,10 @@ class AccountPostCountStatUpdate extends Command
         AccountStatService::removeFromPostCount($id);
     }
 }
+
+
+
+
+
+
+

@@ -35,3 +35,10 @@ class CustomFilterKeyword extends Model
         return '/'.$pattern.'/i';
     }
 }
+
+
+
+
+
+
+

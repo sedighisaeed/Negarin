@@ -694,3 +694,10 @@ class GroupController extends GroupFederationController
         return ['next_url' => '/'];
     }
 }
+
+
+
+
+
+
+

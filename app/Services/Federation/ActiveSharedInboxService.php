@@ -163,7 +163,7 @@ class ActiveSharedInboxService
     public static function transformCacheFileData($res)
     {
         return [
-            'id' => 'pixelfed/storage/app/'.self::CACHE_FILE_NAME,
+            'id' => 'negarin/storage/app/'.self::CACHE_FILE_NAME,
             'version' => self::CACHE_FILE_VERSION,
             'created' => now()->format('c'),
             'updated' => now()->format('c'),
@@ -195,7 +195,7 @@ class ActiveSharedInboxService
         }
 
         $data = [
-            'id' => 'pixelfed/storage/app/'.self::CACHE_FILE_NAME,
+            'id' => 'negarin/storage/app/'.self::CACHE_FILE_NAME,
             'version' => self::CACHE_FILE_VERSION,
             'created' => $res['created'],
             'updated' => now()->format('c'),
@@ -242,3 +242,10 @@ class ActiveSharedInboxService
         return 1;
     }
 }
+
+
+
+
+
+
+

@@ -53,3 +53,10 @@ class PlaceController extends Controller
         return view('discover.places.directory.cities', compact('places'));
     }
 }
+
+
+
+
+
+
+

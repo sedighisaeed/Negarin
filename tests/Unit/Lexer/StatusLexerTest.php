@@ -17,7 +17,7 @@ class StatusLexerTest extends TestCase
     public function setUp(): void
     {
         parent::setUp();
-        $this->status = '@pixelfed hi, really like the website! #píxelfed';
+        $this->status = '@negarin hi, really like the website! #píxelfed';
         $this->entities = Extractor::create()->extract($this->status);
         $this->autolink = Autolink::create()->autolink($this->status);
     }
@@ -31,9 +31,9 @@ class StatusLexerTest extends TestCase
             ],
             'urls' => [],
             'mentions' => [
-                'pixelfed',
+                'negarin',
             ],
-            'replyto' => 'pixelfed',
+            'replyto' => 'negarin',
             'hashtags_with_indices' => [
                 [
                     'hashtag' => 'píxelfed',
@@ -46,7 +46,7 @@ class StatusLexerTest extends TestCase
             'urls_with_indices' => [],
             'mentions_with_indices' => [
                 [
-                    'screen_name' => 'pixelfed',
+                    'screen_name' => 'negarin',
                     'indices' => [
                         0,
                         9,
@@ -61,7 +61,7 @@ class StatusLexerTest extends TestCase
     #[Test]
     public function autolink()
     {
-        $expected = '<a class="u-url mention" href="https://pixelfed.dev/pixelfed" rel="external nofollow noopener" target="_blank">@pixelfed</a> hi, really like the website! <a href="https://pixelfed.dev/discover/tags/píxelfed?src=hash" title="#píxelfed" class="u-url hashtag" rel="external nofollow noopener">#píxelfed</a>';
+        $expected = '<a class="u-url mention" href="https://negarin.dev/negarin" rel="external nofollow noopener" target="_blank">@negarin</a> hi, really like the website! <a href="https://negarin.dev/discover/tags/píxelfed?src=hash" title="#píxelfed" class="u-url hashtag" rel="external nofollow noopener">#píxelfed</a>';
         $this->assertEquals($this->autolink, $expected);
     }
 
@@ -140,3 +140,10 @@ class StatusLexerTest extends TestCase
         $this->assertEquals(Status::MAX_LINKS, $count);
     }
 }
+
+
+
+
+
+
+

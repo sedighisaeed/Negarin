@@ -18,7 +18,7 @@ class SoftwareUpdateService
 
     public static function get()
     {
-        $curVersion = config('pixelfed.version');
+        $curVersion = config('negarin.version');
 
         $versions = Cache::remember(self::cacheKey(), 1800, function() {
             return self::fetchLatest();
@@ -55,7 +55,7 @@ class SoftwareUpdateService
                 ->timeout(5)
                 ->connectTimeout(5)
                 ->retry(2, 500)
-                ->get('https://versions.pixelfed.org/versions.json');
+                ->get('https://versions.negarin.org/versions.json');
         } catch (RequestException $e) {
             return;
         } catch (ConnectionException $e) {
@@ -71,3 +71,10 @@ class SoftwareUpdateService
         return $res->json();
     }
 }
+
+
+
+
+
+
+

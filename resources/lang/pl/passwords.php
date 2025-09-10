@@ -20,3 +20,10 @@ return [
     'user'     => 'Jeżeli ten adres e-mail jest obecny w naszej bazie danych, otrzymasz wiadomość z odnośnikiem resetowania hasła w ciągu kilku minut. Jeżeli nie dostałeś(-aś) tego maila, sprawdź zawartość folderu Spam.',
 
 ];
+
+
+
+
+
+
+

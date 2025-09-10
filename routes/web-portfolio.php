@@ -21,3 +21,10 @@ Route::domain(config('portfolio.domain'))->group(function () {
         });
     });
 });
+
+
+
+
+
+
+

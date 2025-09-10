@@ -31,3 +31,10 @@ class AddRepliesCountToStatusesTable extends Migration
         });
     }
 }
+
+
+
+
+
+
+

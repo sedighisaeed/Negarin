@@ -4,7 +4,7 @@ return [
     'url' => [
         'verify_dns' => env('PF_SECURITY_URL_VERIFY_DNS', false),
 
-        'trusted_domains' => env('PF_SECURITY_URL_TRUSTED_DOMAINS', 'pixelfed.social,pixelfed.art,mastodon.social'),
+        'trusted_domains' => env('PF_SECURITY_URL_TRUSTED_DOMAINS', 'negarin.social,negarin.art,mastodon.social'),
     ],
 
     'forgot-email' => [
@@ -20,3 +20,10 @@ return [
         ]
     ]
 ];
+
+
+
+
+
+
+

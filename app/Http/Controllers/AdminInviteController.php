@@ -186,7 +186,7 @@ class AdminInviteController extends Controller
 					}
 				},
 			],
-			'name' => 'nullable|string|max:'.config('pixelfed.max_name_length'),
+			'name' => 'nullable|string|max:'.config('negarin.max_name_length'),
 			'email' => [
 				'required',
 				'string',
@@ -241,3 +241,10 @@ class AdminInviteController extends Controller
 		}
 	}
 }
+
+
+
+
+
+
+

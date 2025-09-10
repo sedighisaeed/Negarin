@@ -66,7 +66,7 @@ class RemoteFollowImportRecent implements ShouldQueue
             return;
         }
         $response = Zttp::withHeaders([
-            'User-Agent' => 'PixelfedBot v0.1 - https://pixelfed.org',
+            'User-Agent' => 'negarinBot v0.1 - https://negarin.org',
         ])->get($url);
 
         $this->outbox = $response->json();
@@ -237,3 +237,10 @@ class RemoteFollowImportRecent implements ShouldQueue
         }
     }
 }
+
+
+
+
+
+
+

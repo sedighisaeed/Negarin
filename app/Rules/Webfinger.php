@@ -57,3 +57,10 @@ class WebFinger implements Rule
         return 'The :attribute must be a valid WebFinger address (username@domain.tld or @username@domain.tld)';
     }
 }
+
+
+
+
+
+
+

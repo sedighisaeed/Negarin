@@ -45,3 +45,10 @@ return [
         'key' => env('RESEND_KEY'),
     ],
 ];
+
+
+
+
+
+
+

@@ -30,7 +30,7 @@ class FetchCacheService
         }
 
         $headers = [
-            'User-Agent' => '(Pixelfed/'.config('pixelfed.version').'; +'.config('app.url').')',
+            'User-Agent' => '(negarin/'.config('negarin.version').'; +'.config('app.url').')',
         ];
 
         if ($allowRedirects) {
@@ -77,3 +77,10 @@ class FetchCacheService
         return $res->json();
     }
 }
+
+
+
+
+
+
+

@@ -74,7 +74,7 @@ class StatusRemoteUpdatePipeline implements ShouldQueue
                 $nm['url']
             ) &&
             in_array($nm['type'], ['Document', 'Image', 'Video']) &&
-            in_array($nm['mediaType'], explode(',', config_cache('pixelfed.media_types')));
+            in_array($nm['mediaType'], explode(',', config_cache('negarin.media_types')));
         });
 
         // Skip when no media
@@ -95,7 +95,7 @@ class StatusRemoteUpdatePipeline implements ShouldQueue
                 return;
             }
 
-            if (! in_array($res->header('content-type'), explode(',', config_cache('pixelfed.media_types')))) {
+            if (! in_array($res->header('content-type'), explode(',', config_cache('negarin.media_types')))) {
                 return;
             }
 
@@ -169,3 +169,10 @@ class StatusRemoteUpdatePipeline implements ShouldQueue
         ]);
     }
 }
+
+
+
+
+
+
+

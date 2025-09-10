@@ -3,7 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Pixelfed\Snowflake\HasSnowflakePrimary;
+use negarin\Snowflake\HasSnowflakePrimary;
 use Storage;
 
 class StoryItem extends Model
@@ -38,3 +38,10 @@ class StoryItem extends Model
 		return url(Storage::url($this->media_path));
 	}
 }
+
+
+
+
+
+
+

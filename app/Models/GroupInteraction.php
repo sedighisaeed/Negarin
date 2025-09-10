@@ -13,3 +13,10 @@ class GroupInteraction extends Model
     	'metadata' => 'array'
     ];
 }
+
+
+
+
+
+
+

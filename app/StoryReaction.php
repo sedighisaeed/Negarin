@@ -11,3 +11,10 @@ class StoryReaction extends Model
 		return $this->belongsTo(Story::class);
 	}
 }
+
+
+
+
+
+
+

@@ -32,3 +32,10 @@ class MaxMultiLine implements InvokableRule
         }
     }
 }
+
+
+
+
+
+
+

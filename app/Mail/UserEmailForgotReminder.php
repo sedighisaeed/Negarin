@@ -29,7 +29,7 @@ class UserEmailForgotReminder extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: '[' . config('pixelfed.domain.app') . '] Pixelfed Account Email Reminder',
+            subject: '[' . config('negarin.domain.app') . '] negarin Account Email Reminder',
         );
     }
 
@@ -53,3 +53,10 @@ class UserEmailForgotReminder extends Mailable
         return [];
     }
 }
+
+
+
+
+
+
+

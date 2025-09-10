@@ -74,3 +74,10 @@ class ProfileMigrationController extends Controller
         return redirect()->back()->with(['status' => 'Succesfully migrated account!']);
     }
 }
+
+
+
+
+
+
+

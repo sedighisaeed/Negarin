@@ -20,3 +20,10 @@ return [
     'user'     => "Pokud vaše e-mailová adresa existuje v naší databázi, obdržíte za pár minut na vaší e-mailové adrese odkaz pro obnovu hesla. Pokud tento e-mail neobdržíte, prosím zkontrolujte svou složku „spam“.",
 
 ];
+
+
+
+
+
+
+

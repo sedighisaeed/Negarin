@@ -84,3 +84,10 @@ class FetchNodeinfoPipeline implements ShouldQueue, ShouldBeUniqueUntilProcessin
         }
     }
 }
+
+
+
+
+
+
+

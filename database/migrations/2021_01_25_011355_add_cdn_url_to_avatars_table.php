@@ -34,3 +34,10 @@ class AddCdnUrlToAvatarsTable extends Migration
 		});
 	}
 }
+
+
+
+
+
+
+

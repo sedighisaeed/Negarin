@@ -414,7 +414,7 @@ class StatusController extends Controller
 
     public static function mimeTypeCheck($mimes)
     {
-        $allowed = explode(',', config_cache('pixelfed.media_types'));
+        $allowed = explode(',', config_cache('negarin.media_types'));
         if (! isset($allowed['image/jpg'])) {
             $allowed[] = 'image/jpg';
         }
@@ -504,3 +504,10 @@ class StatusController extends Controller
         return response()->json(1);
     }
 }
+
+
+
+
+
+
+

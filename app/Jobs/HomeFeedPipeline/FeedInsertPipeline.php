@@ -89,7 +89,7 @@ class FeedInsertPipeline implements ShouldQueue, ShouldBeUniqueUntilProcessing
         $domain = strtolower(parse_url($status['url'], PHP_URL_HOST));
         $skipIds = [];
 
-        if(strtolower(config('pixelfed.domain.app')) !== $domain) {
+        if(strtolower(config('negarin.domain.app')) !== $domain) {
             $skipIds = UserDomainBlock::where('domain', $domain)->pluck('profile_id')->toArray();
         }
 
@@ -112,3 +112,10 @@ class FeedInsertPipeline implements ShouldQueue, ShouldBeUniqueUntilProcessing
         }
     }
 }
+
+
+
+
+
+
+

@@ -73,3 +73,10 @@ class StatusStatelessTransformer extends Fractal\TransformerAbstract
         ];
     }
 }
+
+
+
+
+
+
+

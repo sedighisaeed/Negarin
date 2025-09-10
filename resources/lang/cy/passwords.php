@@ -20,3 +20,10 @@ return [
     'user'     => 'Os yw\'ch cyfeiriad e-bost yn bodoli yn ein cronfa ddata, byddwch yn derbyn dolen adfer cyfrinair yn eich cyfeiriad e-bost mewn ychydig funudau. Gwiriwch eich ffolder sbam os na dderbynioch yr e-bost hwn.',
 
 ];
+
+
+
+
+
+
+

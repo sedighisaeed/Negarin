@@ -10,3 +10,10 @@ return [
   'shared'              => 'delade ditt inlägg.',
 
 ];
+
+
+
+
+
+
+

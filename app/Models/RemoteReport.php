@@ -15,3 +15,10 @@ class RemoteReport extends Model
     	'report_meta' => 'array'
     ];
 }
+
+
+
+
+
+
+

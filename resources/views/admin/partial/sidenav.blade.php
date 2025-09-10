@@ -2,7 +2,7 @@
 	<div class="scrollbar-inner">
 		<div class="sidenav-header  align-items-center">
 			<a class="navbar-brand" href="/i/web">
-				<img src="/img/pixelfed-icon-color.svg" class="navbar-brand-img">
+				<img src="/img/negarin-icon-color.svg" class="navbar-brand-img">
 			</a>
 		</div>
 		<div class="navbar-inner">
@@ -185,3 +185,10 @@
 		</div>
 	</div>
 </nav>
+
+
+
+
+
+
+

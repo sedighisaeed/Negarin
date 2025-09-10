@@ -22,3 +22,10 @@ Broadcast::channel('live.chat.{id}', function ($user, $id) {
 Broadcast::channel('live.presence.{id}', function ($user, $id) {
     return [ $user->profile_id ];
 }, ['guards' => ['web', 'api']]);
+
+
+
+
+
+
+

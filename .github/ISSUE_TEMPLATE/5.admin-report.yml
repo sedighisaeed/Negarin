@@ -1,7 +1,7 @@
 name: 🧠 Administration Issue (Installation/Operation/Moderation)
 title: "[Admin]: "
 labels: ["🧠 Admin"]
-description: Report an issue as a Pixelfed Administration/Moderation including Installation, Upgrading, and Docker.
+description: Report an issue as a negarin Administration/Moderation including Installation, Upgrading, and Docker.
 body:
   - type: markdown
     attributes:
@@ -39,10 +39,10 @@ body:
       required: true
 
   - type: input
-    id: pixelfed-version
+    id: negarin-version
     attributes:
-      label: Pixelfed version
-      description: What version of Pixelfed are you using?
+      label: negarin version
+      description: What version of negarin are you using?
       placeholder: ex. 1.2.3
     validations:
       required: true
@@ -63,4 +63,11 @@ body:
         - 'Yes'
     validations:
       required: true
+
+
+
+
+
+
+
 

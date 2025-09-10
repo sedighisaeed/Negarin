@@ -17,3 +17,10 @@ return [
     'throttle' => 'Příliš mnoho pokusů o přihlášení. Prosím zkuste to znovu za :seconds sekund.',
 
 ];
+
+
+
+
+
+
+

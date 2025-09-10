@@ -31,3 +31,10 @@ class EmailChange extends Mailable
         return $this->markdown('emails.notification.email_change');
     }
 }
+
+
+
+
+
+
+

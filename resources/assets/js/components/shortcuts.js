@@ -1,7 +1,15 @@
-window.pixelfed.shortcuts = {
+window.negarin.shortcuts = {
 	load: () => {
 		document.onkeyup = function(e) {
 		}
 	}
 }
+
+
+
+
+
+
+
+
 

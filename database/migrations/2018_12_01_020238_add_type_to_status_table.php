@@ -30,3 +30,10 @@ class AddTypeToStatusTable extends Migration
         });
     }
 }
+
+
+
+
+
+
+

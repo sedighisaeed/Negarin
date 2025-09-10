@@ -33,3 +33,10 @@ class CreateHashtagFollowsTable extends Migration
         Schema::dropIfExists('hashtag_follows');
     }
 }
+
+
+
+
+
+
+

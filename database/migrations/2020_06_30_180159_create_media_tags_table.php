@@ -36,3 +36,10 @@ class CreateMediaTagsTable extends Migration
         Schema::dropIfExists('media_tags');
     }
 }
+
+
+
+
+
+
+

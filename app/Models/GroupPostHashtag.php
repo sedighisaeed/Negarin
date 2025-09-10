@@ -20,3 +20,10 @@ class GroupPostHashtag extends Model
 
     public $timestamps = false;
 }
+
+
+
+
+
+
+

@@ -32,3 +32,10 @@ class UserDevice extends Model
         return $agent;
     }
 }
+
+
+
+
+
+
+

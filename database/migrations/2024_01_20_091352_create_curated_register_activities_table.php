@@ -40,3 +40,10 @@ return new class extends Migration
         Schema::dropIfExists('curated_register_activities');
     }
 };
+
+
+
+
+
+
+

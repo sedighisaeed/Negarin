@@ -30,7 +30,7 @@ class AvatarService
     public static function disk()
     {
         $storage = [
-            'cloud' => boolval(config_cache('pixelfed.cloud_storage')),
+            'cloud' => boolval(config_cache('negarin.cloud_storage')),
             'local' => boolval(config_cache('federation.avatars.store_local'))
         ];
 
@@ -53,7 +53,7 @@ class AvatarService
         }
 
         $storage = [
-            'cloud' => boolval(config_cache('pixelfed.cloud_storage')),
+            'cloud' => boolval(config_cache('negarin.cloud_storage')),
             'local' => boolval(config_cache('federation.avatars.store_local'))
         ];
 
@@ -73,7 +73,7 @@ class AvatarService
         }
 
         $storage = [
-            'cloud' => boolval(config_cache('pixelfed.cloud_storage')),
+            'cloud' => boolval(config_cache('negarin.cloud_storage')),
             'local' => boolval(config_cache('federation.avatars.store_local'))
         ];
 
@@ -125,3 +125,10 @@ class AvatarService
         return;
     }
 }
+
+
+
+
+
+
+

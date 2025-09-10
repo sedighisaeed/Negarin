@@ -11,8 +11,8 @@
 
 	<title>{{ $title ?? config_cache('app.name') }}</title>
 
-	<meta property="og:site_name" content="{{ config_cache('app.name', 'pixelfed') }}">
-	<meta property="og:title" content="{{ $title ?? config_cache('app.name', 'pixelfed') }}">
+	<meta property="og:site_name" content="{{ config_cache('app.name', 'negarin') }}">
+	<meta property="og:title" content="{{ $title ?? config_cache('app.name', 'negarin') }}">
 	<meta property="og:type" content="article">
 	<meta property="og:url" content="{{request()->url()}}">
 	@stack('meta')
@@ -47,3 +47,10 @@
 	@stack('scripts')
 </body>
 </html>
+
+
+
+
+
+
+

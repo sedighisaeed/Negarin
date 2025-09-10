@@ -50,3 +50,10 @@ class Report extends Model
         return $this->belongsTo(Profile::class, 'reported_profile_id', 'id');
     }
 }
+
+
+
+
+
+
+

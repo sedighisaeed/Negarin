@@ -33,3 +33,10 @@ class CreateStatusViewsTable extends Migration
         Schema::dropIfExists('status_views');
     }
 }
+
+
+
+
+
+
+

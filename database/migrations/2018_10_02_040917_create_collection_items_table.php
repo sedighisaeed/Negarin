@@ -33,3 +33,10 @@ class CreateCollectionItemsTable extends Migration
         Schema::dropIfExists('collection_items');
     }
 }
+
+
+
+
+
+
+

@@ -62,3 +62,10 @@ class ImageThumbnail implements ShouldQueue
         ImageUpdate::dispatch($media)->onQueue('mmo');
     }
 }
+
+
+
+
+
+
+

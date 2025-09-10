@@ -43,3 +43,10 @@ class CreateNewsroomTable extends Migration
         Schema::dropIfExists('newsroom');
     }
 }
+
+
+
+
+
+
+

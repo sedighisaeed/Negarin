@@ -11,3 +11,10 @@ class DiscoverCategoryHashtag extends Model
     	'hashtag_id'
     ];
 }
+
+
+
+
+
+
+

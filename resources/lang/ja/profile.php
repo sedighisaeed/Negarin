@@ -13,3 +13,10 @@ return [
   'status.disabled.header'   => 'プロフィールが無効です',
   'status.disabled.body'     => 'このプロフィールは現在利用できません。しばらくしてからもう一度お試しください。',
 ];
+
+
+
+
+
+
+

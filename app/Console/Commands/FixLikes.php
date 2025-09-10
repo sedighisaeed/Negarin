@@ -73,3 +73,10 @@ class FixLikes extends Command
         $this->line(' ');
     }
 }
+
+
+
+
+
+
+

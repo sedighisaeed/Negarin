@@ -15,3 +15,10 @@ return [
     'places'            => 'Places',
     'profiles'          => 'Profielen',
 ];
+
+
+
+
+
+
+

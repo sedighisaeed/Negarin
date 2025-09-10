@@ -17,3 +17,9 @@ class FailedJob extends Model
     	return Carbon::parse($val);
     }
 }
+
+
+
+
+
+

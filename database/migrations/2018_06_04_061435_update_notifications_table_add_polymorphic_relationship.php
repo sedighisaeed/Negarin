@@ -29,3 +29,10 @@ class UpdateNotificationsTableAddPolymorphicRelationship extends Migration
         //
     }
 }
+
+
+
+
+
+
+

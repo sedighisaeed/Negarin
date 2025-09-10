@@ -14,3 +14,9 @@ return [
 	'selectLocale'  => 'Desteklenen dillerden birini seçiniz',
 
 ];
+
+
+
+
+
+

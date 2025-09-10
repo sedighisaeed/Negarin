@@ -27,3 +27,11 @@ Vue.component(
 	'groups-invite',
 	require('./../components/groups/GroupInvite.vue').default
 );
+
+
+
+
+
+
+
+

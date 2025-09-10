@@ -40,3 +40,10 @@
 <script type="text/javascript" src="{{ mix('js/compose.js') }}"></script>
 <script type="text/javascript" src="{{ mix('js/settings.js') }}"></script>
 @endpush
+
+
+
+
+
+
+

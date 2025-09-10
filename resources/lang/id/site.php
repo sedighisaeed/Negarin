@@ -11,3 +11,10 @@ return [
 	'currentLocale' => 'Locale sekarang',
 	'selectLocale'  => 'Pilih salah satu bahasa yang tersedia',
 ];
+
+
+
+
+
+
+

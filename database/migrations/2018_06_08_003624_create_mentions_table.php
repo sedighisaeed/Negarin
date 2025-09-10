@@ -32,3 +32,10 @@ class CreateMentionsTable extends Migration
         Schema::dropIfExists('mentions');
     }
 }
+
+
+
+
+
+
+

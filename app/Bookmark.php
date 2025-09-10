@@ -19,3 +19,10 @@ class Bookmark extends Model
 		return $this->belongsTo(Profile::class);
 	}
 }
+
+
+
+
+
+
+

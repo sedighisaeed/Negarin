@@ -28,3 +28,10 @@ class MediaDraftTransformer extends Fractal\TransformerAbstract
         ];
     }
 }
+
+
+
+
+
+
+

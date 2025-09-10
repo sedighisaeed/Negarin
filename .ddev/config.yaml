@@ -8,11 +8,11 @@ database:
 disable_settings_management: true
 web_environment:
   - DB_CONNECTION=mysql
-  - DB_HOST=ddev-pixelfed-db
+  - DB_HOST=ddev-negarin-db
   - DB_DATABASE=db
   - DB_USERNAME=db
   - DB_PASSWORD=db
-  - REDIS_HOST=ddev-pixelfed-redis
+  - REDIS_HOST=ddev-negarin-redis
   - MAIL_DRIVER=smtp
   - MAIL_HOST=localhost
   - MAIL_PORT=1025
@@ -20,13 +20,20 @@ web_environment:
   - MAIL_PASSWORD=null
   - MAIL_ENCRYPTION=null
   - APP_KEY=placeholder
-  - APP_NAME=PixelfedTest
+  - APP_NAME=negarinTest
   - APP_ENV=local
   - APP_KEY=base64:lwX95GbNWX3XsucdMe0XwtOKECta3h/B+p9NbH2jd0E=
   - APP_DEBUG=true
-  - APP_URL=https://pixelfed.ddev.site
-  - APP_DOMAIN=pixelfed.ddev.site
-  - ADMIN_DOMAIN=pixelfed.ddev.site
-  - SESSION_DOMAIN=pixelfed.ddev.site
+  - APP_URL=https://negarin.ddev.site
+  - APP_DOMAIN=negarin.ddev.site
+  - ADMIN_DOMAIN=negarin.ddev.site
+  - SESSION_DOMAIN=negarin.ddev.site
   - "TRUST_PROXIES=*"
   - LOG_CHANNEL=stack
+
+
+
+
+
+
+

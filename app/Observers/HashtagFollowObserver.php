@@ -49,3 +49,10 @@ class HashtagFollowObserver implements ShouldHandleEventsAfterCommit
         HashtagFollowService::unfollow($hashtagFollow->hashtag_id, $hashtagFollow->profile_id);
     }
 }
+
+
+
+
+
+
+

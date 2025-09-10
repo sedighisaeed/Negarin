@@ -52,3 +52,10 @@ class JoinApproved implements ShouldQueue
         GroupService::delSelf($member->group_id, $member->profile_id);
     }
 }
+
+
+
+
+
+
+

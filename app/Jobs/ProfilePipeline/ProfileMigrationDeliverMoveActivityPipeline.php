@@ -101,9 +101,9 @@ class ProfileMigrationDeliverMoveActivityPipeline implements ShouldBeUniqueUntil
             'timeout' => config('federation.activitypub.delivery.timeout'),
         ]);
 
-        $version = config('pixelfed.version');
+        $version = config('negarin.version');
         $appUrl = config('app.url');
-        $userAgent = "(Pixelfed/{$version}; +{$appUrl})";
+        $userAgent = "(negarin/{$version}; +{$appUrl})";
 
         $requests = function ($audience) use ($client, $activity, $profile, $payload, $userAgent) {
             foreach ($audience as $url) {
@@ -138,3 +138,10 @@ class ProfileMigrationDeliverMoveActivityPipeline implements ShouldBeUniqueUntil
         $promise->wait();
     }
 }
+
+
+
+
+
+
+

@@ -32,7 +32,7 @@ class Image
 
     public function __construct()
     {
-        ini_set('memory_limit', config('pixelfed.memory_limit', '1024M'));
+        ini_set('memory_limit', config('negarin.memory_limit', '1024M'));
 
         $this->square = $this->orientations()['square'];
         $this->landscape = $this->orientations()['landscape'];
@@ -199,7 +199,7 @@ class Image
                 }
             }
 
-            $quality = config_cache('pixelfed.image_quality');
+            $quality = config_cache('negarin.image_quality');
 
             $encoder = null;
             switch ($extension) {
@@ -284,3 +284,10 @@ class Image
         }
     }
 }
+
+
+
+
+
+
+

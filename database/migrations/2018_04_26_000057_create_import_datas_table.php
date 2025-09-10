@@ -34,3 +34,10 @@ class CreateImportDatasTable extends Migration
         Schema::dropIfExists('import_datas');
     }
 }
+
+
+
+
+
+
+

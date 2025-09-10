@@ -666,3 +666,10 @@ class StoryIndexService
         return config('database.redis.client') === 'predis' ? ['withscores' => true] : true;
     }
 }
+
+
+
+
+
+
+

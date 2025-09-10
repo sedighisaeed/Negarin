@@ -37,3 +37,9 @@ class Base83 {
         return (int) $result;
     }
 }
+
+
+
+
+
+

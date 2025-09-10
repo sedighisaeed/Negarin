@@ -1,6 +1,6 @@
 <?php
 
-Route::domain(config('pixelfed.domain.app'))->middleware(['validemail', 'twofactor', 'localization'])->group(function () {
+Route::domain(config('negarin.domain.app'))->middleware(['validemail', 'twofactor', 'localization'])->group(function () {
     Route::get('/', 'SiteController@home')->name('timeline.personal');
     Route::redirect('/home', '/')->name('home');
     Route::get('web/directory', 'LandingController@directoryRedirect');
@@ -497,3 +497,10 @@ Route::domain(config('pixelfed.domain.app'))->middleware(['validemail', 'twofact
     Route::get('@{username}', 'SiteController@legacyProfileRedirect');
     Route::get('{username}', 'ProfileController@show');
 });
+
+
+
+
+
+
+

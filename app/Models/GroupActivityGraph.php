@@ -9,3 +9,10 @@ class GroupActivityGraph extends Model
 {
     use HasFactory;
 }
+
+
+
+
+
+
+

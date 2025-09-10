@@ -19,3 +19,10 @@ return [
 'blockedAccounts'         => 'Contas Bloqueadas',
 'blockedDomains'          => 'Domínios Bloqueados',
 ];
+
+
+
+
+
+
+

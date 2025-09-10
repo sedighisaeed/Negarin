@@ -77,7 +77,7 @@ class Helpers
         }
 
         $activity = $data['object'];
-        $mimeTypes = explode(',', config_cache('pixelfed.media_types'));
+        $mimeTypes = explode(',', config_cache('negarin.media_types'));
         $mediaTypes = in_array('video/mp4', $mimeTypes) ?
             ['Document', 'Image', 'Video'] :
             ['Document', 'Image'];
@@ -297,7 +297,7 @@ class Helpers
     {
         $url = self::validateUrl($url);
         if ($url) {
-            $domain = config('pixelfed.domain.app');
+            $domain = config('negarin.domain.app');
             $uri = Uri::new($url);
             $host = $uri->getHost();
 
@@ -316,12 +316,12 @@ class Helpers
      */
     public static function zttpUserAgent(): array
     {
-        $version = config('pixelfed.version');
+        $version = config('negarin.version');
         $url = config('app.url');
 
         return [
             'Accept' => 'application/activity+json',
-            'User-Agent' => "(Pixelfed/{$version}; +{$url})",
+            'User-Agent' => "(negarin/{$version}; +{$url})",
         ];
     }
 
@@ -877,7 +877,7 @@ class Helpers
         $attachments = self::getAttachments($data);
         $profile = $status->profile;
         $storagePath = MediaPathService::get($profile, 2);
-        $allowedTypes = explode(',', config_cache('pixelfed.media_types'));
+        $allowedTypes = explode(',', config_cache('negarin.media_types'));
 
         foreach ($attachments as $key => $media) {
             if (! self::isValidAttachment($media, $allowedTypes)) {
@@ -972,7 +972,7 @@ class Helpers
      */
     public static function handleMediaStorage(Media $media): void
     {
-        if ((bool) config_cache('pixelfed.cloud_storage')) {
+        if ((bool) config_cache('negarin.cloud_storage')) {
             MediaStoragePipeline::dispatch($media);
         }
     }
@@ -1006,7 +1006,7 @@ class Helpers
      */
     public static function getSupportedMediaTypes(): array
     {
-        $mimeTypes = explode(',', config_cache('pixelfed.media_types'));
+        $mimeTypes = explode(',', config_cache('negarin.media_types'));
 
         return in_array('video/mp4', $mimeTypes) ?
             ['Document', 'Image', 'Video'] :
@@ -1105,7 +1105,7 @@ class Helpers
      */
     public static function isLocalDomain(string $host): bool
     {
-        return config('pixelfed.domain.app') == $host;
+        return config('negarin.domain.app') == $host;
     }
 
     /**
@@ -1309,3 +1309,10 @@ class Helpers
             ->send();
     }
 }
+
+
+
+
+
+
+

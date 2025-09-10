@@ -34,3 +34,10 @@ class CreateGroupRolesTable extends Migration
 		Schema::dropIfExists('group_roles');
 	}
 }
+
+
+
+
+
+
+

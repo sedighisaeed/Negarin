@@ -34,3 +34,10 @@ class ProfileOutbox extends Fractal\TransformerAbstract
         return $this->collection($statuses, new CreateNote);
     }
 }
+
+
+
+
+
+
+

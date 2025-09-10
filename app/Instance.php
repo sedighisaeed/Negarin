@@ -87,3 +87,10 @@ class Instance extends Model
         return url("/i/admin/instances/show/{$this->id}");
     }
 }
+
+
+
+
+
+
+

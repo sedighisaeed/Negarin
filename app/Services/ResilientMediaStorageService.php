@@ -16,7 +16,7 @@ class ResilientMediaStorageService
 
     public static function store($storagePath, $path, $name)
     {
-        return (bool) config_cache('pixelfed.cloud_storage') && (bool) config('media.storage.remote.resilient_mode') ?
+        return (bool) config_cache('negarin.cloud_storage') && (bool) config('media.storage.remote.resilient_mode') ?
             self::handleResilientStore($storagePath, $path, $name) :
             self::handleStore($storagePath, $path, $name);
     }
@@ -24,7 +24,7 @@ class ResilientMediaStorageService
     public static function handleStore($storagePath, $path, $name)
     {
         return retry(3, function() use($storagePath, $path, $name) {
-            $baseDisk = (bool) config_cache('pixelfed.cloud_storage') ? config('filesystems.cloud') : 'local';
+            $baseDisk = (bool) config_cache('negarin.cloud_storage') ? config('filesystems.cloud') : 'local';
             $disk = Storage::disk($baseDisk);
             $file = $disk->putFileAs($storagePath, new File($path), $name, 'public');
             return $disk->url($file);
@@ -64,3 +64,10 @@ class ResilientMediaStorageService
         return $drivers[$key];
     }
 }
+
+
+
+
+
+
+

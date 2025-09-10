@@ -38,3 +38,10 @@ class CreateAccountLogsTable extends Migration
         Schema::dropIfExists('account_logs');
     }
 }
+
+
+
+
+
+
+

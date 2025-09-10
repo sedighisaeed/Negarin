@@ -19,9 +19,9 @@ if($s['content_text']) {
 }
 $desc = false;
 if($displayName && $captionPreview) {
-    $desc = $displayName . ': "' . $captionPreview . '" - Pixelfed';
+    $desc = $displayName . ': "' . $captionPreview . '" - negarin';
 } else if($displayName) {
-    $desc = $displayName . ': Shared a new post - Pixelfed';
+    $desc = $displayName . ': Shared a new post - negarin';
 }
 
 @endphp
@@ -64,3 +64,10 @@ if($displayName && $captionPreview) {
 <script type="text/javascript" src="{{ mix('js/status.js') }}"></script>
 <script type="text/javascript">App.boot();</script>
 @endpush
+
+
+
+
+
+
+

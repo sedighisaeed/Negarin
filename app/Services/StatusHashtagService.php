@@ -96,3 +96,10 @@ class StatusHashtagService
         return $fractal->createData($resource)->toArray();
     }
 }
+
+
+
+
+
+
+

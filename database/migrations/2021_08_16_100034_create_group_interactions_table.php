@@ -35,3 +35,10 @@ class CreateGroupInteractionsTable extends Migration
 		Schema::dropIfExists('group_interactions');
 	}
 }
+
+
+
+
+
+
+

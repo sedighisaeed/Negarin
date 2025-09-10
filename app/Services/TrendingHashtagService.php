@@ -101,3 +101,10 @@ class TrendingHashtagService
         Cache::forget(self::key());
     }
 }
+
+
+
+
+
+
+

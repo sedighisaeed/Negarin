@@ -40,3 +40,10 @@ class ResultsTransformer extends Fractal\TransformerAbstract
 		return $this->collection($hashtags, new HashtagTransformer());
 	}
 }
+
+
+
+
+
+
+

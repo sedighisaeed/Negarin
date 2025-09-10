@@ -33,3 +33,10 @@ class CreateCircleProfilesTable extends Migration
         Schema::dropIfExists('circle_profiles');
     }
 }
+
+
+
+
+
+
+

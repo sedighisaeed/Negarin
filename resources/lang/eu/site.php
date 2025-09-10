@@ -11,3 +11,10 @@ return [
 	'currentLocale' => 'Uneko lokalizazioa',
 	'selectLocale'  => 'Aukeratu onartutako hizkuntzetako bat',
 ];
+
+
+
+
+
+
+

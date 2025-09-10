@@ -10,3 +10,9 @@
 <script type="text/javascript" src="{{ mix('js/discover.js') }}"></script>
 <script type="text/javascript">App.boot();</script>
 @endpush
+
+
+
+
+
+

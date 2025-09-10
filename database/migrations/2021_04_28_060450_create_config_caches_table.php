@@ -32,3 +32,10 @@ class CreateConfigCachesTable extends Migration
 		Schema::dropIfExists('config_cache');
 	}
 }
+
+
+
+
+
+
+

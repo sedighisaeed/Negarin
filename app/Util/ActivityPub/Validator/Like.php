@@ -23,3 +23,9 @@ class Like {
 		return $valid;
 	}
 }
+
+
+
+
+
+

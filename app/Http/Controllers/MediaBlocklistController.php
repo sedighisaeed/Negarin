@@ -48,3 +48,10 @@ class MediaBlocklistController extends Controller
         return redirect('/i/admin/media?layout=banned');
     }
 }
+
+
+
+
+
+
+

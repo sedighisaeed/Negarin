@@ -45,3 +45,10 @@ class Place extends Model
 		return $this->name . ', ' . $this->country;
 	}
 }
+
+
+
+
+
+
+

@@ -17,3 +17,10 @@ return [
     'throttle' => 'Zbyt wiele nieudanych prób logowania. Spróbuj ponownie za :seconds sekund.',
 
 ];
+
+
+
+
+
+
+

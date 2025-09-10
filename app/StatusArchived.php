@@ -11,3 +11,10 @@ class StatusArchived extends Model
 
     protected $guarded = [];
 }
+
+
+
+
+
+
+

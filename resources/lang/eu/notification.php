@@ -6,3 +6,10 @@ return [
   'startedFollowingYou' => 'jarraitzen hasi zaizu.',
 
 ];
+
+
+
+
+
+
+

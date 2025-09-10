@@ -15,3 +15,10 @@ class ProfileSponsorController extends Controller
 		return response()->json($res);
 	}
 }
+
+
+
+
+
+
+

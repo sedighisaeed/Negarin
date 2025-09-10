@@ -30,3 +30,10 @@ class AddProfileIdsToUsersTable extends Migration
         });
     }
 }
+
+
+
+
+
+
+

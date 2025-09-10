@@ -13,3 +13,10 @@ return [
   'status.disabled.header' 	  => '個人檔案不可用',
   'status.disabled.body'	  => '抱歉，此個人檔案暫時不可用。請稍後再試。',
 ];
+
+
+
+
+
+
+

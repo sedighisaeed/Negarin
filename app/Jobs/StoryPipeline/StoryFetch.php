@@ -271,13 +271,13 @@ class StoryFetch implements ShouldQueue
      */
     private function fetchStoryPayload(string $url, string $token): ?array
     {
-        $version = config('pixelfed.version');
+        $version = config('negarin.version');
         $appUrl = config('app.url');
 
         $headers = [
             'Accept' => 'application/ld+json; profile="https://www.w3.org/ns/activitystreams"',
             'Authorization' => 'Bearer '.$token,
-            'User-Agent' => "(Pixelfed/{$version}; +{$appUrl})",
+            'User-Agent' => "(negarin/{$version}; +{$appUrl})",
         ];
 
         try {
@@ -474,7 +474,7 @@ class StoryFetch implements ShouldQueue
                 'http' => [
                     'timeout' => self::REQUEST_TIMEOUT,
                     'max_redirects' => self::MAX_REDIRECTS,
-                    'user_agent' => 'Pixelfed/'.config('pixelfed.version'),
+                    'user_agent' => 'negarin/'.config('negarin.version'),
                 ],
             ];
 
@@ -663,7 +663,7 @@ class StoryFetch implements ShouldQueue
      */
     private function getAllowedMimeTypes(): array
     {
-        $mediaTypes = config_cache('pixelfed.media_types', 'image/jpeg,image/png');
+        $mediaTypes = config_cache('negarin.media_types', 'image/jpeg,image/png');
 
         return array_map('trim', explode(',', $mediaTypes));
     }
@@ -703,7 +703,7 @@ class StoryFetch implements ShouldQueue
      */
     private function getMaxFileSizeBytes(): int
     {
-        $maxSizeKb = config('pixelfed.max_photo_size', 15000);
+        $maxSizeKb = config('negarin.max_photo_size', 15000);
 
         return $maxSizeKb * 1024;
     }
@@ -786,3 +786,10 @@ class StoryFetch implements ShouldQueue
         }
     }
 }
+
+
+
+
+
+
+

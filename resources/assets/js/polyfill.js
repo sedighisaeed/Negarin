@@ -808,3 +808,10 @@ if (HTMLCanvasElement && (!canvas_proto.toBlob || !canvas_proto.toBlobHD)) {
 	}
 }
 }(typeof self !== "undefined" && self || typeof window !== "undefined" && window || this.content || this));
+
+
+
+
+
+
+

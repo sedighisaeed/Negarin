@@ -9,3 +9,10 @@ class GroupReport extends Model
 {
     use HasFactory;
 }
+
+
+
+
+
+
+

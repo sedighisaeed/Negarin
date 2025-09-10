@@ -88,7 +88,7 @@ class ActivityPubFetchService
 
         $headers = HttpSignature::instanceActorSign($url, false, $baseHeaders, 'get');
         $headers['Accept'] = 'application/activity+json';
-        $headers['User-Agent'] = 'PixelFedBot/1.0.0 (Pixelfed/'.config('pixelfed.version').'; +'.config('app.url').')';
+        $headers['User-Agent'] = 'negarinBot/1.0.0 (negarin/'.config('negarin.version').'; +'.config('app.url').')';
 
         try {
             $res = Http::withOptions([
@@ -136,3 +136,10 @@ class ActivityPubFetchService
         return $returnJsonFormat ? $res->json() : $res->body();
     }
 }
+
+
+
+
+
+
+

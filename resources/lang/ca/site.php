@@ -15,3 +15,10 @@ return [
     'places'            => 'Llocs',
     'profiles'          => 'Perfils',
 ];
+
+
+
+
+
+
+

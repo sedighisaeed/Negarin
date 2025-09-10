@@ -31,3 +31,10 @@ class CreateStoryReactionsTable extends Migration
         Schema::dropIfExists('story_reactions');
     }
 }
+
+
+
+
+
+
+

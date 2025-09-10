@@ -25,3 +25,10 @@ class Hashtag extends Model
         return config('routes.hashtag.base').$this->slug.$suffix;
     }
 }
+
+
+
+
+
+
+

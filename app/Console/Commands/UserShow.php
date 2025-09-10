@@ -56,3 +56,10 @@ class UserShow extends Command
         $this->info('Status Count: ' . $user->statuses()->count());
     }
 }
+
+
+
+
+
+
+

@@ -30,3 +30,10 @@ class AddLanguageToUsersTable extends Migration
         });
     }
 }
+
+
+
+
+
+
+

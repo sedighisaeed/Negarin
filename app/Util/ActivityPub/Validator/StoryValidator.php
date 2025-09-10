@@ -32,3 +32,10 @@ class StoryValidator {
 		return $valid;
 	}
 }
+
+
+
+
+
+
+

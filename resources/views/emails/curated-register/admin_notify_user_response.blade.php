@@ -14,8 +14,15 @@ You have a new response from a curated onboarding application from **{{$activity
 </x-mail::button>
 
 Thanks,<br>
-<a href="{{ config('app.url') }}">{{ config('pixelfed.domain.app') }}</a>
+<a href="{{ config('app.url') }}">{{ config('negarin.domain.app') }}</a>
 <br>
 <hr>
 <p style="font-size:10pt;">This is an automated message, please be aware that replies to this email cannot be monitored or responded to.</p>
 @endcomponent
+
+
+
+
+
+
+

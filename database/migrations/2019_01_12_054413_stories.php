@@ -64,3 +64,10 @@ class Stories extends Migration
         Schema::dropIfExists('stories');
     }
 }
+
+
+
+
+
+
+

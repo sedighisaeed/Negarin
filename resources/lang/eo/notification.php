@@ -10,3 +10,10 @@ return [
   'shared'				=> 'kunhavigis vian afiŝon.',
 
 ];
+
+
+
+
+
+
+

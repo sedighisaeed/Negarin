@@ -28,3 +28,10 @@ class CollectionItem extends Model
 		return $this->belongsTo(Collection::class);
 	}
 }
+
+
+
+
+
+
+

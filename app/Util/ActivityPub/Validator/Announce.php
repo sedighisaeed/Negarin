@@ -23,3 +23,10 @@ class Announce {
 		return $valid;
 	}
 }
+
+
+
+
+
+
+

@@ -13,3 +13,10 @@ return [
     'previous' => '« Anterior',
     'next' => 'Següent »',
 ];
+
+
+
+
+
+
+

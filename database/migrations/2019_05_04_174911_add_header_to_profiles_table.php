@@ -30,3 +30,10 @@ class AddHeaderToProfilesTable extends Migration
         });
     }
 }
+
+
+
+
+
+
+

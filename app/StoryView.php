@@ -13,3 +13,10 @@ class StoryView extends Model
 		return $this->belongsTo(Story::class);
 	}
 }
+
+
+
+
+
+
+

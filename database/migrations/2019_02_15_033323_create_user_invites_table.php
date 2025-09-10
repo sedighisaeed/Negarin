@@ -37,3 +37,10 @@ class CreateUserInvitesTable extends Migration
         Schema::dropIfExists('user_invites');
     }
 }
+
+
+
+
+
+
+

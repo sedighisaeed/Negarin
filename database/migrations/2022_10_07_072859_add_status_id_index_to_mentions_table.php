@@ -29,3 +29,10 @@ class AddStatusIdIndexToMentionsTable extends Migration
         //
     }
 }
+
+
+
+
+
+
+

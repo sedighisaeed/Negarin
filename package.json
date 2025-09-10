@@ -1,5 +1,5 @@
 {
-    "name": "pixelfed",
+    "name": "negarin",
     "private": true,
     "scripts": {
         "development": "mix",
@@ -77,6 +77,13 @@
     },
     "collective": {
         "type": "opencollective",
-        "url": "https://opencollective.com/pixelfed"
+        "url": "https://opencollective.com/negarin"
     }
 }
+
+
+
+
+
+
+

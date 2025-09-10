@@ -33,3 +33,10 @@ class PasswordChange extends Mailable
             ])->markdown('emails.notification.password_change');
     }
 }
+
+
+
+
+
+
+

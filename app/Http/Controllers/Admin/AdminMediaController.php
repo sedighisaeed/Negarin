@@ -54,3 +54,10 @@ trait AdminMediaController
 		return view('admin.media.show', compact('media'));
 	}
 }
+
+
+
+
+
+
+

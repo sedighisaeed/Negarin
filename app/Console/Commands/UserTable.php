@@ -47,3 +47,10 @@ class UserTable extends Command
         $this->table($headers, $users);
     }
 }
+
+
+
+
+
+
+

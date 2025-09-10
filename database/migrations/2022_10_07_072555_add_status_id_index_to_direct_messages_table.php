@@ -29,3 +29,10 @@ class AddStatusIdIndexToDirectMessagesTable extends Migration
         //
     }
 }
+
+
+
+
+
+
+

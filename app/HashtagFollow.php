@@ -19,3 +19,10 @@ class HashtagFollow extends Model
     	return $this->belongsTo(Hashtag::class);
     }
 }
+
+
+
+
+
+
+

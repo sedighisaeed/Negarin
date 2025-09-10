@@ -14,3 +14,10 @@
     <li>The account the associated email belongs to may have been deleted, or the account may have changed the email address.</li>
 </ul>
 @endsection
+
+
+
+
+
+
+

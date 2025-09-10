@@ -43,3 +43,10 @@ class CreatePortfoliosTable extends Migration
         Schema::dropIfExists('portfolios');
     }
 }
+
+
+
+
+
+
+

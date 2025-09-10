@@ -35,3 +35,10 @@ class CreateReportLogsTable extends Migration
         Schema::dropIfExists('report_logs');
     }
 }
+
+
+
+
+
+
+

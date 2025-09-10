@@ -93,3 +93,10 @@ class ProfileMigrationMoveFollowersPipeline implements ShouldBeUniqueUntilProces
         AccountService::del($this->newPid);
     }
 }
+
+
+
+
+
+
+

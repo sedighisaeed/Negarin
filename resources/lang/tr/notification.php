@@ -9,3 +9,10 @@ return [
   'shared'				=> 'gönderini paylaştı.',
 
 ];
+
+
+
+
+
+
+

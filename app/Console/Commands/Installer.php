@@ -52,10 +52,10 @@ class Installer extends Command
         $this->info('    / ____/ />  </  __/ / __/  __/ /_/ /    ');
         $this->info('   /_/   /_/_/|_|\___/_/_/  \___/\__,_/     ');
         $this->info(' ');
-        $this->info('    Welcome to the Pixelfed Installer!');
+        $this->info('    Welcome to the negarin Installer!');
         $this->info(' ');
         $this->info(' ');
-        $this->info('Pixelfed version: ' . config('pixelfed.version'));
+        $this->info('negarin version: ' . config('negarin.version'));
         $this->line(' ');
         $this->installerSteps();
     }
@@ -241,8 +241,8 @@ class Installer extends Command
         $database_port_default = $database === 'mysql' ? 3306 : 5432;
         $database_port = $this->ask('Select database port', $database_port_default);
 
-        $database_db = $this->ask('Select database', 'pixelfed');
-        $database_username = $this->ask('Select database username', 'pixelfed');
+        $database_db = $this->ask('Select database', 'negarin');
+        $database_username = $this->ask('Select database username', 'negarin');
         $database_password = $this->secret('Select database password');
 
         $this->updateEnvFile('DB_CONNECTION', $database);
@@ -292,9 +292,9 @@ class Installer extends Command
     {
         $this->line('');
         $this->info('Instance URL Settings:');
-        $name = $this->ask('Site name [ex: Pixelfed]', 'Pixelfed');
+        $name = $this->ask('Site name [ex: negarin]', 'negarin');
 
-        $domain = $this->ask('Site Domain [ex: pixelfed.com]');
+        $domain = $this->ask('Site Domain [ex: negarin.com]');
         $domain = strtolower($domain);
         if (empty($domain)) {
             $this->error('You must set the site domain');
@@ -503,3 +503,10 @@ class Installer extends Command
         }
     }
 }
+
+
+
+
+
+
+

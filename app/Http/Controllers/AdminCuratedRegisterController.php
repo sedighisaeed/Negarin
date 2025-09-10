@@ -338,3 +338,10 @@ class AdminCuratedRegisterController extends Controller
         return response()->json($templates);
     }
 }
+
+
+
+
+
+
+

@@ -30,3 +30,10 @@ class AddLastStatusAtToProfilesTable extends Migration
         });
     }
 }
+
+
+
+
+
+
+

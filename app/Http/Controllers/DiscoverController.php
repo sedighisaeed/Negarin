@@ -426,3 +426,10 @@ class DiscoverController extends Controller
         return BeagleService::getDiscoverPosts();
     }
 }
+
+
+
+
+
+
+

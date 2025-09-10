@@ -37,3 +37,10 @@ class CreateUikitTable extends Migration
         Schema::dropIfExists('uikit');
     }
 }
+
+
+
+
+
+
+

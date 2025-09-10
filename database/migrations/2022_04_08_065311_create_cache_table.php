@@ -30,3 +30,10 @@ class CreateCacheTable extends Migration
         Schema::dropIfExists('cache');
     }
 }
+
+
+
+
+
+
+

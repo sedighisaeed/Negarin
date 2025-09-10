@@ -334,3 +334,10 @@ abstract class Regex
 
 // Cause regular expressions to be initialized as soon as this file is loaded:
 Regex::__static();
+
+
+
+
+
+
+

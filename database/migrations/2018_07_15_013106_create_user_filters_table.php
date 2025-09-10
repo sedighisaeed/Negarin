@@ -39,3 +39,10 @@ class CreateUserFiltersTable extends Migration
         Schema::dropIfExists('user_filters');
     }
 }
+
+
+
+
+
+
+

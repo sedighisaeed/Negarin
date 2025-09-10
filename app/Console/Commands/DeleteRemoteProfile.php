@@ -49,3 +49,10 @@ class DeleteRemoteProfile extends Command
         exit;
     }
 }
+
+
+
+
+
+
+

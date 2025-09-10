@@ -37,3 +37,10 @@ class CreateGroupReportsTable extends Migration
         Schema::dropIfExists('group_reports');
     }
 }
+
+
+
+
+
+
+

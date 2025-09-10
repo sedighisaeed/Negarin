@@ -63,7 +63,7 @@ class NewStatusPipeline implements ShouldQueue
     public function handle()
     {
         // Skip media check if cloud storage isn't enabled or fast processing is on
-        if (! config_cache('pixelfed.cloud_storage') || config('pixelfed.media_fast_process')) {
+        if (! config_cache('negarin.cloud_storage') || config('negarin.media_fast_process')) {
             $this->dispatchFederation();
 
             return;
@@ -133,3 +133,10 @@ class NewStatusPipeline implements ShouldQueue
         }
     }
 }
+
+
+
+
+
+
+

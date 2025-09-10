@@ -10,3 +10,10 @@ return [
   'shared'				=> 'compartiu a túa publicación.',
 
 ];
+
+
+
+
+
+
+

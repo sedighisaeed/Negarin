@@ -6,7 +6,7 @@ use Closure;
 use App\Util\Lexer\RestrictedNames;
 use Illuminate\Contracts\Validation\ValidationRule;
 
-class PixelfedUsername implements ValidationRule
+class negarinUsername implements ValidationRule
 {
     /**
      * Run the validation rule.
@@ -55,3 +55,10 @@ class PixelfedUsername implements ValidationRule
         }
     }
 }
+
+
+
+
+
+
+

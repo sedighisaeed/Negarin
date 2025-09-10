@@ -38,3 +38,10 @@ class CreateLoginLinksTable extends Migration
         Schema::dropIfExists('login_links');
     }
 }
+
+
+
+
+
+
+

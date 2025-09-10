@@ -35,3 +35,10 @@ class CreateGroupStoresTable extends Migration
         Schema::dropIfExists('group_stores');
     }
 }
+
+
+
+
+
+
+

@@ -33,3 +33,10 @@ class Poll extends Model
 		return $this->cached_tallies;
 	}
 }
+
+
+
+
+
+
+

@@ -69,7 +69,7 @@ class DomainBlockController extends Controller
 
         $domain = strtolower(parse_url($domain, PHP_URL_HOST));
 
-        abort_if(config_cache('pixelfed.domain.app') == $domain, 400, 'Cannot ban your own server');
+        abort_if(config_cache('negarin.domain.app') == $domain, 400, 'Cannot ban your own server');
 
         $existingCount = UserDomainBlock::whereProfileId($pid)->count();
         $maxLimit = (int) config_cache('instance.user_filters.max_domain_blocks');
@@ -117,3 +117,10 @@ class DomainBlockController extends Controller
         return $this->json([]);
     }
 }
+
+
+
+
+
+
+

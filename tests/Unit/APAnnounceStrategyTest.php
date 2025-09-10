@@ -89,3 +89,10 @@ class APAnnounceStrategyTest extends TestCase
         $this->assertEquals($scope, $actual);
     }
 }
+
+
+
+
+
+
+

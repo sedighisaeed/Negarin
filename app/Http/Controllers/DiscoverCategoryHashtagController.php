@@ -8,3 +8,10 @@ class DiscoverCategoryHashtagController extends Controller
 {
     //
 }
+
+
+
+
+
+
+

@@ -56,3 +56,10 @@ class CuratedRegisterRequestDetailsFromUser extends Mailable
         return [];
     }
 }
+
+
+
+
+
+
+

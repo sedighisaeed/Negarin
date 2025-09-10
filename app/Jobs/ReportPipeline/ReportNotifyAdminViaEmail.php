@@ -50,3 +50,10 @@ class ReportNotifyAdminViaEmail implements ShouldQueue
         Mail::to($to)->send(new AdminNewReport($this->report));
     }
 }
+
+
+
+
+
+
+

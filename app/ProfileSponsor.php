@@ -13,3 +13,10 @@ class ProfileSponsor extends Model
     	return $this->belongsTo(Profile::class);
     }
 }
+
+
+
+
+
+
+

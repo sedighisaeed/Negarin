@@ -17,3 +17,10 @@ return [
     'throttle' => 'Terlalu banyak cubaan log masuk. Cuba lagi dalam :seconds saat.',
 
 ];
+
+
+
+
+
+
+

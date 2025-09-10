@@ -30,3 +30,10 @@ class AddProfileIdToStatusHashtagsTable extends Migration
         });
     }
 }
+
+
+
+
+
+
+

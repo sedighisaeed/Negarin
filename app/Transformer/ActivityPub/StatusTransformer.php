@@ -30,7 +30,7 @@ class StatusTransformer extends Fractal\TransformerAbstract
                 [
                     'manuallyApprovesFollowers' => 'as:manuallyApprovesFollowers',
                     'featured' => [
-                        'https://pixelfed.org/ns#featured' => ['@type' => '@id'],
+                        'https://negarin.org/ns#featured' => ['@type' => '@id'],
                     ],
                 ],
             ],
@@ -61,3 +61,10 @@ class StatusTransformer extends Fractal\TransformerAbstract
         ];
     }
 }
+
+
+
+
+
+
+

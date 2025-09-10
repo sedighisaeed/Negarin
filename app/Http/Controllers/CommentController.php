@@ -29,7 +29,7 @@ class CommentController extends Controller
         }
         $this->validate($request, [
             'item' => 'required|integer|min:1',
-            'comment' => 'required|string|max:'.config_cache('pixelfed.max_caption_length'),
+            'comment' => 'required|string|max:'.config_cache('negarin.max_caption_length'),
             'sensitive' => 'nullable|boolean',
         ]);
         $comment = $request->input('comment');
@@ -95,3 +95,10 @@ class CommentController extends Controller
         return $response;
     }
 }
+
+
+
+
+
+
+

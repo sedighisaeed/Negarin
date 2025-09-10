@@ -15,3 +15,10 @@ class StatusView extends Model
     	'profile_id'
     ];
 }
+
+
+
+
+
+
+

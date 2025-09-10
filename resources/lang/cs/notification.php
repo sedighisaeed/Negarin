@@ -10,3 +10,10 @@ return [
   'shared'				=> 'sdílel/a váš příspěvek.',
 
 ];
+
+
+
+
+
+
+

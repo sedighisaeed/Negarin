@@ -100,3 +100,10 @@ class CreateGroupCategoriesTable extends Migration
 		});
     }
 }
+
+
+
+
+
+
+

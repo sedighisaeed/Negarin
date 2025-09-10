@@ -31,3 +31,10 @@ class AddIndexesToReportsTable extends Migration
         //
     }
 }
+
+
+
+
+
+
+

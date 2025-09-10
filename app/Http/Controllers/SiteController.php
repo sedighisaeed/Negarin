@@ -185,7 +185,7 @@ class SiteController extends Controller
             return redirect('/i/web');
         }
 
-        $regOpen = (bool) config_cache('pixelfed.open_registration');
+        $regOpen = (bool) config_cache('negarin.open_registration');
         $curOnboarding = (bool) config_cache('instance.curated_registration.enabled');
         $curOnlyClosed = (bool) config('instance.curated_registration.state.only_enabled_on_closed_reg');
         if ($regOpen) {
@@ -201,3 +201,10 @@ class SiteController extends Controller
         return view('auth.curated-register.index', ['step' => 1]);
     }
 }
+
+
+
+
+
+
+

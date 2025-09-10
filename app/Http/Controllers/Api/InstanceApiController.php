@@ -34,10 +34,10 @@ class InstanceApiController extends Controller {
 		});
 
 		$res = [
-			'uri' => config('pixelfed.domain.app'),
+			'uri' => config('negarin.domain.app'),
 			'title' => config_cache('app.name'),
 			'description' => '',
-			'version' => config('pixelfed.version'),
+			'version' => config('negarin.version'),
 			'urls' => [],
 			'stats' => [
 				'user_count' => User::count(),
@@ -61,3 +61,10 @@ class InstanceApiController extends Controller {
 	}
 
 }
+
+
+
+
+
+
+

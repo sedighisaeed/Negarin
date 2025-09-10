@@ -30,3 +30,10 @@ class AddUuidsToFailedJobsTable extends Migration
         });
     }
 }
+
+
+
+
+
+
+

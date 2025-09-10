@@ -49,7 +49,7 @@ class ImportInstagram implements ShouldQueue
 	 */
 	public function handle()
 	{
-		if(config_cache('pixelfed.import.instagram.enabled') != true) {
+		if(config_cache('negarin.import.instagram.enabled') != true) {
 			return;
 		}
 
@@ -129,3 +129,10 @@ class ImportInstagram implements ShouldQueue
 		$job->save();
 	}
 }
+
+
+
+
+
+
+

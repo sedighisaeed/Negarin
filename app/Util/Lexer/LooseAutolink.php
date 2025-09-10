@@ -365,3 +365,10 @@ class LooseAutolink extends Autolink
         return $before.$at.$this->wrap($url, $class, $element);
     }
 }
+
+
+
+
+
+
+

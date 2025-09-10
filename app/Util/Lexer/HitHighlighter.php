@@ -197,3 +197,10 @@ class HitHighlighter extends Regex
         return $this->highlight($this->tweet, $hits);
     }
 }
+
+
+
+
+
+
+

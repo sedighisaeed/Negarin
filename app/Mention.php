@@ -30,3 +30,10 @@ class Mention extends Model
         return $this->belongsTo(Status::class, 'status_id', 'id');
     }
 }
+
+
+
+
+
+
+

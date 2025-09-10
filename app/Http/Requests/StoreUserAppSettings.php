@@ -80,3 +80,10 @@ class StoreUserAppSettings extends FormRequest
         return filter_var($booleable, FILTER_VALIDATE_BOOLEAN, FILTER_NULL_ON_FAILURE);
     }
 }
+
+
+
+
+
+
+

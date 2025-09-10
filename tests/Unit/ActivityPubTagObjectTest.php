@@ -36,48 +36,48 @@ class ActivityPubTagObjectTest extends TestCase
     }
 
     #[Test]
-    public function pixelfed_hashtags(): void
+    public function negarin_hashtags(): void
     {
         $res = [
             "tag" => [
                 [
                     "type" => "Mention",
-                    "href" => "https://pixelfed.social/dansup",
-                    "name" => "@dansup@pixelfed.social"
+                    "href" => "https://negarin.social/dansup",
+                    "name" => "@dansup@negarin.social"
                 ],
                 [
                     "type" => "Hashtag",
-                    "href" => "https://pixelfed.social/discover/tags/dogsofpixelfed",
-                    "name" => "#dogsOfPixelFed"
+                    "href" => "https://negarin.social/discover/tags/dogsofnegarin",
+                    "name" => "#dogsOfnegarin"
                 ],
                 [
                     "type" => "Hashtag",
-                    "href" => "https://pixelfed.social/discover/tags/doggo",
+                    "href" => "https://negarin.social/discover/tags/doggo",
                     "name" => "#doggo"
                 ],
                 [
                     "type" => "Hashtag",
-                    "href" => "https://pixelfed.social/discover/tags/dog",
+                    "href" => "https://negarin.social/discover/tags/dog",
                     "name" => "#dog"
                 ],
                 [
                     "type" => "Hashtag",
-                    "href" => "https://pixelfed.social/discover/tags/drake",
+                    "href" => "https://negarin.social/discover/tags/drake",
                     "name" => "#drake"
                 ],
                 [
                     "type" => "Hashtag",
-                    "href" => "https://pixelfed.social/discover/tags/blacklab",
+                    "href" => "https://negarin.social/discover/tags/blacklab",
                     "name" => "#blacklab"
                 ],
                 [
                     "type" => "Hashtag",
-                    "href" => "https://pixelfed.social/discover/tags/iconic",
+                    "href" => "https://negarin.social/discover/tags/iconic",
                     "name" => "#Iconic"
                 ],
                 [
                     "type" => "Hashtag",
-                    "href" => "https://pixelfed.social/discover/tags/majestic",
+                    "href" => "https://negarin.social/discover/tags/majestic",
                     "name" => "#majestic"
                 ]
             ]
@@ -98,23 +98,23 @@ class ActivityPubTagObjectTest extends TestCase
     }
 
     #[Test]
-    public function pixelfed_mentions(): void
+    public function negarin_mentions(): void
     {
         $res = [
             "tag" => [
                 [
                     "type" => "Mention",
-                    "href" => "https://pixelfed.social/dansup",
-                    "name" => "@dansup@pixelfed.social"
+                    "href" => "https://negarin.social/dansup",
+                    "name" => "@dansup@negarin.social"
                 ],
                 [
                     "type" => "Hashtag",
-                    "href" => "https://pixelfed.social/discover/tags/dogsofpixelfed",
-                    "name" => "#dogsOfPixelFed"
+                    "href" => "https://negarin.social/discover/tags/dogsofnegarin",
+                    "name" => "#dogsOfnegarin"
                 ],
                 [
                     "type" => "Hashtag",
-                    "href" => "https://pixelfed.social/discover/tags/doggo",
+                    "href" => "https://negarin.social/discover/tags/doggo",
                     "name" => "#doggo"
                 ],
             ]
@@ -134,3 +134,10 @@ class ActivityPubTagObjectTest extends TestCase
         $this->assertTrue($tags->count() === 1);
     }
 }
+
+
+
+
+
+
+

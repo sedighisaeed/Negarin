@@ -94,3 +94,10 @@
 @push('scripts')
 <script type="text/javascript" src="{{mix('js/activity.js')}}"></script>
 @endpush
+
+
+
+
+
+
+

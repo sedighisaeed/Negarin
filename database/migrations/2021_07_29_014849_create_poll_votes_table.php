@@ -35,3 +35,10 @@ class CreatePollVotesTable extends Migration
         Schema::dropIfExists('poll_votes');
     }
 }
+
+
+
+
+
+
+

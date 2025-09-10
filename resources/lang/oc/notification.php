@@ -10,3 +10,10 @@ return [
   'shared'				=> 'a partejat vòstra publicacion.',
 
 ];
+
+
+
+
+
+
+

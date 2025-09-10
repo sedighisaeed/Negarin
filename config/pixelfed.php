@@ -17,10 +17,10 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Pixelfed Version
+    | negarin Version
     |--------------------------------------------------------------------------
     |
-    | This value is the version of your Pixelfed instance.
+    | This value is the version of your negarin instance.
     |
     */
     'version' => '0.12.6',
@@ -292,3 +292,10 @@ return [
     'app_registration_confirm_rate_limit_attempts' => env('PF_IARC_RL_ATTEMPTS', 20),
     'app_registration_confirm_rate_limit_decay' => env('PF_IARC_RL_ATTEMPTS', 1800),
 ];
+
+
+
+
+
+
+

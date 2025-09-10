@@ -19,3 +19,10 @@ class AdminInvite extends Model
         return url('/auth/invite/a/' . $this->invite_code);
     }
 }
+
+
+
+
+
+
+

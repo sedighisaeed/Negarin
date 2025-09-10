@@ -37,3 +37,10 @@ class CreateInstancesTable extends Migration
         Schema::dropIfExists('instances');
     }
 }
+
+
+
+
+
+
+

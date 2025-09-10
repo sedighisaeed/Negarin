@@ -17,3 +17,10 @@ return [
     'throttle' => 'Zu viele Anmeldeversuche. Versuche es in :seconds Sekunden erneut.',
 
 ];
+
+
+
+
+
+
+

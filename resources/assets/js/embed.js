@@ -9,7 +9,7 @@ pixlfed.autoSizeIFrame = function(el) {
 }
 
 pixlfed.polyfill = function() {
-	[].forEach.call(document.querySelectorAll('div.pixelfed-embed'), function(el) {
+	[].forEach.call(document.querySelectorAll('div.negarin-embed'), function(el) {
 		pixlfed.loadIFrame(el);
 	});
 }
@@ -41,7 +41,7 @@ pixlfed.loadIFrame = function(el) {
 }
 
 pixlfed.run = function() {
-	var lazyFrames = [].slice.call(document.querySelectorAll("div.pixelfed-embed"));
+	var lazyFrames = [].slice.call(document.querySelectorAll("div.negarin-embed"));
 
 	if ("IntersectionObserver" in window) {
 	let lazyFrameObserver = new IntersectionObserver(function(entries, observer) {
@@ -63,3 +63,10 @@ pixlfed.run = function() {
 }
 
 pixlfed.run();
+
+
+
+
+
+
+

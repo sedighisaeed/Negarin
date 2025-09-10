@@ -17,3 +17,10 @@ trait HasSnowflakePrimary
 		});
 	}
 }
+
+
+
+
+
+
+

@@ -74,3 +74,10 @@ class StatusHashtagObserver implements ShouldHandleEventsAfterCommit
         StatusHashtagService::del($hashtag->hashtag_id, $hashtag->status_id);
     }
 }
+
+
+
+
+
+
+

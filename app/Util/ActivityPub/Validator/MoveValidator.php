@@ -21,3 +21,10 @@ class MoveValidator
         ])->passes();
     }
 }
+
+
+
+
+
+
+

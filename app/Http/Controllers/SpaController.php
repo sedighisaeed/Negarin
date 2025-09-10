@@ -136,3 +136,10 @@ class SpaController extends Controller
 		return view('layouts.spa');
 	}
 }
+
+
+
+
+
+
+

@@ -17,3 +17,10 @@ class ProfileAlias extends Model
         return $this->belongsTo(Profile::class);
     }
 }
+
+
+
+
+
+
+

@@ -17,3 +17,10 @@
 @push('meta')
 <meta property="og:description" content="{{ $page->title ?? 'Legal Notice' }}">
 @endpush
+
+
+
+
+
+
+

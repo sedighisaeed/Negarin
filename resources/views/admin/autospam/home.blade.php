@@ -10,3 +10,10 @@
     new Vue({ el: '#panel'});
 </script>
 @endpush
+
+
+
+
+
+
+

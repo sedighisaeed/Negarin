@@ -51,7 +51,7 @@ trait SecuritySettings
 		$google2fa = app(Google2FA::class);
 		$key = $google2fa->generateSecretKey(32);
 		$qrcode = $google2fa->getQRCodeUrl(
-		    config('pixelfed.domain.app'),
+		    config('negarin.domain.app'),
 		    $user->email,
 		    $key,
 		    500
@@ -165,3 +165,10 @@ trait SecuritySettings
 		], 200);
 	}
 }
+
+
+
+
+
+
+

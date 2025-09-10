@@ -19,7 +19,7 @@ class AvatarController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-          'avatar' => 'required|mimetypes:image/jpeg,image/jpg,image/png|max:'.config('pixelfed.max_avatar_size'),
+          'avatar' => 'required|mimetypes:image/jpeg,image/jpg,image/png|max:'.config('negarin.max_avatar_size'),
         ]);
 
         try {
@@ -138,3 +138,10 @@ class AvatarController extends Controller
         return response()->json(200);
     }
 }
+
+
+
+
+
+
+

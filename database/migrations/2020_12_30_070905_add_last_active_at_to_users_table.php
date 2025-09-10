@@ -30,3 +30,10 @@ class AddLastActiveAtToUsersTable extends Migration
         });
     }
 }
+
+
+
+
+
+
+

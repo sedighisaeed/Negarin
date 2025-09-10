@@ -31,3 +31,10 @@ class AccountInterstitial extends Model
 		return $this->hasOne(Status::class, 'id', 'item_id');
 	}
 }
+
+
+
+
+
+
+

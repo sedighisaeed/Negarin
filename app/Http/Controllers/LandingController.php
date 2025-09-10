@@ -42,3 +42,10 @@ class LandingController extends Controller
         );
     }
 }
+
+
+
+
+
+
+

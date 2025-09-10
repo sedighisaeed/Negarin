@@ -1,7 +1,7 @@
 name: 🐞 Bug Report (Server / Backend / API)
 title: "[Server Bug]: "
 labels: ["🐛 Server Bug"]
-description: Report an issue with Pixelfed's HTTP server, REST API, etc.
+description: Report an issue with negarin's HTTP server, REST API, etc.
 body:
   - type: markdown
     attributes:
@@ -38,10 +38,10 @@ body:
       required: true
 
   - type: input
-    id: pixelfed-version
+    id: negarin-version
     attributes:
-      label: Pixelfed version
-      description: What version of Pixelfed are you using?
+      label: negarin version
+      description: What version of negarin are you using?
       placeholder: ex. 1.2.3
     validations:
       required: true
@@ -62,4 +62,11 @@ body:
         - 'Yes'
     validations:
       required: true
+
+
+
+
+
+
+
 

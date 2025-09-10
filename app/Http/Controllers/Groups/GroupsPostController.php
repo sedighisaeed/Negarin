@@ -38,7 +38,7 @@ class GroupsPostController extends Controller
     {
         $this->validate($request, [
             'group_id' => 'required|exists:groups,id',
-            'caption' => 'sometimes|string|max:'.config_cache('pixelfed.max_caption_length', 500),
+            'caption' => 'sometimes|string|max:'.config_cache('negarin.max_caption_length', 500),
             'pollOptions' => 'sometimes|array|min:1|max:4'
         ]);
 
@@ -418,3 +418,10 @@ class GroupsPostController extends Controller
         return response()->json($media->toArray(), 200, [], JSON_PRETTY_PRINT|JSON_UNESCAPED_SLASHES);
     }
 }
+
+
+
+
+
+
+

@@ -9,3 +9,10 @@ class GroupInvitation extends Model
 {
     use HasFactory;
 }
+
+
+
+
+
+
+

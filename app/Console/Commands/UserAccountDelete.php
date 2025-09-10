@@ -84,9 +84,9 @@ class UserAccountDelete extends Command
             'timeout' => 5,
         ]);
 
-        $version = config('pixelfed.version');
+        $version = config('negarin.version');
         $appUrl = config('app.url');
-        $userAgent = "(Pixelfed/{$version}; +{$appUrl})";
+        $userAgent = "(negarin/{$version}; +{$appUrl})";
 
         $requests = function ($audience) use ($client, $activity, $profile, $payload, $userAgent) {
             foreach ($audience as $url) {
@@ -121,3 +121,10 @@ class UserAccountDelete extends Command
         $promise->wait();
     }
 }
+
+
+
+
+
+
+

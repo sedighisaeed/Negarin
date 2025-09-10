@@ -33,3 +33,10 @@ class UpdateSettingsTable extends Migration
         });
     }
 }
+
+
+
+
+
+
+

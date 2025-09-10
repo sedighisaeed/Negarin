@@ -88,3 +88,10 @@ class InstanceUpdateTotalLocalPosts extends Command
             ->count();
     }
 }
+
+
+
+
+
+
+

@@ -52,7 +52,7 @@ class BackupToCloud extends Command
 			empty(config('filesystems.disks.backup.bucket'))
 		) {
 			$this->error('Backup disk not configured.');
-			$this->error('See https://docs.pixelfed.org/technical-documentation/env.html#filesystem for more information.');
+			$this->error('See https://docs.negarin.org/technical-documentation/env.html#filesystem for more information.');
 			return Command::FAILURE;
 		}
 
@@ -74,3 +74,10 @@ class BackupToCloud extends Command
 		return Command::SUCCESS;
     }
 }
+
+
+
+
+
+
+

@@ -7,10 +7,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="mobile-web-app-capable" content="yes">
 
-	<title>Pixelfed | 404 Embed Not Found</title>
+	<title>negarin | 404 Embed Not Found</title>
 
-	<meta property="og:site_name" content="{{ config_cache('app.name', 'pixelfed') }}">
-	<meta property="og:title" content="{{ $title ?? config_cache('app.name', 'pixelfed') }}">
+	<meta property="og:site_name" content="{{ config_cache('app.name', 'negarin') }}">
+	<meta property="og:title" content="{{ $title ?? config_cache('app.name', 'negarin') }}">
 	<meta name="medium" content="image">
 	<meta name="theme-color" content="#10c5f8">
 	<meta name="apple-mobile-web-app-capable" content="yes">
@@ -40,13 +40,20 @@
 	<div class="embed-card border">
 		<div class="card status-card-embed card-md-rounded-0 card-body shadow-none rounded-0">
 			<div class="text-center p-5">
-				<img src="/img/pixelfed-icon-color.svg" width="40px" height="40px">
-				<p class="h2 py-3 font-weight-bold">Pixelfed</p>
+				<img src="/img/negarin-icon-color.svg" width="40px" height="40px">
+				<p class="h2 py-3 font-weight-bold">negarin</p>
 				<p style="font-size:14px;font-weight: 500;" class="p-2">The link to this photo or video may be broken, or the post may have been removed.</p>
-				<p><a href="{{config('app.url')}}" class="font-weight-bold" target="_blank">Visit Pixelfed</a></p>
+				<p><a href="{{config('app.url')}}" class="font-weight-bold" target="_blank">Visit negarin</a></p>
 			</div>
 		</div>
 	</div>
 	<script type="text/javascript">window.addEventListener("message",e=>{const t=e.data||{};window.parent&&"setHeight"===t.type&&window.parent.postMessage({type:"setHeight",id:t.id,height:document.getElementsByTagName("html")[0].scrollHeight},"*")});</script>
 </body>
 </html>
+
+
+
+
+
+
+

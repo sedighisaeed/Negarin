@@ -105,3 +105,10 @@ class StringUtils
         return (is_null($length) === true) ? substr_replace($string, $replacement, $start) : substr_replace($string, $replacement, $start, $length);
     }
 }
+
+
+
+
+
+
+

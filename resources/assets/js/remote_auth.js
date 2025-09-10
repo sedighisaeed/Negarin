@@ -7,3 +7,11 @@ Vue.component(
     'remote-auth-getting-started-component',
     require('./../components/remote-auth/GettingStartedComponent.vue').default
 );
+
+
+
+
+
+
+
+

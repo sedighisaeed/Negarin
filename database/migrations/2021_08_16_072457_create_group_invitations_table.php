@@ -36,3 +36,10 @@ class CreateGroupInvitationsTable extends Migration
 		Schema::dropIfExists('group_invitations');
 	}
 }
+
+
+
+
+
+
+

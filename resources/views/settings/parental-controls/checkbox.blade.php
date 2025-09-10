@@ -5,3 +5,10 @@ $defaultChecked = isset($checked) && $checked ? 'checked=""' : '';
                 <input type="checkbox" class="custom-control-input" id="{{$id}}" name="{{$name}}" {!!$defaultChecked!!}>
                 <label class="custom-control-label pl-2" for="{{$id}}">{{ $title }}</label>
             </div>
+
+
+
+
+
+
+

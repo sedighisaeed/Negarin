@@ -55,3 +55,10 @@ class AddComposeSettingsToUserSettingsTable extends Migration
         });
     }
 }
+
+
+
+
+
+
+

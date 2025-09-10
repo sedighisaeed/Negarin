@@ -35,3 +35,9 @@
     <input type="text" class="form-control" id="db_username" name="db_username" disabled value="{{config('database.connections.mysql.username')}}">
   </div>
 </div>
+
+
+
+
+
+

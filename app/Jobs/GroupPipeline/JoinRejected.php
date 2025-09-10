@@ -48,3 +48,10 @@ class JoinRejected implements ShouldQueue
         $n->save();
     }
 }
+
+
+
+
+
+
+

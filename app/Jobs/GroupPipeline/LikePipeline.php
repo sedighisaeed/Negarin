@@ -105,3 +105,10 @@ class LikePipeline implements ShouldQueue
 		Helpers::sendSignedObject($actor, $url, $activity);
 	}
 }
+
+
+
+
+
+
+

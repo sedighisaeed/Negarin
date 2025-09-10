@@ -11,3 +11,10 @@ return [
   'status.disabled.header' 	  => 'Profil Tidak Tersedia',
   'status.disabled.body'	  => 'Maaf, profil ini sedang tidak tersedia. Silakan coba lagi kemudian.',
 ];
+
+
+
+
+
+
+

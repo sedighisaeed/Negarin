@@ -26,12 +26,19 @@ Need help getting started? Visit our [Help Center]({{url('site/help')}}) for tip
 
 If you have any questions or need assistance, feel free to reach out to [our support team]({{url('/site/contact')}}).
 
-Happy posting, and once again, welcome to Pixelfed!
+Happy posting, and once again, welcome to negarin!
 
 Warm regards,<br>
-<strong>{{ config('pixelfed.domain.app') }}</strong>
+<strong>{{ config('negarin.domain.app') }}</strong>
 
 <br>
 <hr>
 <p style="font-size:10pt;">This is an automated message, please be aware that replies to this email cannot be monitored or responded to.</p>
 @endcomponent
+
+
+
+
+
+
+

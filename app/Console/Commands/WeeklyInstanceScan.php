@@ -45,3 +45,10 @@ class WeeklyInstanceScan extends Command
         FetchNodeinfoPipeline::dispatch($instance)->onQueue('intbg');
     }
 }
+
+
+
+
+
+
+

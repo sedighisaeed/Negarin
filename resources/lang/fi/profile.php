@@ -6,3 +6,10 @@ return [
   'emptyFollowing' => 'Tämä käyttäjä ei vielä seuraa ketään!',
   'savedWarning'   => 'Vain sinä voit nähdä, mitä olet tallentanut',
 ];
+
+
+
+
+
+
+

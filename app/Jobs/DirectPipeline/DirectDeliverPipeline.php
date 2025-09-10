@@ -40,3 +40,10 @@ class DirectDeliverPipeline implements ShouldQueue
         Helpers::sendSignedObject($this->profile, $this->url, $this->payload);
     }
 }
+
+
+
+
+
+
+

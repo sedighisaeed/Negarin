@@ -1,6 +1,6 @@
 <?php
 
-Route::domain(config('pixelfed.domain.admin'))->prefix('i/admin')->group(function () {
+Route::domain(config('negarin.domain.admin'))->prefix('i/admin')->group(function () {
     Route::redirect('/', '/dashboard');
     Route::redirect('timeline', config('app.url').'/timeline');
     Route::get('settings/custom-css', 'AdminController@customCss')->name('admin.custom-css');
@@ -190,3 +190,10 @@ Route::domain(config('pixelfed.domain.admin'))->prefix('i/admin')->group(functio
         Route::post('settings/update/{type}', 'AdminController@settingsApiUpdateType');
     });
 });
+
+
+
+
+
+
+

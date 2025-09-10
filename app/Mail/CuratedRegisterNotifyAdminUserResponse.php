@@ -53,3 +53,10 @@ class CuratedRegisterNotifyAdminUserResponse extends Mailable
         return [];
     }
 }
+
+
+
+
+
+
+

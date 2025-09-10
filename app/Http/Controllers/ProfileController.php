@@ -392,3 +392,10 @@ class ProfileController extends Controller
         return view('profile.story', compact('pid', 'profile'));
     }
 }
+
+
+
+
+
+
+

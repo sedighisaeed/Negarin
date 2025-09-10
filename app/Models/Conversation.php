@@ -11,3 +11,10 @@ class Conversation extends Model
 
     protected $fillable = ['from_id', 'to_id'];
 }
+
+
+
+
+
+
+

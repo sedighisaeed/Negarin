@@ -40,3 +40,10 @@ class CreateGroupPostsTable extends Migration
 		Schema::dropIfExists('group_posts');
 	}
 }
+
+
+
+
+
+
+

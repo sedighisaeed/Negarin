@@ -207,3 +207,10 @@ class TagsController extends Controller
         return response()->json(FollowedTagResource::collection($res)->collection);
     }
 }
+
+
+
+
+
+
+

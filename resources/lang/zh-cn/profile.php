@@ -13,3 +13,10 @@ return [
   'status.disabled.header' 	  => '主页不可用',
   'status.disabled.body'	  => '抱歉，此个人主页暂时未开放。请稍后再试。',
 ];
+
+
+
+
+
+
+

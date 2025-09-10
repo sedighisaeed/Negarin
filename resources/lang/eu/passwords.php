@@ -20,3 +20,10 @@ return [
     'user'     => 'Ez dugu aurkitu pasahitz hori duen erabiltzailerik.',
 
 ];
+
+
+
+
+
+
+

@@ -22,3 +22,10 @@ class DeleteNote extends Fractal\TransformerAbstract
 	}
 
 }
+
+
+
+
+
+
+

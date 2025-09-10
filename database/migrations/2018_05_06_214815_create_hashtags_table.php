@@ -33,3 +33,10 @@ class CreateHashtagsTable extends Migration
         Schema::dropIfExists('hashtags');
     }
 }
+
+
+
+
+
+
+

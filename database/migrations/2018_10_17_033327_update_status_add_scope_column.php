@@ -30,3 +30,10 @@ class UpdateStatusAddScopeColumn extends Migration
         });
     }
 }
+
+
+
+
+
+
+

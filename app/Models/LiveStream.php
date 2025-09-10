@@ -39,3 +39,10 @@ class LiveStream extends Model
 		return $this->getStreamServer() . '/' . $this->stream_id;
 	}
 }
+
+
+
+
+
+
+

@@ -19,3 +19,10 @@ class EmailVerification extends Model
 		return $this->belongsTo(User::class);
 	}
 }
+
+
+
+
+
+
+

@@ -8,3 +8,10 @@ class DiscoverCategoryController extends Controller
 {
     //
 }
+
+
+
+
+
+
+

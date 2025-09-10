@@ -13,3 +13,10 @@ return [
   'status.disabled.header' 	  => 'Profil nicht verfügbar',
   'status.disabled.body'	  => 'Entschuldigung, dieses Profil ist im Moment nicht verfügbar. Bitte versuche es in Kürze noch einmal.',
 ];
+
+
+
+
+
+
+

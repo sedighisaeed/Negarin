@@ -41,3 +41,10 @@ class InstanceCrawlPipeline implements ShouldQueue
 		});
 	}
 }
+
+
+
+
+
+
+

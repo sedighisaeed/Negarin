@@ -58,3 +58,10 @@ class UserVerifyEmail extends Command implements PromptsForMissingInput
         $this->info('Successfully verified email address for ' . $user->username);
     }
 }
+
+
+
+
+
+
+

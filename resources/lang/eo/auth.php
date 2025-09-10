@@ -17,3 +17,10 @@ return [
     'throttle' => 'Tro saluton provojn. Bonvolu provu refoje post :seconds sekundoj.',
 
 ];
+
+
+
+
+
+
+

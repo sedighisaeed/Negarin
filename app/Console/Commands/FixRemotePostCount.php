@@ -51,3 +51,10 @@ class FixRemotePostCount extends Command
         return 0;
     }
 }
+
+
+
+
+
+
+

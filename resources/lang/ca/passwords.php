@@ -16,3 +16,10 @@ return [
     'token'    => 'Aquest testimoni (token) de reinicialització de la contrasenya no és vàlid.',
     'user'     => 'Si la vostra adreça electrònica existeix a la nostra base de dades, en breus minuts rebreu un enllaç de recuperació a la vostra bústia. Si us plau, si no rebeu el missatge, comproveu la bústia de correu brossa.',
 ];
+
+
+
+
+
+
+

@@ -69,3 +69,10 @@ class NotificationObserver
         NotificationService::del($notification->profile_id, $notification->id);
     }
 }
+
+
+
+
+
+
+

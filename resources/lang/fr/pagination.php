@@ -15,3 +15,10 @@ return [
     'previous'    =>    '« Précédente',
     'next'        =>    'Suivante »',
 ];
+
+
+
+
+
+
+

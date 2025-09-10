@@ -9,3 +9,10 @@ class GroupCategory extends Model
 {
     use HasFactory;
 }
+
+
+
+
+
+
+

@@ -77,7 +77,7 @@ class BaseApiController extends Controller
         abort_if(! $request->user(), 403);
 
         $this->validate($request, [
-            'upload' => 'required|mimetypes:image/jpeg,image/jpg,image/png|max:'.config('pixelfed.max_avatar_size'),
+            'upload' => 'required|mimetypes:image/jpeg,image/jpg,image/png|max:'.config('negarin.max_avatar_size'),
         ]);
 
         try {
@@ -225,3 +225,10 @@ class BaseApiController extends Controller
         return $fractal->createData($resource)->toArray();
     }
 }
+
+
+
+
+
+
+

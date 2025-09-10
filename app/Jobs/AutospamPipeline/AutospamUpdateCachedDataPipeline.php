@@ -107,3 +107,10 @@ class AutospamUpdateCachedDataPipeline implements ShouldQueue
 		Cache::forget(AutospamService::CHCKD_CACHE_KEY);
 	}
 }
+
+
+
+
+
+
+

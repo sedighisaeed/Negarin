@@ -175,7 +175,7 @@ class InboxWorker implements ShouldQueue
 		try {
 			$res = Http::withOptions(['allow_redirects' => false])->timeout(20)->withHeaders([
 			  'Accept'     => 'application/ld+json; profile="https://www.w3.org/ns/activitystreams"',
-			  'User-Agent' => 'PixelfedBot v0.1 - https://pixelfed.org',
+			  'User-Agent' => 'negarinBot v0.1 - https://negarin.org',
 			])->get($actor->remote_url);
 		} catch (ConnectionException $e) {
 			return false;
@@ -197,3 +197,10 @@ class InboxWorker implements ShouldQueue
 		return $this->verifySignature($headers, $payload);
 	}
 }
+
+
+
+
+
+
+

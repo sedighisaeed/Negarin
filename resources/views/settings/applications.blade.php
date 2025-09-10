@@ -6,7 +6,7 @@
 	<h3 class="font-weight-bold">Applications</h3>
 </div>
 <hr>
-@if((bool) config_cache('pixelfed.oauth_enabled') == true)
+@if((bool) config_cache('negarin.oauth_enabled') == true)
 	<passport-authorized-clients></passport-authorized-clients>
 	<passport-personal-access-tokens></passport-personal-access-tokens>
 @else
@@ -17,3 +17,10 @@
 @push('scripts')
 <script type="text/javascript" src="{{mix('js/developers.js')}}"></script>
 @endpush
+
+
+
+
+
+
+

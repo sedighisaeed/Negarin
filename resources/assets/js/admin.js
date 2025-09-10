@@ -1,7 +1,7 @@
 require('./polyfill');
 window._ = require('lodash');
 window.Popper = require('popper.js').default;
-window.pixelfed = window.pixelfed || {};
+window.negarin = window.negarin || {};
 window.$ = window.jQuery = require('jquery');
 require('bootstrap');
 window.axios = require('axios');
@@ -55,3 +55,11 @@ Vue.component(
     'hashtag-component',
     require('./../components/admin/AdminHashtags.vue').default
 );
+
+
+
+
+
+
+
+

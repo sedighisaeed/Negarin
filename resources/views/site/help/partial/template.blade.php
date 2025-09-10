@@ -1,4 +1,4 @@
-@extends('layouts.anon', ['title' => 'Pixelfed Help Center'])
+@extends('layouts.anon', ['title' => 'negarin Help Center'])
 
 @section('content')
 
@@ -28,3 +28,10 @@
 </div>
 
 @endsection
+
+
+
+
+
+
+

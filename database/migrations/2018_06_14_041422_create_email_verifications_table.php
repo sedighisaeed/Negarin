@@ -33,3 +33,10 @@ class CreateEmailVerificationsTable extends Migration
         Schema::dropIfExists('email_verifications');
     }
 }
+
+
+
+
+
+
+

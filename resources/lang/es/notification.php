@@ -9,3 +9,10 @@ return [
   'mentionedYou'        => 'te mencionó.',
   'shared'				=> 'compartió tu foto.',
 ];
+
+
+
+
+
+
+

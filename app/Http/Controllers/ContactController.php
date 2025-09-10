@@ -62,3 +62,10 @@ class ContactController extends Controller
         return view('site.contact.admin-response', compact('contact'));
     }
 }
+
+
+
+
+
+
+

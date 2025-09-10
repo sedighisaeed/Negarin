@@ -49,3 +49,10 @@ class NewChatComment implements ShouldBroadcast
         return ['msg' => $this->chatmsg];
     }
 }
+
+
+
+
+
+
+

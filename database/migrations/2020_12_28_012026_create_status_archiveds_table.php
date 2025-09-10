@@ -33,3 +33,10 @@ class CreateStatusArchivedsTable extends Migration
         Schema::dropIfExists('status_archiveds');
     }
 }
+
+
+
+
+
+
+

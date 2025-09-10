@@ -17,3 +17,9 @@ final class Color {
             : (int) round((1.055 * pow($normalized, 1 / 2.4) - 0.055) * 255 + 0.5);
     }
 }
+
+
+
+
+
+

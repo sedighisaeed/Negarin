@@ -34,3 +34,10 @@ class CreateWebSubsTable extends Migration
         Schema::dropIfExists('web_subs');
     }
 }
+
+
+
+
+
+
+

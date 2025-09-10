@@ -35,22 +35,22 @@ class ConfigCacheService
                     'app.description',
                     'app.rules',
 
-                    'pixelfed.max_photo_size',
-                    'pixelfed.max_album_length',
-                    'pixelfed.image_quality',
-                    'pixelfed.media_types',
+                    'negarin.max_photo_size',
+                    'negarin.max_album_length',
+                    'negarin.image_quality',
+                    'negarin.media_types',
 
-                    'pixelfed.open_registration',
+                    'negarin.open_registration',
                     'federation.activitypub.enabled',
                     'instance.stories.enabled',
-                    'pixelfed.oauth_enabled',
-                    'pixelfed.import.instagram.enabled',
-                    'pixelfed.bouncer.enabled',
+                    'negarin.oauth_enabled',
+                    'negarin.import.instagram.enabled',
+                    'negarin.bouncer.enabled',
                     'federation.activitypub.authorized_fetch',
 
-                    'pixelfed.enforce_email_verification',
-                    'pixelfed.max_account_size',
-                    'pixelfed.enforce_account_limit',
+                    'negarin.enforce_email_verification',
+                    'negarin.max_account_size',
+                    'negarin.enforce_account_limit',
 
                     'uikit.custom.css',
                     'uikit.custom.js',
@@ -58,7 +58,7 @@ class ConfigCacheService
                     'uikit.show_custom.js',
                     'about.title',
 
-                    'pixelfed.cloud_storage',
+                    'negarin.cloud_storage',
 
                     'account.autofollow',
                     'account.autofollow_usernames',
@@ -67,14 +67,14 @@ class ConfigCacheService
                     'instance.has_legal_notice',
                     'instance.avatar.local_to_cloud',
 
-                    'pixelfed.directory',
+                    'negarin.directory',
                     'app.banner_image',
-                    'pixelfed.directory.submission-key',
-                    'pixelfed.directory.submission-ts',
-                    'pixelfed.directory.has_submitted',
-                    'pixelfed.directory.latest_response',
-                    'pixelfed.directory.is_synced',
-                    'pixelfed.directory.testimonials',
+                    'negarin.directory.submission-key',
+                    'negarin.directory.submission-ts',
+                    'negarin.directory.has_submitted',
+                    'negarin.directory.latest_response',
+                    'negarin.directory.is_synced',
+                    'negarin.directory.testimonials',
 
                     'instance.landing.show_directory',
                     'instance.landing.show_explore',
@@ -87,17 +87,17 @@ class ConfigCacheService
 
                     'federation.migration',
 
-                    'pixelfed.max_caption_length',
-                    'pixelfed.max_bio_length',
-                    'pixelfed.max_name_length',
-                    'pixelfed.min_password_length',
-                    'pixelfed.max_avatar_size',
-                    'pixelfed.max_altext_length',
-                    'pixelfed.allow_app_registration',
-                    'pixelfed.app_registration_rate_limit_attempts',
-                    'pixelfed.app_registration_rate_limit_decay',
-                    'pixelfed.app_registration_confirm_rate_limit_attempts',
-                    'pixelfed.app_registration_confirm_rate_limit_decay',
+                    'negarin.max_caption_length',
+                    'negarin.max_bio_length',
+                    'negarin.max_name_length',
+                    'negarin.min_password_length',
+                    'negarin.max_avatar_size',
+                    'negarin.max_altext_length',
+                    'negarin.allow_app_registration',
+                    'negarin.app_registration_rate_limit_attempts',
+                    'negarin.app_registration_rate_limit_decay',
+                    'negarin.app_registration_confirm_rate_limit_attempts',
+                    'negarin.app_registration_confirm_rate_limit_decay',
                     'instance.embed.profile',
                     'instance.embed.post',
 
@@ -110,9 +110,9 @@ class ConfigCacheService
                     'captcha.triggers.login.attempts',
                     'federation.custom_emoji.enabled',
 
-                    'pixelfed.optimize_image',
-                    'pixelfed.optimize_video',
-                    'pixelfed.max_collection_length',
+                    'negarin.optimize_image',
+                    'negarin.optimize_video',
+                    'negarin.max_collection_length',
                     'media.delete_local_after_cloud',
                     'instance.user_filters.max_user_blocks',
                     'instance.user_filters.max_user_mutes',
@@ -214,3 +214,10 @@ class ConfigCacheService
         return self::get($key);
     }
 }
+
+
+
+
+
+
+

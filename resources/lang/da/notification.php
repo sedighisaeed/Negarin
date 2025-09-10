@@ -10,3 +10,10 @@ return [
   'shared'				=> 'har delt dit opslag.',
 
 ];
+
+
+
+
+
+
+

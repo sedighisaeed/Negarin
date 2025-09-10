@@ -14,3 +14,10 @@ class AccountLog extends Model
     	return $this->belongsTo(User::class);
     }
 }
+
+
+
+
+
+
+

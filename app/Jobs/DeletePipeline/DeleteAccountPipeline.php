@@ -77,7 +77,7 @@ class DeleteAccountPipeline implements ShouldQueue
         $user = $this->user;
         $profile = $user->profile;
         $id = $user->profile_id;
-        $cloudStorageEnabled = (bool) config_cache('pixelfed.cloud_storage');
+        $cloudStorageEnabled = (bool) config_cache('negarin.cloud_storage');
         $cloudDisk = config('filesystems.cloud');
 
         if ($user && $user->id && is_numeric($user->id)) {
@@ -213,3 +213,10 @@ class DeleteAccountPipeline implements ShouldQueue
         });
     }
 }
+
+
+
+
+
+
+

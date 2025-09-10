@@ -29,7 +29,7 @@ class CuratedRegisterSendMessage extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Your ' . config('pixelfed.domain.app') . ' Registration Update',
+            subject: 'Your ' . config('negarin.domain.app') . ' Registration Update',
         );
     }
 
@@ -53,3 +53,10 @@ class CuratedRegisterSendMessage extends Mailable
         return [];
     }
 }
+
+
+
+
+
+
+

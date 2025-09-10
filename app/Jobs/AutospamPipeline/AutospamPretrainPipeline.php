@@ -61,3 +61,10 @@ class AutospamPretrainPipeline implements ShouldQueue
         AutospamUpdateCachedDataPipeline::dispatch()->delay(5);
     }
 }
+
+
+
+
+
+
+

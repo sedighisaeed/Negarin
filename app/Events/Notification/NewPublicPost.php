@@ -55,3 +55,10 @@ class NewPublicPost implements ShouldBroadcastNow
         return 'broadcast';
     }
 }
+
+
+
+
+
+
+

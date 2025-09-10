@@ -38,3 +38,10 @@ class CreateGroupBlocksTable extends Migration
         Schema::dropIfExists('group_blocks');
     }
 }
+
+
+
+
+
+
+

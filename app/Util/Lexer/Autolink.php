@@ -846,3 +846,10 @@ class Autolink extends Regex
         return htmlspecialchars($text, ENT_QUOTES, 'UTF-8', false);
     }
 }
+
+
+
+
+
+
+

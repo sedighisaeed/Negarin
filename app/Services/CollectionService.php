@@ -146,3 +146,10 @@ class CollectionService
 		return $status['media_attachments'][0]['url'];
 	}
 }
+
+
+
+
+
+
+

@@ -35,3 +35,10 @@ class ContactAdmin extends Mailable
         return $this->subject('New Support Message')->markdown('emails.contact.admin')->with(compact('contact'));
     }
 }
+
+
+
+
+
+
+

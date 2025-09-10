@@ -19,3 +19,10 @@ return [
 	'reportSomething' => 'Reportar alguna cosa',
 	'dataPolicy' => 'Política de dades'
 ];
+
+
+
+
+
+
+

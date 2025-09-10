@@ -55,7 +55,7 @@ class PushGatewayRefresh extends Command
                 } else {
                     $this->error('Error, please ensure you have a valid API key.');
                     $this->line(' ');
-                    $this->line('For more info, visit https://docs.pixelfed.org/running-pixelfed/push-notifications.html');
+                    $this->line('For more info, visit https://docs.negarin.org/running-negarin/push-notifications.html');
                     $this->line(' ');
 
                     return;
@@ -70,3 +70,10 @@ class PushGatewayRefresh extends Command
         }
     }
 }
+
+
+
+
+
+
+

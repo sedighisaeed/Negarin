@@ -85,3 +85,10 @@ class HashtagService
         return Redis::zrevrange(self::FOLLOW_KEY . $hid, $start, $limit);
     }
 }
+
+
+
+
+
+
+

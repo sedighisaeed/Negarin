@@ -48,3 +48,10 @@ class BannedEmailCheck extends Command
         }
     }
 }
+
+
+
+
+
+
+

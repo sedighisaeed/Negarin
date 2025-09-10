@@ -22,3 +22,10 @@ class GroupComment extends Model
         return '/group/' . $this->group_id . '/c/' . $this->id;
     }
 }
+
+
+
+
+
+
+

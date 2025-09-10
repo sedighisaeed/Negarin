@@ -9,3 +9,10 @@ class PollVote extends Model
 {
     use HasFactory;
 }
+
+
+
+
+
+
+

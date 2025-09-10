@@ -82,9 +82,9 @@ class UnfollowLegacyAccountMovePipeline implements ShouldQueue
             throw new Exception('Invalid move accounts');
         }
 
-        $version = config('pixelfed.version');
+        $version = config('negarin.version');
         $appUrl = config('app.url');
-        $userAgent = "(Pixelfed/{$version}; +{$appUrl})";
+        $userAgent = "(negarin/{$version}; +{$appUrl})";
         $addlHeaders = [
             'Content-Type' => 'application/ld+json; profile="https://www.w3.org/ns/activitystreams"',
             'User-Agent' => $userAgent,
@@ -109,3 +109,10 @@ class UnfollowLegacyAccountMovePipeline implements ShouldQueue
             }, 'id');
     }
 }
+
+
+
+
+
+
+

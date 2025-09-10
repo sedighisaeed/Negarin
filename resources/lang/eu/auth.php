@@ -18,3 +18,10 @@ return [
     'throttle' => 'Saiakera gehiegi. Mesedez, saitu zaitez :seconds segundo barru.',
 
 ];
+
+
+
+
+
+
+

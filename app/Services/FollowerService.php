@@ -157,7 +157,7 @@ class FollowerService
         return (new self)->getAudienceInboxes($profile, $scope);
     }
 
-    public static function softwareAudience($profile, $software = 'pixelfed')
+    public static function softwareAudience($profile, $software = 'negarin')
     {
         return collect(self::audience($profile))
             ->filter(function ($inbox) use ($software) {
@@ -410,3 +410,10 @@ class FollowerService
             $res->values()->toArray();
     }
 }
+
+
+
+
+
+
+

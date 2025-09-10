@@ -148,3 +148,10 @@ class FixMissingUserProfile extends Command
         }
     }
 }
+
+
+
+
+
+
+

@@ -39,3 +39,10 @@ class CreateGroupPostHashtagsTable extends Migration
         Schema::dropIfExists('group_post_hashtags');
     }
 }
+
+
+
+
+
+
+

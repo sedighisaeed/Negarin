@@ -28,6 +28,13 @@ class Contact extends Model
 
     public function getMessageId()
     {
-        return $this->id.'-'.(string) Str::uuid().'@'.strtolower(config('pixelfed.domain.app', 'example.org'));
+        return $this->id.'-'.(string) Str::uuid().'@'.strtolower(config('negarin.domain.app', 'example.org'));
     }
 }
+
+
+
+
+
+
+

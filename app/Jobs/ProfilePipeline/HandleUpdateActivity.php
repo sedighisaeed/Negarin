@@ -64,7 +64,7 @@ class HandleUpdateActivity implements ShouldQueue
             if($len) {
                 if($len > 500) {
                     $updated = strip_tags($payload['object']['summary']);
-                    $updated = substr($updated, 0, config('pixelfed.max_bio_length'));
+                    $updated = substr($updated, 0, config('negarin.max_bio_length'));
                     $profile->bio = Autolink::create()->autolink($updated);
                 } else {
                     $profile->bio = Purify::clean($payload['object']['summary']);
@@ -75,7 +75,7 @@ class HandleUpdateActivity implements ShouldQueue
         }
 
         if($profile->name !== $payload['object']['name']) {
-            $profile->name = Purify::clean(substr($payload['object']['name'], 0, config('pixelfed.max_name_length')));
+            $profile->name = Purify::clean(substr($payload['object']['name'], 0, config('negarin.max_name_length')));
         }
 
         if($profile->isDirty()) {
@@ -92,3 +92,10 @@ class HandleUpdateActivity implements ShouldQueue
         return;
     }
 }
+
+
+
+
+
+
+

@@ -30,3 +30,10 @@ return new class extends Migration
         Schema::dropIfExists('user_email_forgots');
     }
 };
+
+
+
+
+
+
+

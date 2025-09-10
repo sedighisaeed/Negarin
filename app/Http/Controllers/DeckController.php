@@ -22,3 +22,10 @@ class DeckController extends Controller
         return view('deck.insights.index');
     }
 }
+
+
+
+
+
+
+

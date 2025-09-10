@@ -69,3 +69,10 @@ class LikeObserver
         LikeService::remove($like->profile_id, $like->status_id);
     }
 }
+
+
+
+
+
+
+

@@ -33,3 +33,10 @@ class CreateReportCommentsTable extends Migration
         Schema::dropIfExists('report_comments');
     }
 }
+
+
+
+
+
+
+

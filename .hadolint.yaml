@@ -4,3 +4,10 @@ ignored:
   - DL3029 # warning: Do not use --platform flag with FROM
   - SC2046 # warning: Quote this to prevent word splitting.
   - SC2086 # info: Double quote to prevent globbing and word splitting.
+
+
+
+
+
+
+

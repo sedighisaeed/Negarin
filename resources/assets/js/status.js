@@ -42,3 +42,11 @@ Vue.component(
 // 	'video-component',
 // 	require('./components/VideoComponent.vue').default
 // );
+
+
+
+
+
+
+
+

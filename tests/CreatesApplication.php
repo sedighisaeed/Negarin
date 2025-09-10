@@ -24,3 +24,10 @@ trait CreatesApplication
         return $app;
     }
 }
+
+
+
+
+
+
+

@@ -20,3 +20,10 @@ return [
     'user'     => 'Wenn deine E-Mail-Adresse in unserer Datenbank existiert, wirst du in ein paar Minuten einen Link zum Zurücksetzen deines Passworts zugesendet bekommen. Bitte prüfe deinen Spam-Ordner, wenn du diese E-Mail nicht bekommst.',
 
 ];
+
+
+
+
+
+
+

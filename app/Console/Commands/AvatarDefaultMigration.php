@@ -90,3 +90,10 @@ class AvatarDefaultMigration extends Command
         $bar->finish();
     }
 }
+
+
+
+
+
+
+

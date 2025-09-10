@@ -35,3 +35,10 @@ class CreateMediaBlocklistsTable extends Migration
         Schema::dropIfExists('media_blocklists');
     }
 }
+
+
+
+
+
+
+

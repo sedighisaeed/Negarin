@@ -63,3 +63,10 @@ class CuratedOnboardingNotifyAdminNewApplicationPipeline implements ShouldQueue
         }
     }
 }
+
+
+
+
+
+
+

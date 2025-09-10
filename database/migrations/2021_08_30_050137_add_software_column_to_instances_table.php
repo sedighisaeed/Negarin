@@ -44,3 +44,10 @@ class AddSoftwareColumnToInstancesTable extends Migration
 		InstanceCrawlPipeline::dispatch();
 	}
 }
+
+
+
+
+
+
+

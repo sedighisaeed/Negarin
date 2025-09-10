@@ -11,3 +11,10 @@ class DefaultDomainBlock extends Model
 
     protected $guarded = [];
 }
+
+
+
+
+
+
+

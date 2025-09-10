@@ -55,3 +55,9 @@ class SuggestionService {
 		return 0;
 	}
 }
+
+
+
+
+
+

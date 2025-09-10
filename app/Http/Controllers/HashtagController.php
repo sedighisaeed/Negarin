@@ -6,3 +6,10 @@ class HashtagController extends Controller
 {
     //
 }
+
+
+
+
+
+
+

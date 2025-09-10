@@ -16,7 +16,7 @@ class FixCdnUrlInAvatarsTable extends Migration
      */
     public function up()
     {
-        $baseUrl = 'https://' . config('pixelfed.domain.app');
+        $baseUrl = 'https://' . config('negarin.domain.app');
         Avatar::whereNotNull('cdn_url')
         ->chunk(50, function($avatars) use($baseUrl) {
             foreach($avatars as $avatar) {
@@ -39,3 +39,10 @@ class FixCdnUrlInAvatarsTable extends Migration
     {
     }
 }
+
+
+
+
+
+
+

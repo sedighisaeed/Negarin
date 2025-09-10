@@ -7,3 +7,10 @@ return [
         'limit' => env('PF_HASHTAGS_TRENDING_LIMIT', 20)
     ]
 ];
+
+
+
+
+
+
+

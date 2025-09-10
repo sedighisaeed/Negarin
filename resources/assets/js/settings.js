@@ -17,3 +17,11 @@ new Vue({
     el: '#content',
     i18n
 });
+
+
+
+
+
+
+
+

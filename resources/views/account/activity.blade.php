@@ -22,3 +22,10 @@
 <script type="text/javascript" src="{{ mix('js/activity.js') }}"></script>
 <script type="text/javascript">window.App.boot();</script>
 @endpush
+
+
+
+
+
+
+

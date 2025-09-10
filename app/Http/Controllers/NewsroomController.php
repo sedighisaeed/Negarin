@@ -92,3 +92,10 @@ class NewsroomController extends Controller
 		return response()->json(['code' => 200]);
 	}
 }
+
+
+
+
+
+
+

@@ -30,3 +30,10 @@ class AddCacheLocksTable extends Migration
         Schema::dropIfExists('cache_locks');
     }
 }
+
+
+
+
+
+
+

@@ -572,3 +572,10 @@ class Extractor extends Regex
         return ($a['indices'][0] < $b['indices'][0]) ? -1 : 1;
     }
 }
+
+
+
+
+
+
+

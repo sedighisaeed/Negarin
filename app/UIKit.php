@@ -19,3 +19,10 @@ class UIKit extends Model
     	return (new self)->where('k', $k)->first()->v;
     }
 }
+
+
+
+
+
+
+

@@ -34,3 +34,10 @@ class CreatePushSubscriptionsTable extends Migration
         Schema::connection(config('webpush.database_connection'))->dropIfExists(config('webpush.table_name'));
     }
 }
+
+
+
+
+
+
+

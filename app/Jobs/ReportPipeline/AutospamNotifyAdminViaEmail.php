@@ -50,3 +50,10 @@ class AutospamNotifyAdminViaEmail implements ShouldQueue
         Mail::to($to)->send(new AdminNewAutospam($this->report));
     }
 }
+
+
+
+
+
+
+

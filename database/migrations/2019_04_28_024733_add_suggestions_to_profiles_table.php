@@ -30,3 +30,10 @@ class AddSuggestionsToProfilesTable extends Migration
         });
     }
 }
+
+
+
+
+
+
+

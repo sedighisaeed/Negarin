@@ -19,3 +19,10 @@
 @push('meta')
 <meta property="og:description" content="Fediverse {{__('site.is_a_portmanteau_of_federation_and_universe_etc')}}">
 @endpush
+
+
+
+
+
+
+

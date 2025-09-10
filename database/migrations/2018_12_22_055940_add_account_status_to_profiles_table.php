@@ -72,3 +72,10 @@ class AddAccountStatusToProfilesTable extends Migration
         });
     }
 }
+
+
+
+
+
+
+

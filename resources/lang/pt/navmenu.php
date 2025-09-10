@@ -17,3 +17,10 @@ return [
     'directMessages'	=> 'Mensagens Diretas',
     'composePost'		=> 'Criar Publicação',
 ];
+
+
+
+
+
+
+

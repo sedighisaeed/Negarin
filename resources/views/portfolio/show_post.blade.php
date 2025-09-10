@@ -15,3 +15,10 @@
     <meta property="og:image" content="{{ $post['media_attachments'][0]['url']}}">
     <meta name="twitter:card" content="summary_large_image">
 @endpush
+
+
+
+
+
+
+

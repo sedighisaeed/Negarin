@@ -37,3 +37,10 @@ class StatusHashtagTransformer extends Fractal\TransformerAbstract
 		];
 	}
 }
+
+
+
+
+
+
+

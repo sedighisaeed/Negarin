@@ -129,3 +129,10 @@ class UserEmailForgotController extends Controller
         });
     }
 }
+
+
+
+
+
+
+

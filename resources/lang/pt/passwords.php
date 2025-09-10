@@ -20,3 +20,10 @@ return [
     'user'     => 'Se o teu endereço de e-mail existir na nossa base de dados, receberás um link de recuperação da palavras-passe no teu endereço de e-mail dentro de alguns minutos. Por favor veja na sua pasta de spam e verifique se não recebeu este e-mail.',
 
 ];
+
+
+
+
+
+
+

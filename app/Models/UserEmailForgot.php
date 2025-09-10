@@ -15,3 +15,10 @@ class UserEmailForgot extends Model
         'email_sent_at' => 'datetime',
     ];
 }
+
+
+
+
+
+
+

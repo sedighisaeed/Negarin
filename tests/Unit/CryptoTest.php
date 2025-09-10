@@ -25,9 +25,16 @@ class CryptoTest extends TestCase
         $rsa = new RSA();
         extract($rsa->createKey());
         $rsa->loadKey($privatekey);
-        $plaintext = 'pixelfed rsa test';
+        $plaintext = 'negarin rsa test';
         $signature = $rsa->sign($plaintext);
         $rsa->loadKey($publickey);
         $this->assertTrue($rsa->verify($plaintext, $signature));
     }
 }
+
+
+
+
+
+
+

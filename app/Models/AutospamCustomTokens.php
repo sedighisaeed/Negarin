@@ -9,3 +9,10 @@ class AutospamCustomTokens extends Model
 {
     use HasFactory;
 }
+
+
+
+
+
+
+

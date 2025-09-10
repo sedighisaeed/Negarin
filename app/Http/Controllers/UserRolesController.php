@@ -21,3 +21,10 @@ class UserRolesController extends Controller
         return UserRoleService::getRoles($request->user()->id);
     }
 }
+
+
+
+
+
+
+

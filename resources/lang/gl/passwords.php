@@ -20,3 +20,10 @@ return [
     'user'     => 'Se o email está na base de datos, recibirás unha ligazón para restablecer o contrasinal dentro duns minutos. Comproba o cartafol de spam se non recibes o email.',
 
 ];
+
+
+
+
+
+
+

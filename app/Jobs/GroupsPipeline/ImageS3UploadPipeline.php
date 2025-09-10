@@ -50,7 +50,7 @@ class ImageS3UploadPipeline implements ShouldQueue
     {
         $media = $this->media;
 
-        if(!$media || (bool) config_cache('pixelfed.cloud_storage') === false) {
+        if(!$media || (bool) config_cache('negarin.cloud_storage') === false) {
             return;
         }
 
@@ -60,7 +60,7 @@ class ImageS3UploadPipeline implements ShouldQueue
         $name = array_pop($p);
         $storagePath = implode('/', $p);
 
-        $url =  (bool) config_cache('pixelfed.cloud_storage') && (bool) config('media.storage.remote.resilient_mode') ?
+        $url =  (bool) config_cache('negarin.cloud_storage') && (bool) config('media.storage.remote.resilient_mode') ?
             self::handleResilientStore($storagePath, $path, $name) :
             self::handleStore($storagePath, $path, $name);
 
@@ -76,7 +76,7 @@ class ImageS3UploadPipeline implements ShouldQueue
     protected function handleStore($storagePath, $path, $name)
     {
         return retry(3, function() use($storagePath, $path, $name) {
-            $baseDisk = (bool) config_cache('pixelfed.cloud_storage') ? config('filesystems.cloud') : 'local';
+            $baseDisk = (bool) config_cache('negarin.cloud_storage') ? config('filesystems.cloud') : 'local';
             $disk = Storage::disk($baseDisk);
             $file = $disk->putFileAs($storagePath, new File($path), $name, 'public');
             return $disk->url($file);
@@ -105,3 +105,10 @@ class ImageS3UploadPipeline implements ShouldQueue
         return config('filesystems.cloud');
     }
 }
+
+
+
+
+
+
+

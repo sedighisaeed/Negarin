@@ -64,3 +64,10 @@ class MicroController extends Controller
         return $fractal->createData($s)->toArray();
     }
 }
+
+
+
+
+
+
+

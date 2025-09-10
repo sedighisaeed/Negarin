@@ -34,3 +34,10 @@ return new class extends Migration
         Schema::dropIfExists('remote_reports');
     }
 };
+
+
+
+
+
+
+

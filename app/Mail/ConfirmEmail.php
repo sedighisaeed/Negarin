@@ -31,3 +31,10 @@ class ConfirmEmail extends Mailable
         return $this->markdown('emails.confirm_email')->with(['verify'=>$this->verify]);
     }
 }
+
+
+
+
+
+
+

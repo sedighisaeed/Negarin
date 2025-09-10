@@ -63,7 +63,7 @@ class AddUserDomainBlock extends Command
             return;
         }
 
-        if($domain === config('pixelfed.domain.app')) {
+        if($domain === config('negarin.domain.app')) {
             $this->error('Invalid domain');
             return;
         }
@@ -104,3 +104,10 @@ class AddUserDomainBlock extends Command
         ]);
     }
 }
+
+
+
+
+
+
+

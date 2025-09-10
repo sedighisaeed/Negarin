@@ -39,3 +39,10 @@ class CreateDiscoverCategoriesTable extends Migration
         Schema::dropIfExists('discover_categories');
     }
 }
+
+
+
+
+
+
+

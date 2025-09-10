@@ -65,3 +65,10 @@ class Group extends Model
 		return optional($this->members()->whereProfileId($id)->first())->role ?? null;
 	}
 }
+
+
+
+
+
+
+

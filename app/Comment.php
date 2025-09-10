@@ -16,3 +16,10 @@ class Comment extends Model
         return $this->belongsTo(Status::class);
     }
 }
+
+
+
+
+
+
+

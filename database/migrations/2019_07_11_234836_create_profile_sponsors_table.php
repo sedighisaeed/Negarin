@@ -31,3 +31,10 @@ class CreateProfileSponsorsTable extends Migration
         Schema::dropIfExists('profile_sponsors');
     }
 }
+
+
+
+
+
+
+

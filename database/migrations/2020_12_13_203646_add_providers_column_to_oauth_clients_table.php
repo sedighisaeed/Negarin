@@ -34,3 +34,10 @@ class AddProvidersColumnToOauthClientsTable extends Migration
     	}
     }
 }
+
+
+
+
+
+
+

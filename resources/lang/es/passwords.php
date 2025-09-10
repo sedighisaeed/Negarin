@@ -20,3 +20,10 @@ return [
     'user'     => 'No hemos podido encontrar a ningún usuario con esa contraseña.',
 
 ];
+
+
+
+
+
+
+

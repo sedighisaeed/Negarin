@@ -32,3 +32,10 @@ class AddReblogOfIdIndexToStatusesTable extends Migration
         });
     }
 }
+
+
+
+
+
+
+

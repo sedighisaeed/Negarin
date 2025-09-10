@@ -47,3 +47,10 @@ class CreateStatusesTable extends Migration
         Schema::dropIfExists('statuses');
     }
 }
+
+
+
+
+
+
+

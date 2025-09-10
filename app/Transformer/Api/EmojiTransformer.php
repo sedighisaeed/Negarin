@@ -16,3 +16,10 @@ class EmojiTransformer extends Fractal\TransformerAbstract
 		];
 	}
 }
+
+
+
+
+
+
+

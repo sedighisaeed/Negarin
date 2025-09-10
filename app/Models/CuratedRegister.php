@@ -65,3 +65,10 @@ class CuratedRegister extends Model
         return url('/i/admin/curated-onboarding/show/' . $this->id);
     }
 }
+
+
+
+
+
+
+

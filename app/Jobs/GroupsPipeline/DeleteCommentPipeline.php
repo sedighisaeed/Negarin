@@ -56,3 +56,10 @@ class DeleteCommentPipeline implements ShouldQueue
         return;
     }
 }
+
+
+
+
+
+
+

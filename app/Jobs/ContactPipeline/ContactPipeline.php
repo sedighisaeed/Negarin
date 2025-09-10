@@ -42,3 +42,10 @@ class ContactPipeline implements ShouldQueue
         Mail::to($email)->send(new ContactAdmin($contact));
     }
 }
+
+
+
+
+
+
+

@@ -50,3 +50,10 @@ class HandleSpammerPipeline implements ShouldQueue
 		return 1;
 	}
 }
+
+
+
+
+
+
+

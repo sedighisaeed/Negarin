@@ -29,7 +29,7 @@ class InAppRegisterEmailVerify extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: config('pixelfed.domain.app') . __('auth.verifyYourEmailAddress'),
+            subject: config('negarin.domain.app') . __('auth.verifyYourEmailAddress'),
         );
     }
 
@@ -53,3 +53,10 @@ class InAppRegisterEmailVerify extends Mailable
         return [];
     }
 }
+
+
+
+
+
+
+

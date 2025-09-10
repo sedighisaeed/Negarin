@@ -17,3 +17,10 @@ return [
     'throttle' => 'Liian monta kirjautumisyritystä. Yrityä uudelleen :seconds sekuntin kuluttua.',
 
 ];
+
+
+
+
+
+
+

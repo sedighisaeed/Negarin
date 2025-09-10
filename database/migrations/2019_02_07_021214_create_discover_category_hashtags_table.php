@@ -32,3 +32,10 @@ class CreateDiscoverCategoryHashtagsTable extends Migration
         Schema::dropIfExists('discover_category_hashtags');
     }
 }
+
+
+
+
+
+
+

@@ -26,3 +26,10 @@ return [
 	'taggingPeople' => 'Etiquetar persoas'
 
 ];
+
+
+
+
+
+
+

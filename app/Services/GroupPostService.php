@@ -47,3 +47,10 @@ class GroupPostService
         return Cache::forget(self::key($gid, $pid));
     }
 }
+
+
+
+
+
+
+

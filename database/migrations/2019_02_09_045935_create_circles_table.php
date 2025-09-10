@@ -35,3 +35,10 @@ class CreateCirclesTable extends Migration
         Schema::dropIfExists('circles');
     }
 }
+
+
+
+
+
+
+

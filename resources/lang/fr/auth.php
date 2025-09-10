@@ -16,3 +16,10 @@ return [
     'throttle'    =>    'Trop de tentatives de connexion ont été effectuées. Veuillez réessayer dans :seconds secondes.',
     'verifyYourEmailAddress' => ' - Vérifiez votre adresse de courrier électronique',
 ];
+
+
+
+
+
+
+

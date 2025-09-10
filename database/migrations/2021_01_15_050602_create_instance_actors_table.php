@@ -31,3 +31,10 @@ class CreateInstanceActorsTable extends Migration
         Schema::dropIfExists('instance_actors');
     }
 }
+
+
+
+
+
+
+

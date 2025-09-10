@@ -26,7 +26,7 @@ class InstanceService
 
     public function __construct()
     {
-        ini_set('memory_limit', config('pixelfed.memory_limit', '1024M'));
+        ini_set('memory_limit', config('negarin.memory_limit', '1024M'));
     }
 
     public static function getByDomain($domain)
@@ -152,3 +152,10 @@ class InstanceService
         });
     }
 }
+
+
+
+
+
+
+

@@ -22,3 +22,10 @@ class HashtagRelated extends Model
         'last_moderated_at' => 'datetime',
     ];
 }
+
+
+
+
+
+
+

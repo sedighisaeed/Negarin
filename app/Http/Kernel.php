@@ -74,3 +74,10 @@ class Kernel extends HttpKernel
         // 'restricted'    => \App\Http\Middleware\RestrictedAccess::class,
     ];
 }
+
+
+
+
+
+
+

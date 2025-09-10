@@ -30,3 +30,10 @@ class AddMoreSettingsToUserSettingsTable extends Migration
 		});
 	}
 }
+
+
+
+
+
+
+

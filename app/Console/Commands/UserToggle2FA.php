@@ -59,3 +59,10 @@ class UserToggle2FA extends Command implements PromptsForMissingInput
         $this->info('Successfully disabled 2FA on this account!');
     }
 }
+
+
+
+
+
+
+

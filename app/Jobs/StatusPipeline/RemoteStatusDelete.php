@@ -178,3 +178,10 @@ class RemoteStatusDelete implements ShouldBeUniqueUntilProcessing, ShouldQueue
         return 1;
     }
 }
+
+
+
+
+
+
+

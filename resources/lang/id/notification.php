@@ -5,3 +5,10 @@ return [
   'commented'           => 'mengomentari posting kamu.',
   'mentionedYou'        => 'menyebut nama kamu.',
 ];
+
+
+
+
+
+
+

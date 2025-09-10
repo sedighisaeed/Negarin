@@ -27,3 +27,10 @@ class AdminHashtag extends JsonResource
         ];
     }
 }
+
+
+
+
+
+
+

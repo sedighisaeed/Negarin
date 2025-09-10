@@ -10,3 +10,10 @@ $cid = 'col' . str_random(6);
     {{ $slot }}
   </div>
 </p>
+
+
+
+
+
+
+

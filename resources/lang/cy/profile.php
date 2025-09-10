@@ -15,3 +15,10 @@ return [
   'status.disabled.body'	  => 'Mae\'n ddrwg gennym, nid yw\'r proffil hwn ar gael ar hyn o bryd. Rhowch gynnig arall arni cyn bo hir.',
   
 ];
+
+
+
+
+
+
+

@@ -13,3 +13,10 @@ return [
   'status.disabled.header' 	  => 'Profilo Maldisponebla',
   'status.disabled.body'	  => 'Mi bedaŭras, ĉi tiu profilo momente estas maldisponebla. Bonvolu, momente provu denove.',
 ];
+
+
+
+
+
+
+

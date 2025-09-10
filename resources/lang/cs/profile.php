@@ -13,3 +13,10 @@ return [
   'status.disabled.header' 	  => 'Profil nedostupný',
   'status.disabled.body'	  => 'Omlouváme se, tento profil není v tuto chvíli dostupný. Prosím zkuste to znovu zakrátko.',
 ];
+
+
+
+
+
+
+

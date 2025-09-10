@@ -49,3 +49,10 @@ class PinChatMessage implements ShouldBroadcast
         return $this->chatmsg;
     }
 }
+
+
+
+
+
+
+

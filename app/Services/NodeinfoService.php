@@ -10,11 +10,11 @@ class NodeinfoService
 {
     public static function get($domain)
     {
-        $version = config('pixelfed.version');
+        $version = config('negarin.version');
         $appUrl = config('app.url');
         $headers = [
             'Accept' => 'application/json',
-            'User-Agent' => "(Pixelfed/{$version}; +{$appUrl})",
+            'User-Agent' => "(negarin/{$version}; +{$appUrl})",
         ];
 
         $url = 'https://'.$domain;
@@ -80,3 +80,10 @@ class NodeinfoService
         return $res->json();
     }
 }
+
+
+
+
+
+
+

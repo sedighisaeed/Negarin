@@ -41,3 +41,10 @@ class CreateLiveStreamsTable extends Migration
         Schema::dropIfExists('live_streams');
     }
 }
+
+
+
+
+
+
+

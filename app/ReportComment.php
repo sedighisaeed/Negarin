@@ -13,3 +13,10 @@ class ReportComment extends Model
 		return $this->belongsTo(Profile::class);
 	}
 }
+
+
+
+
+
+
+

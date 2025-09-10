@@ -260,7 +260,7 @@ class Inbox
             is_array($cc) &&
             count($to) == 1 &&
             count($cc) == 0 &&
-            parse_url($to[0], PHP_URL_HOST) == config('pixelfed.domain.app')
+            parse_url($to[0], PHP_URL_HOST) == config('negarin.domain.app')
         ) {
             $this->handleDirectMessage();
 
@@ -476,8 +476,8 @@ class Inbox
         if (count($activity['attachment'])) {
             $photos = 0;
             $videos = 0;
-            $allowed = explode(',', config_cache('pixelfed.media_types'));
-            $activity['attachment'] = array_slice($activity['attachment'], 0, config_cache('pixelfed.max_album_length'));
+            $allowed = explode(',', config_cache('negarin.media_types'));
+            $activity['attachment'] = array_slice($activity['attachment'], 0, config_cache('negarin.max_album_length'));
             foreach ($activity['attachment'] as $a) {
                 $type = $a['mediaType'];
                 $url = $a['url'];
@@ -1438,3 +1438,10 @@ class Inbox
             ->dispatch();
     }
 }
+
+
+
+
+
+
+

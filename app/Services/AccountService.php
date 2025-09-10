@@ -340,3 +340,10 @@ class AccountService
         return $posts.$following.$followers.$note;
     }
 }
+
+
+
+
+
+
+

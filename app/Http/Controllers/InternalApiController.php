@@ -423,3 +423,10 @@ class InternalApiController extends Controller
         return redirect('/i/verify-email')->with(['status' => 'Successfully sent manual verification request!']);
     }
 }
+
+
+
+
+
+
+

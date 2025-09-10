@@ -732,7 +732,7 @@ class PublicApiController extends Controller
     }
 
     /**
-     *  GET /api/pixelfed/v1/statuses/{id}/pin
+     *  GET /api/negarin/v1/statuses/{id}/pin
      */
     public function statusPin(Request $request, $id)
     {
@@ -763,7 +763,7 @@ class PublicApiController extends Controller
     }
 
     /**
-     *  GET /api/pixelfed/v1/statuses/{id}/unpin
+     *  GET /api/negarin/v1/statuses/{id}/unpin
      */
     public function statusUnpin(Request $request, $id)
     {
@@ -877,3 +877,10 @@ class PublicApiController extends Controller
         return isset($link) ? ['Link' => $link] : [];
     }
 }
+
+
+
+
+
+
+

@@ -49,3 +49,10 @@ class BanUser implements ShouldBroadcast
         return ['id' => $this->profileId];
     }
 }
+
+
+
+
+
+
+

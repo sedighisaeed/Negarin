@@ -54,3 +54,10 @@ class AccountWithStatusesTransformer extends Fractal\TransformerAbstract
 		return $this->collection($posts, new StatusStatelessTransformer());
 	}
 }
+
+
+
+
+
+
+

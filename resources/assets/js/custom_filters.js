@@ -12,3 +12,11 @@ Vue.component(
     'filters-list',
     require('./components/filters/FiltersList.vue').default
 );
+
+
+
+
+
+
+
+

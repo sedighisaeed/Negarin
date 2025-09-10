@@ -14,3 +14,10 @@ class GroupMember extends Model
     	return $this->belongsTo(Group::class);
     }
 }
+
+
+
+
+
+
+

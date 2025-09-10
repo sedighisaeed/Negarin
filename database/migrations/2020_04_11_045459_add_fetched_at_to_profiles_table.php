@@ -37,3 +37,10 @@ class AddFetchedAtToProfilesTable extends Migration
 		});
 	}
 }
+
+
+
+
+
+
+

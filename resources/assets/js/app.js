@@ -3,7 +3,7 @@ import VueI18n from 'vue-i18n';
 require('./polyfill');
 window._ = require('lodash');
 window.Popper = require('popper.js').default;
-window.pixelfed = window.pixelfed || {};
+window.negarin = window.negarin || {};
 window.$ = window.jQuery = require('jquery');
 require('bootstrap');
 window.axios = require('axios');
@@ -270,11 +270,11 @@ window.App.util = {
 			u += caption ? 'caption=true&' : 'caption=false&';
 			u += likes ? 'likes=true&' : 'likes=false&';
 			u += layout == 'compact' ? 'layout=compact' : 'layout=full';
-			return '<iframe title="Pixelfed Post Embed" src="'+u+'" class="pixelfed__embed" style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe><script async defer src="'+window.location.origin +'/embed.js"><\/script>';
+			return '<iframe title="negarin Post Embed" src="'+u+'" class="negarin__embed" style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe><script async defer src="'+window.location.origin +'/embed.js"><\/script>';
 		}),
 		profile: (function(url) {
 			let u = url + '/embed';
-			return '<iframe title="Pixelfed Profile Embed" src="'+u+'" class="pixelfed__embed" style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe><script async defer src="'+window.location.origin +'/embed.js"><\/script>';
+			return '<iframe title="negarin Profile Embed" src="'+u+'" class="negarin__embed" style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe><script async defer src="'+window.location.origin +'/embed.js"><\/script>';
 		})
 	},
 
@@ -291,3 +291,11 @@ window.App.util = {
 	})
 
 };
+
+
+
+
+
+
+
+

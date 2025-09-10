@@ -19,7 +19,7 @@ class MediaController extends Controller
 
     public function fallbackRedirect(Request $request, $pid, $mhash, $uhash, $f)
     {
-        if (! (bool) config_cache('pixelfed.cloud_storage')) {
+        if (! (bool) config_cache('negarin.cloud_storage')) {
             return redirect('/storage/no-preview.png', 302);
         }
 
@@ -37,3 +37,10 @@ class MediaController extends Controller
         return redirect()->away($media->cdn_url, 302);
     }
 }
+
+
+
+
+
+
+

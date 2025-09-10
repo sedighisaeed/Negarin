@@ -37,3 +37,10 @@ class CreateUserDevicesTable extends Migration
         Schema::dropIfExists('user_devices');
     }
 }
+
+
+
+
+
+
+

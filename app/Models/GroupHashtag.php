@@ -11,3 +11,10 @@ class GroupHashtag extends Model
 
     public $fillable = ['name'];
 }
+
+
+
+
+
+
+

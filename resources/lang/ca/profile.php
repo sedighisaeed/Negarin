@@ -11,3 +11,10 @@ return [
   'status.disabled.header' 	  => 'Perfil no disponible',
   'status.disabled.body'	  => 'Perdoneu, aquest perfil no està disponible en aquest moment. Proveu d\'accedir-hi d\'aquí a una estona.',
 ];
+
+
+
+
+
+
+

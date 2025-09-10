@@ -24,3 +24,10 @@ class FrameGuard
         return $response;
     }
 }
+
+
+
+
+
+
+

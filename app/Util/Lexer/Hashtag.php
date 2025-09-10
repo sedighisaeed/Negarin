@@ -35,3 +35,10 @@ class Hashtag
         return $rendered;
     }
 }
+
+
+
+
+
+
+

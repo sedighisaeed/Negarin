@@ -70,7 +70,7 @@ class VideoThumbnailToCloudPipeline implements ShouldQueue, ShouldBeUniqueUntilP
      */
     public function handle(): void
     {
-        if((bool) config_cache('pixelfed.cloud_storage') === false) {
+        if((bool) config_cache('negarin.cloud_storage') === false) {
             return;
         }
 
@@ -145,3 +145,10 @@ class VideoThumbnailToCloudPipeline implements ShouldQueue, ShouldBeUniqueUntilP
         }
     }
 }
+
+
+
+
+
+
+

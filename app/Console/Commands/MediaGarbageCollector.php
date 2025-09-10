@@ -56,3 +56,10 @@ class MediaGarbageCollector extends Command
 		$this->line('');
 	}
 }
+
+
+
+
+
+
+

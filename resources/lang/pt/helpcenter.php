@@ -26,3 +26,10 @@ return [
 	'taggingPeople' => 'Marcação de Pessoas'
 
 ];
+
+
+
+
+
+
+

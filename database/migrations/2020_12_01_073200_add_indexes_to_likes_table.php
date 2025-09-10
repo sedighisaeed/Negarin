@@ -32,3 +32,10 @@ class AddIndexesToLikesTable extends Migration
         });
     }
 }
+
+
+
+
+
+
+

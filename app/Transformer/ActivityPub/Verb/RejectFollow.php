@@ -23,3 +23,10 @@ class RejectFollow extends Fractal\TransformerAbstract
 		];
 	}
 }
+
+
+
+
+
+
+

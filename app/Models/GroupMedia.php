@@ -37,3 +37,10 @@ class GroupMedia extends Model
         return $this->thumbnail_url;
     }
 }
+
+
+
+
+
+
+

@@ -36,3 +36,10 @@ class UpdateMediaTableAddAltText extends Migration
         });
     }
 }
+
+
+
+
+
+
+

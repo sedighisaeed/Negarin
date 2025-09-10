@@ -62,3 +62,10 @@ class DiscoverCategory extends Model
     		->where('discover_categories.id', $this->id);
     }
 }
+
+
+
+
+
+
+

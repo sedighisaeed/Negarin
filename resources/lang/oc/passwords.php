@@ -20,3 +20,10 @@ return [
     'user'     => 'Trobam pas cap d’utilizaire amb aquesta adreça de corrièl.',
 
 ];
+
+
+
+
+
+
+

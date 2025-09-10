@@ -97,3 +97,10 @@ class GroupCommentPipeline implements ShouldQueue
         NotificationService::set($notification->profile_id, $notification->id);
 	}
 }
+
+
+
+
+
+
+

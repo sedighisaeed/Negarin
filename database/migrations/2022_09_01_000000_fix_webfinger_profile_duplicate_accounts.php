@@ -57,3 +57,10 @@ class FixWebfingerProfileDuplicateAccounts extends Migration
         //
     }
 }
+
+
+
+
+
+
+

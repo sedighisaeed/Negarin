@@ -82,7 +82,7 @@ class InstanceActor extends Model
 			'type' => 'Application',
 			'inbox' => $this->permalink('/inbox'),
 			'outbox' => $this->permalink('/outbox'),
-			'preferredUsername' => config('pixelfed.domain.app'),
+			'preferredUsername' => config('negarin.domain.app'),
 			'publicKey' => [
 				'id' => $this->permalink('#main-key'),
 				'owner' => $this->permalink(),
@@ -93,3 +93,10 @@ class InstanceActor extends Model
 		];
 	}
 }
+
+
+
+
+
+
+

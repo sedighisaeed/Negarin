@@ -93,7 +93,7 @@ class StoryDelete implements ShouldQueue
 
 	protected function fanoutExpiry($profile, $activity)
 	{
-		$audience = FollowerService::softwareAudience($profile->id, 'pixelfed');
+		$audience = FollowerService::softwareAudience($profile->id, 'negarin');
 
 		if(empty($audience)) {
 			// Return on profiles with no remote followers
@@ -108,11 +108,11 @@ class StoryDelete implements ShouldQueue
 
 		$requests = function($audience) use ($client, $activity, $profile, $payload) {
 			foreach($audience as $url) {
-				$version = config('pixelfed.version');
+				$version = config('negarin.version');
 				$appUrl = config('app.url');
 				$headers = HttpSignature::sign($profile, $url, $activity, [
 					'Content-Type'	=> 'application/ld+json; profile="https://www.w3.org/ns/activitystreams"',
-					'User-Agent'	=> "(Pixelfed/{$version}; +{$appUrl})",
+					'User-Agent'	=> "(negarin/{$version}; +{$appUrl})",
 				]);
 				yield function() use ($client, $url, $headers, $payload) {
 					return $client->postAsync($url, [
@@ -139,3 +139,10 @@ class StoryDelete implements ShouldQueue
 		$promise->wait();
 	}
 }
+
+
+
+
+
+
+

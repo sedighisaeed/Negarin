@@ -27,3 +27,10 @@ class Newsroom extends Model
         return url("/i/admin/newsroom/edit/{$this->id}");
     }
 }
+
+
+
+
+
+
+

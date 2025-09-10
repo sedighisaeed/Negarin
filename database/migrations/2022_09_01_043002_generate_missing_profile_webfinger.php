@@ -36,3 +36,10 @@ class GenerateMissingProfileWebfinger extends Migration
         //
     }
 }
+
+
+
+
+
+
+

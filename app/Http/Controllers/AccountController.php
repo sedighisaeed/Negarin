@@ -662,3 +662,10 @@ class AccountController extends Controller
         return response()->json(UserFilterService::filters($request->user()->profile_id), 200, [], JSON_UNESCAPED_SLASHES);
     }
 }
+
+
+
+
+
+
+

@@ -31,3 +31,10 @@ return new class extends Migration
         Schema::dropIfExists('oauth_access_tokens');
     }
 };
+
+
+
+
+
+
+
