@@ -106,12 +106,12 @@ print_step "9. Installing unzip (required for font extraction)..."
 sudo apt install -y unzip
 
 print_step "10. Fixing .env file format..."
-# Fix any malformed environment variables
-sed -i 's/APP_NAME="Negarin Crafts"/APP_NAME="Negarin Crafts"/' .env
-sed -i 's/APP_DOMAIN="negarincrafts.com"/APP_DOMAIN="negarincrafts.com"/' .env
-sed -i 's/INSTANCE_CONTACT_EMAIL="admin@negarincrafts.com"/INSTANCE_CONTACT_EMAIL="admin@negarincrafts.com"/' .env
+# Fix any malformed environment variables by removing and re-adding quotes properly
+sed -i 's/APP_NAME=.*/APP_NAME="Negarin Crafts"/' .env
+sed -i 's/APP_DOMAIN=.*/APP_DOMAIN="negarincrafts.com"/' .env
+sed -i 's/INSTANCE_CONTACT_EMAIL=.*/INSTANCE_CONTACT_EMAIL="admin@negarincrafts.com"/' .env
 
-# Remove any problematic characters
+# Remove any problematic characters (smart quotes, etc.)
 sed -i 's/[""]/"/g' .env
 
 print_step "11. Pulling Docker images..."
