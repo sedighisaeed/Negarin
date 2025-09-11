@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 @auth
 <html lang="{{ app()->getLocale() }}">
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="csrf-token" content="{{ csrf_token() }}">
+
+	<!-- Preload Vazir Font for better performance -->
+	<link rel="preload" href="{{ asset('fonts/vazir/fonts/webfonts/Vazirmatn-Regular.woff2') }}" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="{{ asset('fonts/vazir/fonts/webfonts/Vazirmatn-Bold.woff2') }}" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="{{ asset('fonts/vazir/fonts/webfonts/Vazirmatn-Medium.woff2') }}" as="font" type="font/woff2" crossorigin>
 
 	<meta name="mobile-web-app-capable" content="yes">
 
@@ -35,12 +41,27 @@
 	@stack('styles')
 
 	@if(config_cache('uikit.show_custom.css'))
-	<style type="text/css">{!!config_cache('uikit.custom.css')!!}</style>
+	<style type="text/css">
+		{
+			! !config_cache('uikit.custom.css') ! !
+		}
+	</style>
 	@endif
 
-	<script type="text/javascript">window._sharedData = {curUser: {}, version: 0}; window.App = {config: {!!App\Util\Site\Config::json()!!}};</script>
+	<script type="text/javascript">
+		window._sharedData = {
+			curUser: {},
+			version: 0
+		};
+		window.App = {
+			config: {
+				!!App\ Util\ Site\ Config::json() !!
+			}
+		};
+	</script>
 
 </head>
+
 <body class="loggedIn">
 	@include('layouts.partial.nav')
 	<main id="content">
@@ -59,11 +80,13 @@
 	<script type="text/javascript" src="{{ mix('js/components.js') }}"></script>
 	@stack('scripts')
 </body>
+
 </html>
 @endauth
 
 @guest
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -86,9 +109,20 @@
 	<link rel="apple-touch-icon" type="image/png" href="/img/favicon.png?v=2">
 	<link rel="canonical" href="{{url(request()->url())}}">
 	<link href="{{ mix('css/app.css') }}" rel="stylesheet" data-stylesheet="light">
-	<script type="text/javascript">window._sharedData = {curUser: {}, version: 0}; window.App = {config: {!!App\Util\Site\Config::json()!!}};</script>
+	<script type="text/javascript">
+		window._sharedData = {
+			curUser: {},
+			version: 0
+		};
+		window.App = {
+			config: {
+				!!App\ Util\ Site\ Config::json() !!
+			}
+		};
+	</script>
 	@stack('styles')
 </head>
+
 <body>
 	@include('layouts.partial.nav')
 	<main id="content">
@@ -101,18 +135,6 @@
 	<script type="text/javascript" src="{{ mix('js/components.js') }}"></script>
 	@stack('scripts')
 </body>
+
 </html>
 @endguest
-
-
-
-
-
-
-
-
-
-
-
-
-

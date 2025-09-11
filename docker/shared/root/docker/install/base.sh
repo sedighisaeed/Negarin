@@ -1,5 +1,8 @@
 #!/bin/bash
-set -ex -o errexit -o nounset -o pipefail
+set -ex
+set -o errexit
+set -o nounset
+set -o pipefail
 
 # Ensure we keep apt cache around in a Docker environment
 rm -f /etc/apt/apt.conf.d/docker-clean

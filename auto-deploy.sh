@@ -84,6 +84,11 @@ print_step "6. Creating required directories..."
 mkdir -p docker-compose-state/{data/{db,redis,pixelfed/{storage,cache}},config/{proxy,proxy-acme,redis}}
 chmod -R 755 docker-compose-state/
 
+print_step "6.1. Downloading Vazir font for offline use..."
+# Download Vazir font
+chmod +x download-vazir-font.sh
+./download-vazir-font.sh
+
 print_step "7. Starting Docker service..."
 sudo systemctl enable docker
 sudo systemctl start docker

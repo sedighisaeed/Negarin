@@ -66,15 +66,9 @@ services:
       - "${DOCKER_PROXY_HOST_DOCKER_SOCKET_PATH}:/var/run/docker.sock:ro"
 
   web:
-    image: "${DOCKER_APP_IMAGE}:${DOCKER_APP_TAG}"
-    container_name: "${DOCKER_ALL_CONTAINER_NAME_PREFIX}-web"
-    restart: unless-stopped
-    profiles:
-      - ${DOCKER_WEB_PROFILE:-}
     build:
+      context: .
       target: ${DOCKER_APP_RUNTIME}-runtime
-      cache_from:
-        - "type=registry,ref=${DOCKER_APP_IMAGE}-cache:${DOCKER_APP_TAG}"
       args:
         APT_PACKAGES_EXTRA: "${DOCKER_APP_APT_PACKAGES_EXTRA:-}"
         BUILD_FRONTEND: "${DOCKER_APP_BUILD_FRONTEND:-0}"
@@ -83,6 +77,10 @@ services:
         PHP_EXTENSIONS_EXTRA: "${DOCKER_APP_PHP_EXTENSIONS_EXTRA:-}"
         PHP_PECL_EXTENSIONS_EXTRA: "${DOCKER_APP_PHP_PECL_EXTENSIONS_EXTRA:-}"
         PHP_VERSION: "${DOCKER_APP_PHP_VERSION:?error}"
+    container_name: "${DOCKER_ALL_CONTAINER_NAME_PREFIX}-web"
+    restart: unless-stopped
+    profiles:
+      - ${DOCKER_WEB_PROFILE:-}
     environment:
       # Used by Pixelfed Docker init script
       DOCKER_SERVICE_NAME: "web"

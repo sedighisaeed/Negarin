@@ -1,0 +1,160 @@
+// Persian Typography Utilities
+// Optimized for Vazir font and Persian content
+
+// Persian text utilities
+.persian-text {
+  font-family: var(--font-family-vazir);
+  direction: rtl;
+  text-align: right;
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+  
+  // Better word spacing for Persian
+  word-spacing: 0.1em;
+  
+  // Prevent text overflow issues
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+// Mixed content (Persian + English)
+.mixed-content {
+  font-family: var(--font-family-vazir);
+  
+  .english, [lang="en"] {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    direction: ltr;
+    text-align: left;
+    letter-spacing: normal;
+    word-spacing: normal;
+  }
+}
+
+// Persian form controls
+.form-control-persian {
+  font-family: var(--font-family-vazir);
+  direction: rtl;
+  text-align: right;
+  
+  &::placeholder {
+    font-family: var(--font-family-vazir);
+    opacity: 0.7;
+  }
+}
+
+// Persian buttons
+.btn-persian {
+  font-family: var(--font-family-vazir);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+// Persian navigation
+.nav-persian {
+  .nav-link {
+    font-family: var(--font-family-vazir);
+    font-weight: 500;
+  }
+}
+
+// Persian cards
+.card-persian {
+  .card-title, .card-text, .card-header, .card-footer {
+    font-family: var(--font-family-vazir);
+  }
+  
+  .card-title {
+    font-weight: 600;
+    line-height: 1.6;
+  }
+  
+  .card-text {
+    line-height: 1.8;
+  }
+}
+
+// Persian modals
+.modal-persian {
+  .modal-title, .modal-body, .modal-footer {
+    font-family: var(--font-family-vazir);
+  }
+  
+  .modal-title {
+    font-weight: 600;
+  }
+  
+  .modal-body {
+    line-height: 1.8;
+    direction: rtl;
+    text-align: right;
+  }
+}
+
+// Persian alerts
+.alert-persian {
+  font-family: var(--font-family-vazir);
+  direction: rtl;
+  text-align: right;
+  line-height: 1.7;
+}
+
+// Persian tables
+.table-persian {
+  font-family: var(--font-family-vazir);
+  direction: rtl;
+  
+  th, td {
+    text-align: right;
+  }
+  
+  th {
+    font-weight: 600;
+  }
+}
+
+// Persian breadcrumbs
+.breadcrumb-persian {
+  font-family: var(--font-family-vazir);
+  direction: rtl;
+  
+  .breadcrumb-item {
+    &::before {
+      content: "‹";
+      transform: scaleX(-1);
+    }
+  }
+}
+
+// Persian pagination
+.pagination-persian {
+  font-family: var(--font-family-vazir);
+  direction: rtl;
+  
+  .page-link {
+    font-weight: 500;
+  }
+}
+
+// Responsive Persian typography
+@media (max-width: 768px) {
+  .persian-text {
+    font-size: 0.95em;
+    line-height: 1.7;
+  }
+  
+  .persian-text h1, .persian-text .h1 { font-size: 1.8rem; }
+  .persian-text h2, .persian-text .h2 { font-size: 1.5rem; }
+  .persian-text h3, .persian-text .h3 { font-size: 1.3rem; }
+  .persian-text h4, .persian-text .h4 { font-size: 1.1rem; }
+  .persian-text h5, .persian-text .h5 { font-size: 1rem; }
+  .persian-text h6, .persian-text .h6 { font-size: 0.9rem; }
+}
+
+// Print styles for Persian content
+@media print {
+  .persian-text {
+    font-family: 'Vazir', 'Tahoma', serif;
+    color: black !important;
+    background: white !important;
+  }
+}

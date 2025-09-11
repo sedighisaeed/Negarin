@@ -146,10 +146,11 @@ ENV APT_PACKAGES_EXTRA=${APT_PACKAGES_EXTRA}
 
 # Install and configure base layer
 COPY docker/shared/root/docker/install/base.sh /docker/install/base.sh
+RUN chmod +x /docker/install/base.sh
 
 RUN --mount=type=cache,id=negarin-apt-${PHP_VERSION}-${PHP_DEBIAN_RELEASE}-${TARGETPLATFORM},sharing=locked,target=/var/lib/apt \
     --mount=type=cache,id=negarin-apt-cache-${PHP_VERSION}-${PHP_DEBIAN_RELEASE}-${TARGETPLATFORM},sharing=locked,target=/var/cache/apt \
-    /docker/install/base.sh
+    bash /docker/install/base.sh
 
 #######################################################
 # PHP: extensions

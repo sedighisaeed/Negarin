@@ -1,0 +1,40 @@
+// Font imports for Negarin
+// Vazir font is imported via _vazir-font.scss for offline use
+
+// Default font stack with Vazir as primary
+$font-family-sans-serif: 'Vazir', 'Tahoma', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !default;
+$font-family-persian: 'Vazir', 'Tahoma', 'Arial', sans-serif !default;
+
+// Override Bootstrap variables
+:root {
+  --bs-font-sans-serif: #{$font-family-sans-serif};
+  --font-family-base: #{$font-family-sans-serif};
+}
+
+// Ensure Vazir is used throughout the application
+body, .btn, .form-control, .nav-link, .card, .modal, .dropdown-menu {
+  font-family: $font-family-sans-serif;
+}
+
+// Persian/RTL specific styling
+[lang="fa"], [dir="rtl"], .persian, .farsi {
+  font-family: $font-family-persian;
+  direction: rtl;
+  text-align: right;
+  
+  // Better line height for Persian text
+  line-height: 1.8;
+  
+  // Adjust letter spacing for better readability
+  letter-spacing: 0.01em;
+}
+
+// Mixed content handling
+.mixed-content {
+  .english, [lang="en"], [dir="ltr"] {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    direction: ltr;
+    text-align: left;
+    letter-spacing: normal;
+  }
+}

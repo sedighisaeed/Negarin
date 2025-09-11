@@ -1,5 +1,5 @@
-
 // Fonts
+@import "vazir-font";
 @import "fonts";
 @import "lib/fontawesome";
 
@@ -19,6 +19,8 @@
 
 @import "components/switch";
 
+@import "components/persian-typography";
+
 @import '~bootstrap-vue/dist/bootstrap-vue.css';
 
 @import "moment";
@@ -26,17 +28,3 @@
 @import 'animate.css';
 
 @import "lib/placeholder-loading";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
