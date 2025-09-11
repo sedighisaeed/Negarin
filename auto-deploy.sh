@@ -40,22 +40,23 @@ print_step "1. Preparing environment configuration..."
 cp .env.docker .env
 
 # Update configuration for your server
-sed -i 's/APP_NAME=/APP_NAME="Negarin Crafts"/' .env
-sed -i 's/APP_DOMAIN="example.com"/APP_DOMAIN="negarincrafts.com"/' .env
-sed -i 's/INSTANCE_CONTACT_EMAIL="__CHANGE_ME__"/INSTANCE_CONTACT_EMAIL="admin@negarincrafts.com"/' .env
-sed -i 's/DB_PASSWORD=/DB_PASSWORD="negarin_secure_2024!"/' .env
-sed -i 's/#REDIS_PASSWORD=/REDIS_PASSWORD="redis_secure_2024!"/' .env
-sed -i 's/#ACTIVITY_PUB="true"/ACTIVITY_PUB="true"/' .env
-sed -i 's/#AP_REMOTE_FOLLOW="true"/AP_REMOTE_FOLLOW="true"/' .env
-sed -i 's/#AP_INBOX="true"/AP_INBOX="true"/' .env
-sed -i 's/#AP_OUTBOX="true"/AP_OUTBOX="true"/' .env
-sed -i 's/#OPEN_REGISTRATION="true"/OPEN_REGISTRATION="true"/' .env
-sed -i 's/#MAIL_DRIVER="smtp"/MAIL_DRIVER="log"/' .env
+sed -i 's|APP_NAME=|APP_NAME="Negarin Crafts"|' .env
+sed -i 's|APP_DOMAIN="example.com"|APP_DOMAIN="negarincrafts.com"|' .env
+sed -i 's|INSTANCE_CONTACT_EMAIL="__CHANGE_ME__"|INSTANCE_CONTACT_EMAIL="admin@negarincrafts.com"|' .env
+sed -i 's|DB_PASSWORD=|DB_PASSWORD="negarin_secure_2024!"|' .env
+sed -i 's|#REDIS_PASSWORD=|REDIS_PASSWORD="redis_secure_2024!"|' .env
+sed -i 's|#ACTIVITY_PUB="true"|ACTIVITY_PUB="true"|' .env
+sed -i 's|#AP_REMOTE_FOLLOW="true"|AP_REMOTE_FOLLOW="true"|' .env
+sed -i 's|#AP_INBOX="true"|AP_INBOX="true"|' .env
+sed -i 's|#AP_OUTBOX="true"|AP_OUTBOX="true"|' .env
+sed -i 's|#OPEN_REGISTRATION="true"|OPEN_REGISTRATION="true"|' .env
+sed -i 's|#MAIL_DRIVER="smtp"|MAIL_DRIVER="log"|' .env
 
 # Generate application key
 print_step "2. Generating application key..."
 APP_KEY=$(openssl rand -base64 32)
-sed -i "s/APP_KEY=/APP_KEY=base64:$APP_KEY/" .env
+# Use a safer method to set the APP_KEY
+grep -q "^APP_KEY=" .env && sed -i "s|^APP_KEY=.*|APP_KEY=base64:$APP_KEY|" .env || echo "APP_KEY=base64:$APP_KEY" >> .env
 
 print_step "3. Updating system packages..."
 sudo apt update && sudo apt upgrade -y
