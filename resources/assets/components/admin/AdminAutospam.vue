@@ -993,7 +993,7 @@
             	})
 				.then(res => {
 					const aElement = document.createElement('a');
-					aElement.setAttribute('download', 'pixelfed-autospam-export.json');
+					aElement.setAttribute('download', 'negarin-autospam-export.json');
 					const href = URL.createObjectURL(res.data);
 					aElement.href = href;
 					aElement.setAttribute('target', '_blank');

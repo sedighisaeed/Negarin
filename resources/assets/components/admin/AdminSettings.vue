@@ -59,7 +59,7 @@
                                         <checkbox
                                             name="ActivityPub"
                                             :value="features.activitypub_enabled"
-                                            description="ActivityPub federation, compatible with Pixelfed, Mastodon and other projects."
+                                            description="ActivityPub federation, compatible with Negarin, Mastodon and other projects."
                                             @change="handleChange($event, 'features', 'activitypub_enabled')"
                                         />
 
@@ -161,7 +161,7 @@
                                                 <label for="form-summary" class="font-weight-bold">Server Name</label>
                                                 <input
                                                     class="form-control form-control-muted"
-                                                    placeholder="Pixelfed"
+                                                    placeholder="Negarin"
                                                     v-model="branding.name" />
                                             </div>
                                             <p class="help-text small text-muted mb-0">
@@ -174,7 +174,7 @@
                                                 <label for="form-summary" class="font-weight-bold">Short Description</label>
                                                 <textarea
                                                     class="form-control form-control-muted"
-                                                    placeholder="Pixelfed"
+                                                    placeholder="Negarin"
                                                     rows="4"
                                                     v-model="branding.short_description"></textarea>
                                             </div>
@@ -188,7 +188,7 @@
                                                 <label for="form-summary" class="font-weight-bold">Long Description</label>
                                                 <textarea
                                                     class="form-control form-control-muted"
-                                                    placeholder="Pixelfed"
+                                                    placeholder="Negarin"
                                                     rows="8"
                                                     v-model="branding.long_description"></textarea>
                                             </div>
@@ -331,7 +331,7 @@
                                                     <label class="custom-control-label font-weight-bold" for="platform1">Allow App Registrations</label>
                                                 </div>
                                                 <p v-if="features.registration_status !== 'open'" class="mb-0 small text-muted">Requires open registration to be enabled.</p>
-                                                <p v-else class="mb-0 small">Allow users to register via the official Pixelfed mobile application.</p>
+                                                <p v-else class="mb-0 small">Allow users to register via the official Negarin mobile application.</p>
                                             </div>
                                         </div>
 

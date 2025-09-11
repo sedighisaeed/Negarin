@@ -40,7 +40,7 @@
 									v-if="n.type === 'autospam.warning'"
 									class="mr-2 rounded-circle shadow-sm p-1"
 									style="border: 2px solid var(--danger)"
-									src="/img/pixelfed-icon-color.svg"
+									src="/img/negarin-icon-color.svg"
 									width="32"
 									height="32"
 									/>

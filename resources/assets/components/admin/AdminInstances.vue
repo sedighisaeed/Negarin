@@ -757,7 +757,7 @@
 				let el = document.createElement('p');
 					el.classList.add('text-left');
 					el.classList.add('mb-0');
-					el.innerHTML = '<p class="lead mb-0">Import your instance moderation backup.</span></p><br /><p>Import Instructions:</p><ol><li>Press OK</li><li>Press "Choose File" on Import form input</li><li>Select your <kbd>pixelfed-instances-mod.json</kbd> file</li><li>Review instance moderation actions. Tap on an instance to remove it</li><li>Press "Import" button to finish importing</li></ol>';
+					el.innerHTML = '<p class="lead mb-0">Import your instance moderation backup.</span></p><br /><p>Import Instructions:</p><ol><li>Press OK</li><li>Press "Choose File" on Import form input</li><li>Select your <kbd>negarin-instances-mod.json</kbd> file</li><li>Review instance moderation actions. Tap on an instance to remove it</li><li>Press "Import" button to finish importing</li></ol>';
 					let wrapper = document.createElement('div');
 					wrapper.appendChild(el);
 				swal({
@@ -774,7 +774,7 @@
 				})
 				.then(res => {
 					let el = document.createElement('a');
-					el.setAttribute('download', 'pixelfed-instances-mod.json')
+					el.setAttribute('download', 'negarin-instances-mod.json')
 					const href = URL.createObjectURL(res.data);
       				el.href = href;
       				el.setAttribute('target', '_blank');
@@ -782,7 +782,7 @@
 
       				swal(
       					'Instance Backup Downloading',
-      					'Your instance moderation backup is downloading. Use this to import auto_cw, banned and unlisted instances to supported Pixelfed instances.',
+      					'Your instance moderation backup is downloading. Use this to import auto_cw, banned and unlisted instances to supported Negarin instances.',
       					'success'
       				)
 				})

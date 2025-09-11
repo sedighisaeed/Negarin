@@ -31,7 +31,7 @@
 						<div class="server-header">
 							<p class="server-header-domain">{{ config.domain }}</p>
 							<p class="server-header-attribution">
-								Decentralized photo sharing social media powered by <a href="https://pixelfed.org" target="_blank">Pixelfed</a>
+								Decentralized photo sharing social media powered by <a href="https://negarin.org" target="_blank">Negarin</a>
 							</p>
 						</div>
 

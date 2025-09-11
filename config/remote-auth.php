@@ -2,8 +2,8 @@
 
 return [
     'mastodon' => [
-        'enabled' => env('PF_LOGIN_WITH_MASTODON_ENABLED', false),
-        'ignore_closed_state' => env('PF_LOGIN_WITH_MASTODON_ENABLED_SKIP_CLOSED', false),
+        'enabled' => env('NEGARIN_LOGIN_WITH_MASTODON_ENABLED', false),
+        'ignore_closed_state' => env('NEGARIN_LOGIN_WITH_MASTODON_ENABLED_SKIP_CLOSED', false),
 
         'contraints' => [
             /*
@@ -12,7 +12,7 @@ return [
              *   To improve the onboarding experience, you can opt to skip the email
              *   verification process and automatically verify their email
              */
-            'skip_email_verification' => env('PF_LOGIN_WITH_MASTODON_SKIP_EMAIL', true),
+            'skip_email_verification' => env('NEGARIN_LOGIN_WITH_MASTODON_SKIP_EMAIL', true),
         ],
 
         'domains' => [
@@ -23,14 +23,14 @@ return [
              *
              *   Define a comma separated list of custom domains to allow
              */
-            'custom' => env('PF_LOGIN_WITH_MASTODON_DOMAINS'),
+            'custom' => env('NEGARIN_LOGIN_WITH_MASTODON_DOMAINS'),
 
             /*
              *   Use only default domains
              *
              *   Allow Sign-in with Mastodon using only the default domains
              */
-            'only_default' => env('PF_LOGIN_WITH_MASTODON_ONLY_DEFAULT', false),
+            'only_default' => env('NEGARIN_LOGIN_WITH_MASTODON_ONLY_DEFAULT', false),
 
             /*
              *   Use only custom domains
@@ -38,7 +38,7 @@ return [
              *   Allow Sign-in with Mastodon using only the custom domains
              *   you define, in comma separated format
              */
-            'only_custom' => env('PF_LOGIN_WITH_MASTODON_ONLY_CUSTOM', false),
+            'only_custom' => env('NEGARIN_LOGIN_WITH_MASTODON_ONLY_CUSTOM', false),
         ],
 
         'max_uses' => [
@@ -50,8 +50,8 @@ return [
              *   all known and reporting negarin instances to prevent the same masto account from
              *   abusing this
              */
-            'enabled' => env('PF_LOGIN_WITH_MASTODON_ENFORCE_MAX_USES', true),
-            'limit' => env('PF_LOGIN_WITH_MASTODON_MAX_USES_LIMIT', 3)
+            'enabled' => env('NEGARIN_LOGIN_WITH_MASTODON_ENFORCE_MAX_USES', true),
+            'limit' => env('NEGARIN_LOGIN_WITH_MASTODON_MAX_USES_LIMIT', 3)
         ]
     ],
 
@@ -61,21 +61,21 @@ return [
          *
          *   Enable Sign-in with OpenID Connect (OIDC) authentication providers
          */
-        'enabled' => env('PF_OIDC_ENABLED', false),
+        'enabled' => env('NEGARIN_OIDC_ENABLED', false),
 
         /*
          *   Client ID
          *
          *   The client ID provided by your OIDC provider
          */
-        'clientId' => env('PF_OIDC_CLIENT_ID', false),
+        'clientId' => env('NEGARIN_OIDC_CLIENT_ID', false),
 
         /*
          *   Client Secret
          *
          *   The client secret provided by your OIDC provider
          */
-        'clientSecret' => env('PF_OIDC_CLIENT_SECRET', false),
+        'clientSecret' => env('NEGARIN_OIDC_CLIENT_SECRET', false),
 
         /*
          *   OAuth Scopes
@@ -83,35 +83,35 @@ return [
          *   The scopes to request from the OIDC provider, typically including
          *   'openid' (required), 'profile', and 'email' for basic user information
          */
-        'scopes' =>  env('PF_OIDC_SCOPES', 'openid profile email'),
+        'scopes' =>  env('NEGARIN_OIDC_SCOPES', 'openid profile email'),
 
         /*
          *   Authorization URL
          *
          *   The endpoint used to start the OIDC authentication flow
          */
-        'authorizeURL' => env('PF_OIDC_AUTHORIZE_URL', ''),
+        'authorizeURL' => env('NEGARIN_OIDC_AUTHORIZE_URL', ''),
 
         /*
          *   Token URL
          *
          *   The endpoint used to exchange the authorization code for an access token
          */
-        'tokenURL' => env('PF_OIDC_TOKEN_URL', ''),
+        'tokenURL' => env('NEGARIN_OIDC_TOKEN_URL', ''),
 
         /*
          *   Profile URL
          *
          *   The endpoint used to retrieve user information with a valid access token
          */
-        'profileURL' => env('PF_OIDC_PROFILE_URL', ''),
+        'profileURL' => env('NEGARIN_OIDC_PROFILE_URL', ''),
 
         /*
          *   Logout URL
          *
          *   The endpoint used to log the user out of the OIDC provider
          */
-        'logoutURL' => env('PF_OIDC_LOGOUT_URL', ''),
+        'logoutURL' => env('NEGARIN_OIDC_LOGOUT_URL', ''),
 
         /*
          *   Username Field
@@ -119,7 +119,7 @@ return [
          *   The field from the OIDC profile response to use as the username
          *   Default is 'preferred_username' but can be changed based on your provider
          */
-        'field_username' => env('PF_OIDC_USERNAME_FIELD', "preferred_username"),
+        'field_username' => env('NEGARIN_OIDC_USERNAME_FIELD', "preferred_username"),
 
         /*
          *   ID Field
@@ -127,7 +127,7 @@ return [
          *   The field from the OIDC profile response to use as the unique identifier
          *   Default is 'sub' (subject) which is standard in OIDC implementations
          */
-        'field_id' => env('PF_OIDC_FIELD_ID', 'sub'),
+        'field_id' => env('NEGARIN_OIDC_FIELD_ID', 'sub'),
     ],
 ];
 

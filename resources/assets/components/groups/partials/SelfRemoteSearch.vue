@@ -12,7 +12,7 @@
 					<div class="p-4 mb-4">
 						<div class="form-group">
 							<label>Group URL</label>
-							<input type="text" class="form-control form-control-lg rounded-pill bg-white border" placeholder="https://pixelfed.social/groups/328323406233735168" v-model="q">
+							<input type="text" class="form-control form-control-lg rounded-pill bg-white border" placeholder="https://negarin.social/groups/328323406233735168" v-model="q">
 						</div>
 						<button class="btn btn-primary btn-block btn-lg rounded-pill font-weight-bold">Search</button>
 					</div>

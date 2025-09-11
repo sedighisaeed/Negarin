@@ -108,7 +108,7 @@ return [
         'redis:session' => [
             'driver' => 'redis',
             'connection' => 'session',
-            'prefix' => 'pf_session',
+            'prefix' => 'negarin_session',
         ],
 
         'dynamodb' => [

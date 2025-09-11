@@ -715,8 +715,7 @@
 					'troll'
 				],
 				moderatedInstances: [
-					'pawoo.net',
-					'pixelfed.com'
+					'pawoo.net'
 				],
 				importBlocksData: {},
 				importBlocksUploaded: false,
@@ -899,7 +898,7 @@
 					content: {
 						element: 'input',
 						attributes: {
-      						placeholder: type == 'user' ? 'pixelfed' : 'pixelfed.org'
+      						placeholder: type == 'user' ? 'negarin' : 'negarin.org'
       					}
 					},
 					button: {
@@ -910,7 +909,7 @@
 				.then(name => {
 					if (!name) throw null;
 					if(action !== 'user' && name.startsWith('http')) {
-						swal('Oops!', 'Please enter the instance domain (eg: pixelfed.social)', 'error');
+						swal('Oops!', 'Please enter the instance domain (eg: negarin.social)', 'error');
 						return null;
 					}
 					return name;
@@ -1068,7 +1067,7 @@
 					const url = window.URL.createObjectURL(new Blob([response.data]));
 					const link = document.createElement('a');
 					link.href = url;
-					link.setAttribute('download', `pixelfed-group-blocks-${Date.now()}.json`);
+					link.setAttribute('download', `negarin-group-blocks-${Date.now()}.json`);
 					document.body.appendChild(link);
 					link.click();
 				});

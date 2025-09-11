@@ -7,7 +7,7 @@
             <div class="wrapper-mh">
                 <div class="flex-grow-1">
                     <p class="text-dark">Hello {{ initialData['_webfinger'] }},</p>
-                    <p class="lead font-weight-bold">Welcome to Pixelfed!</p>
+                    <p class="lead font-weight-bold">Welcome to Negarin!</p>
 
                     <p>You are moments away from joining our vibrant photo and video focused community with members from around the world.</p>
                 </div>

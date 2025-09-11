@@ -64,8 +64,8 @@ class BaseApiController extends Controller
             }
         }
 
-        if (empty($res) && ! Cache::has('pf:services:notifications:hasSynced:'.$pid)) {
-            Cache::put('pf:services:notifications:hasSynced:'.$pid, 1, 1209600);
+        if (empty($res) && ! Cache::has('negarin:services:notifications:hasSynced:'.$pid)) {
+            Cache::put('negarin:services:notifications:hasSynced:'.$pid, 1, 1209600);
             NotificationWarmUserCache::dispatch($pid);
         }
 

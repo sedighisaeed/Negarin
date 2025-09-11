@@ -11,7 +11,7 @@
 
                 <div v-else-if="tabIndex === 1" class="card-body">
                     <div class="d-flex justify-content-center my-3">
-                        <img src="/img/pixelfed-icon-color.png" width="60" alt="Pixelfed logo" />
+                        <img src="/img/negarin-icon-color.png" width="60" alt="Negarin logo" />
                     </div>
                     <div class="d-flex flex-column align-items-center justify-content-center">
                         <p class="lead mb-1 text-muted">You've been invited to join</p>
@@ -71,7 +71,7 @@
 
                 <div v-else-if="tabIndex === 2" class="card-body">
                     <div class="d-flex justify-content-center my-3">
-                        <img src="/img/pixelfed-icon-color.png" width="60" alt="Pixelfed logo" />
+                        <img src="/img/negarin-icon-color.png" width="60" alt="Negarin logo" />
                     </div>
                     <div class="d-flex flex-column align-items-center justify-content-center">
                         <p class="lead mb-1 text-muted">You've been invited to join</p>
@@ -108,7 +108,7 @@
 
                 <div v-else-if="tabIndex === 3" class="card-body">
                     <div class="d-flex justify-content-center my-3">
-                        <img src="/img/pixelfed-icon-color.png" width="60" alt="Pixelfed logo" />
+                        <img src="/img/negarin-icon-color.png" width="60" alt="Negarin logo" />
                     </div>
                     <div class="d-flex flex-column align-items-center justify-content-center">
                         <p class="lead mb-1 text-muted">You've been invited to join</p>
@@ -146,7 +146,7 @@
 
                 <div v-else-if="tabIndex === 4" class="card-body">
                     <div class="d-flex justify-content-center my-3">
-                        <img src="/img/pixelfed-icon-color.png" width="60" alt="Pixelfed logo" />
+                        <img src="/img/negarin-icon-color.png" width="60" alt="Negarin logo" />
                     </div>
                     <div class="d-flex flex-column align-items-center justify-content-center">
                         <p class="lead mb-1 text-muted">You've been invited to join</p>
@@ -184,7 +184,7 @@
 
                 <div v-else-if="tabIndex === 5" class="card-body">
                     <div class="d-flex justify-content-center my-3">
-                        <img src="/img/pixelfed-icon-color.png" width="60" alt="Pixelfed logo" />
+                        <img src="/img/negarin-icon-color.png" width="60" alt="Negarin logo" />
                     </div>
                     <div class="d-flex flex-column align-items-center justify-content-center">
                         <p class="lead mb-1 text-muted">You've been invited to join</p>
@@ -222,7 +222,7 @@
 
                 <div v-else-if="tabIndex === 6" class="card-body d-flex flex-column">
                     <div class="d-flex justify-content-center my-3">
-                        <img src="/img/pixelfed-icon-color.png" width="60" alt="Pixelfed logo" />
+                        <img src="/img/negarin-icon-color.png" width="60" alt="Negarin logo" />
                     </div>
                     <div class="d-flex flex-column align-items-center justify-content-center">
                         <p class="lead mb-1 text-muted">You've been invited to join</p>

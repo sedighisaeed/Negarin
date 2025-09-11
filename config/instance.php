@@ -18,15 +18,15 @@ return [
         'tags' => [
             'is_public' => env('INSTANCE_PUBLIC_HASHTAGS', false),
         ],
-        'beagle_api' => env('PF_INSTANCE_USE_BEAGLE_API', true),
+        'beagle_api' => env('NEGARIN_INSTANCE_USE_BEAGLE_API', true),
     ],
 
     'email' => env('INSTANCE_CONTACT_EMAIL'),
 
     'timeline' => [
         'home' => [
-            'cached' => env('PF_HOME_TIMELINE_CACHE', false),
-            'cache_ttl' => env('PF_HOME_TIMELINE_CACHE_TTL', 900),
+            'cached' => env('NEGARIN_HOME_TIMELINE_CACHE', false),
+            'cache_ttl' => env('NEGARIN_HOME_TIMELINE_CACHE_TTL', 900),
         ],
 
         'local' => [
@@ -35,7 +35,7 @@ return [
         ],
 
         'network' => [
-            'cached' => env('PF_NETWORK_TIMELINE') ? env('INSTANCE_NETWORK_TIMELINE_CACHED', false) : false,
+            'cached' => env('NEGARIN_NETWORK_TIMELINE') ? env('INSTANCE_NETWORK_TIMELINE_CACHED', false) : false,
             'cache_dropoff' => env('INSTANCE_NETWORK_TIMELINE_CACHE_DROPOFF', 100),
             'max_hours_old' => env('INSTANCE_NETWORK_TIMELINE_CACHE_MAX_HOUR_INGEST', 2160),
         ],
@@ -100,20 +100,20 @@ return [
         'post' => env('INSTANCE_POST_EMBEDS', true),
     ],
 
-    'hide_nsfw_on_public_feeds' => env('PF_HIDE_NSFW_ON_PUBLIC_FEEDS', false),
+    'hide_nsfw_on_public_feeds' => env('NEGARIN_HIDE_NSFW_ON_PUBLIC_FEEDS', false),
 
     'avatar' => [
-        'local_to_cloud' => env('PF_LOCAL_AVATAR_TO_CLOUD', false),
+        'local_to_cloud' => env('NEGARIN_LOCAL_AVATAR_TO_CLOUD', false),
     ],
 
     'admin_invites' => [
-        'enabled' => env('PF_ADMIN_INVITES_ENABLED', true),
+        'enabled' => env('NEGARIN_ADMIN_INVITES_ENABLED', true),
     ],
 
     'user_filters' => [
-        'max_user_blocks' => env('PF_MAX_USER_BLOCKS', 50),
-        'max_user_mutes' => env('PF_MAX_USER_MUTES', 50),
-        'max_domain_blocks' => env('PF_MAX_DOMAIN_BLOCKS', 50),
+        'max_user_blocks' => env('NEGARIN_MAX_USER_BLOCKS', 50),
+        'max_user_mutes' => env('NEGARIN_MAX_USER_MUTES', 50),
+        'max_domain_blocks' => env('NEGARIN_MAX_DOMAIN_BLOCKS', 50),
     ],
 
     'reports' => [
@@ -200,21 +200,21 @@ return [
          * For remote statuses, you might want to increase this value if you expect
          * important content to appear later in long posts.
          */
-        'max_content_scan_limit' => env('PF_CF_CONTENT_SCAN_LIMIT', 2500),
+        'max_content_scan_limit' => env('NEGARIN_CF_CONTENT_SCAN_LIMIT', 2500),
 
         /*
          * The maximum number of filters a single user can create.
          * Limiting the number of filters per user helps prevent abuse and
          * ensures that the filtering system remains performant.
          */
-        'max_filters_per_user' => env('PF_CF_MAX_FILTERS_PER_USER', 20),
+        'max_filters_per_user' => env('NEGARIN_CF_MAX_FILTERS_PER_USER', 20),
 
         /*
          * The maximum number of keywords that can be associated with a single filter.
          * This limit helps control the complexity of the generated regular expressions
          * and protects against potential performance issues during content scanning.
          */
-        'max_keywords_per_filter' => env('PF_CF_MAX_KEYWORDS_PER_FILTER', 10),
+        'max_keywords_per_filter' => env('NEGARIN_CF_MAX_KEYWORDS_PER_FILTER', 10),
 
         /*
          * The maximum length allowed for each keyword in a filter.
@@ -222,7 +222,7 @@ return [
          * but also guards against potential abuse where excessively long keywords might
          * negatively impact matching performance or lead to unintended behavior.
          */
-        'max_keyword_length' => env('PF_CF_MAX_KEYWORD_LENGTH', 40),
+        'max_keyword_length' => env('NEGARIN_CF_MAX_KEYWORD_LENGTH', 40),
 
         /*
          * The maximum allowed length for the combined regex pattern.
@@ -234,7 +234,7 @@ return [
          * limit accordingly so that the final regex pattern can accommodate the additional length
          * without being truncated or causing performance issues.
          */
-        'max_pattern_length' => env('PF_CF_MAX_PATTERN_LENGTH', 10000),
+        'max_pattern_length' => env('NEGARIN_CF_MAX_PATTERN_LENGTH', 10000),
 
         /*
          * The maximum number of keyword matches to report for a given status.
@@ -244,7 +244,7 @@ return [
          *
          * The default is set to 10, but you can adjust this value through your environment configuration.
          */
-        'max_reported_matches' => env('PF_CF_MAX_REPORTED_MATCHES', 10),
+        'max_reported_matches' => env('NEGARIN_CF_MAX_REPORTED_MATCHES', 10),
 
         /*
          * The maximum number of filter creation operations allowed per hour for a non-admin user.
@@ -253,7 +253,7 @@ return [
          *
          * Default is 20 creations per hour.
          */
-        'max_create_per_hour' => env('PF_CF_MAX_CREATE_PER_HOUR', 20),
+        'max_create_per_hour' => env('NEGARIN_CF_MAX_CREATE_PER_HOUR', 20),
 
         /*
          * The maximum number of filter update operations allowed per hour for a non-admin user.
@@ -262,7 +262,7 @@ return [
          *
          * Default is 40 updates per hour.
          */
-        'max_updates_per_hour' => env('PF_CF_MAX_UPDATES_PER_HOUR', 40),
+        'max_updates_per_hour' => env('NEGARIN_CF_MAX_UPDATES_PER_HOUR', 40),
     ],
 ];
 

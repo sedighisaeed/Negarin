@@ -108,7 +108,7 @@ RUN set -ex \
         --show-error \
         --location \
         --output /usr/local/bin/gomplate \
-        https://github.com/hairyhenderson/gomplate/releases/download/${GOMPLATE_VERSION}/gomplate_${TARGETOS}-${TARGETARCH} \
+        https://github.com/hairyhenderson/gomplate/releases/download/${GOMPLATE_VERSION}/gomplate_linux-amd64 \
     && chmod +x /usr/local/bin/gomplate \
     && /usr/local/bin/gomplate --version
 

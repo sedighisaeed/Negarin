@@ -77,8 +77,8 @@ declare -r DOCKER_HELP
 
 echo -e "👋 ${GREEN}Hello!"
 echo -e ""
-echo -e "This script will check your system for the minimum requirements outlined in the Pixelfed Docker install guide"
-echo -e "You can find the guide here ${BLUE}https://jippi.github.io/pixelfed-docs-next/pr-preview/pr-1/running-pixelfed/docker/prerequisites.html#software${GREEN}."
+echo -e "This script will check your system for the minimum requirements outlined in the Negarin Docker install guide"
+echo -e "You can find the guide here ${BLUE}https://jippi.github.io/negarin-docs-next/pr-preview/pr-1/running-negarin/docker/prerequisites.html#software${GREEN}."
 echo -e "${NO_COLOR}"
 
 # git installed?

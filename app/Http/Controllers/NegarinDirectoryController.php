@@ -12,7 +12,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Storage;
 
-class negarinDirectoryController extends Controller
+class NegarinDirectoryController extends Controller
 {
     public function get(Request $request)
     {

@@ -32,7 +32,7 @@
                         <p class="lead text-center font-weight-bold mt-3">Oops!</p>
 
                         <p class="mb-2 text-center">We cannot complete your request at this time</p>
-                        <p class="mb-3 text-center text-xs">It appears that you've signed-in on other Pixelfed instances and reached the max limit that we accept.</p>
+                        <p class="mb-3 text-center text-xs">It appears that you've signed-in on other Negarin instances and reached the max limit that we accept.</p>
                     </div>
 
                     <div class="w-100">

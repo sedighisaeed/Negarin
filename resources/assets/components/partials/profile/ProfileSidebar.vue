@@ -336,7 +336,7 @@
             </div>
 
             <div class="d-none d-md-block sidebar-attribution">
-                <a href="https://pixelfed.org" class="font-weight-bold">Powered by Pixelfed</a>
+                <a href="https://negarin.org" class="font-weight-bold">Powered by Negarin</a>
             </div>
         </div>
 

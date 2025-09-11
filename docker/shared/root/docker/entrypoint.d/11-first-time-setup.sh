@@ -20,7 +20,7 @@ fi
 
 await-database-ready
 
-# Following https://docs.pixelfed.org/running-pixelfed/installation/#one-time-setup-tasks
+# Following https://docs.negarin.org/running-negarin/installation/#one-time-setup-tasks
 #
 # NOTE: Caches happens in [30-cache.sh]
 

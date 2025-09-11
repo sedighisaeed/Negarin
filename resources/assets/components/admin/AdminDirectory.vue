@@ -6,7 +6,7 @@
                     <div class="row align-items-center py-4">
                         <div class="col-lg-6 col-7">
                             <p class="display-1 text-white d-inline-block mb-0">Directory</p>
-                            <p class="h3 text-white font-weight-light">Manage your server listing on pixelfed.org</p>
+                            <p class="h3 text-white font-weight-light">Manage your server listing on negarin.org</p>
                         </div>
 
                         <div class="col-lg-6 col-5">
@@ -52,7 +52,7 @@
                                                 <button
                                                     class="btn btn-primary btn-lg font-weight-bold px-5 text-uppercase"
                                                     @click="handleSubmit">
-                                                    Submit my Server to pixelfed.org
+                                                    Submit my Server to negarin.org
                                                 </button>
                                             </div>
                                         </div>
@@ -61,16 +61,16 @@
                                     <div v-else-if="!isSubmitting && state.awaiting_approval && !state.is_active">
                                         <div class="card card-body shadow-none border d-flex align-items-center justify-content-center py-5">
                                             <p class="display-3 mb-1">Awaiting Approval</p>
-                                            <p class="text-primary mb-1">Awaiting submission approval from pixelfed.org, please check back later!</p>
-                                            <p class="small text-muted mb-0">If you are still waiting for approval after 24 hours please contact the Pixelfed team.</p>
+                                            <p class="text-primary mb-1">Awaiting submission approval from negarin.org, please check back later!</p>
+                                            <p class="small text-muted mb-0">If you are still waiting for approval after 24 hours please contact the Negarin team.</p>
                                         </div>
                                     </div>
 
                                     <div v-else-if="!isSubmitting && state.awaiting_approval && state.is_active">
                                         <div class="card card-body shadow-none border d-flex align-items-center justify-content-center py-5">
                                             <p class="display-3 mb-1">Awaiting Update Approval</p>
-                                            <p class="text-primary mb-1">Awaiting updated submission approval from pixelfed.org, please check back later!</p>
-                                            <p class="small text-muted mb-0">If you are still waiting for approval after 24 hours please contact the Pixelfed team.</p>
+                                            <p class="text-primary mb-1">Awaiting updated submission approval from negarin.org, please check back later!</p>
+                                            <p class="small text-muted mb-0">If you are still waiting for approval after 24 hours please contact the Negarin team.</p>
                                         </div>
                                     </div>
 
@@ -80,12 +80,12 @@
                                             <p class="my-3">
                                                 <i class="far fa-check-circle fa-4x text-success"></i>
                                             </p>
-                                            <p class="mt-2 mb-0">Your server directory listing on <a href="#" class="font-weight-bold">pixelfed.org</a> is active</p>
+                                            <p class="mt-2 mb-0">Your server directory listing on <a href="#" class="font-weight-bold">negarin.org</a> is active</p>
 
                                             <button
                                                 class="btn btn-primary btn-sm mt-3 font-weight-bold px-5 text-uppercase"
                                                 @click="handleSubmit">
-                                                Update my listing on pixelfed.org
+                                                Update my listing on negarin.org
                                             </button>
                                         </div>
                                     </div>
@@ -100,7 +100,7 @@
                                     <div v-else>
                                         <div class="card card-body shadow-none border d-flex align-items-center justify-content-center py-5">
                                             <p class="display-3 mb-1">Oops! An unexpected error occured</p>
-                                            <p class="text-primary mb-1">Ask the Pixelfed team for assistance.</p>
+                                            <p class="text-primary mb-1">Ask the Negarin team for assistance.</p>
                                         </div>
                                     </div>
 

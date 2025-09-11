@@ -25,7 +25,7 @@ return [
     ],
 
     'image_optimize' => [
-        'catch_unoptimized_media_hour_limit' => env('PF_CATCHUNOPTIMIZEDMEDIA', false),
+        'catch_unoptimized_media_hour_limit' => env('NEGARIN_CATCHUNOPTIMIZEDMEDIA', false),
     ],
 
     'hls' => [

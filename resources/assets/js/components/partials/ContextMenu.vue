@@ -80,7 +80,7 @@
 			<div class="list-group-item rounded cursor-pointer">Facebook</div>
 			<div class="list-group-item rounded cursor-pointer">Mastodon</div>
 			<div class="list-group-item rounded cursor-pointer">Pinterest</div>
-			<div class="list-group-item rounded cursor-pointer">Pixelfed</div>
+			<div class="list-group-item rounded cursor-pointer">Negarin</div>
 			<div class="list-group-item rounded cursor-pointer">Twitter</div>
 			<div class="list-group-item rounded cursor-pointer">VK</div> -->
 			<div class="list-group-item rounded cursor-pointer text-lighter" @click="closeCtxShareMenu()">Cancel</div>

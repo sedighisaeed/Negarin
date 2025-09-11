@@ -340,7 +340,7 @@
 									<a href="/site/terms" class="text-lighter pr-2">Terms</a>
 								</p>
 								<p class="mb-0 text-uppercase text-muted small">
-									<a href="https://pixelfed.org" class="text-lighter" rel="noopener" title="" data-toggle="tooltip">Powered by Pixelfed</a>
+									<a href="https://negarin.org" class="text-lighter" rel="noopener" title="" data-toggle="tooltip">Powered by Negarin</a>
 								</p>
 							</div>
 						</footer>

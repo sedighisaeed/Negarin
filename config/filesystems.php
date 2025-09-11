@@ -124,16 +124,16 @@ return [
         ],
 
         'backup' => [
-            'driver' => env('PF_BACKUP_DRIVER', 's3'),
+            'driver' => env('NEGARIN_BACKUP_DRIVER', 's3'),
             'visibility' => 'private',
-            'root' => env('PF_BACKUP_DRIVER', 'local') == 'local' ?
+            'root' => env('NEGARIN_BACKUP_DRIVER', 'local') == 'local' ?
                 storage_path('app/backups/') :
-                env('PF_BACKUP_ROOT','/'),
-            'key' => env('PF_BACKUP_KEY'),
-            'secret' => env('PF_BACKUP_SECRET'),
-            'endpoint' => env('PF_BACKUP_ENDPOINT'),
-            'region' => env('PF_BACKUP_REGION'),
-            'bucket' => env('PF_BACKUP_BUCKET'),
+                env('NEGARIN_BACKUP_ROOT','/'),
+            'key' => env('NEGARIN_BACKUP_KEY'),
+            'secret' => env('NEGARIN_BACKUP_SECRET'),
+            'endpoint' => env('NEGARIN_BACKUP_ENDPOINT'),
+            'region' => env('NEGARIN_BACKUP_REGION'),
+            'bucket' => env('NEGARIN_BACKUP_BUCKET'),
         ],
 
     ],

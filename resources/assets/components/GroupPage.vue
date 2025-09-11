@@ -261,10 +261,10 @@
                                                                     </p>
 
                                                                     <div class="my-3 row px-0 mx-0 card card-body my-0 py-0 border shadow-none">
-                                                                            <img src="https://opengraph.githubassets.com/f66d0f7bf17df4a45382b83c1ffde2f25e3d700f9d87ab8c9ec2029c3a1e16b6/pixelfed/pixelfed/pull/2865" class="img-fluid">
+                                                                            <img src="https://opengraph.githubassets.com/f66d0f7bf17df4a45382b83c1ffde2f25e3d700f9d87ab8c9ec2029c3a1e16b6/negarin/negarin/pull/2865" class="img-fluid">
                                                                         <div class="bg-light px-3 pt-2 pb-3">
                                                                             <p class="text-muted mb-0 small">GITHUB.COM</p>
-                                                                            <p class="mb-0" style="font-size: 16px;font-weight:500;">Update LikeController, add UndoLikePipeline and federate Undo Like ac… by dansup · Pull Request #2865 · pixelfed/pixelfed</p>
+                                                                            <p class="mb-0" style="font-size: 16px;font-weight:500;">Update LikeController, add UndoLikePipeline and federate Undo Like ac… by dansup · Pull Request #2865 · negarin/negarin</p>
                                                                             <p class="mb-0 text-muted" style="font-size:14px;line-height:15px;">…tivities</p>
                                                                         </div>
                                                                     </div>

@@ -188,7 +188,7 @@ return [
     | Store media on object storage like S3, Digital Ocean Spaces, Rackspace
     |
     */
-    'cloud_storage' => env('PF_ENABLE_CLOUD', false),
+    'cloud_storage' => env('NEGARIN_ENABLE_CLOUD', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -198,8 +198,8 @@ return [
     | Allow a maximum number of user accounts. Default: enabled w/ 1000 max users
     |
     */
-    'max_users' => env('PF_MAX_USERS', 1000),
-    'enforce_max_users' => env('PF_ENFORCE_MAX_USERS', true),
+    'max_users' => env('NEGARIN_MAX_USERS', 1000),
+    'enforce_max_users' => env('NEGARIN_ENFORCE_MAX_USERS', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -209,7 +209,7 @@ return [
     | Resize and optimize image uploads. Default: on
     |
     */
-    'optimize_image' => env('PF_OPTIMIZE_IMAGES', true),
+    'optimize_image' => env('NEGARIN_OPTIMIZE_IMAGES', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -219,7 +219,7 @@ return [
     | Resize and optimize video uploads. Default: on
     |
     */
-    'optimize_video' => env('PF_OPTIMIZE_VIDEOS', true),
+    'optimize_video' => env('NEGARIN_OPTIMIZE_VIDEOS', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -232,15 +232,15 @@ return [
     |
     */
     'user_invites' => [
-        'enabled' => env('PF_USER_INVITES', false),
+        'enabled' => env('NEGARIN_USER_INVITES', false),
         'limit' => [
-            'total' => (int) env('PF_USER_INVITES_TOTAL_LIMIT', 0),
-            'daily' => (int) env('PF_USER_INVITES_DAILY_LIMIT', 0),
-            'monthly' => (int) env('PF_USER_INVITES_MONTHLY_LIMIT', 0),
+            'total' => (int) env('NEGARIN_USER_INVITES_TOTAL_LIMIT', 0),
+            'daily' => (int) env('NEGARIN_USER_INVITES_DAILY_LIMIT', 0),
+            'monthly' => (int) env('NEGARIN_USER_INVITES_MONTHLY_LIMIT', 0),
         ],
     ],
 
-    'max_collection_length' => (int) env('PF_MAX_COLLECTION_LENGTH', 100),
+    'max_collection_length' => (int) env('NEGARIN_MAX_COLLECTION_LENGTH', 100),
 
     'media_types' => env('MEDIA_TYPES', 'image/jpeg,image/jpg,image/png,image/gif'),
 
@@ -259,13 +259,13 @@ return [
     'oauth_enabled' => env('OAUTH_ENABLED', true),
 
     'bouncer' => [
-        'enabled' => env('PF_BOUNCER_ENABLED', false),
+        'enabled' => env('NEGARIN_BOUNCER_ENABLED', false),
 
         'cloud_ips' => [
-            'ban_logins' => env('PF_BOUNCER_BAN_CLOUD_LOGINS', false),
-            'ban_signups' => env('PF_BOUNCER_BAN_CLOUD_SIGNUPS', false),
-            'ban_api' => env('PF_BOUNCER_BAN_CLOUD_API', false),
-            'ban_api_strict_mode' => env('PF_BOUNCER_BAN_CLOUD_API_STRICT_MODE', false),
+            'ban_logins' => env('NEGARIN_BOUNCER_BAN_CLOUD_LOGINS', false),
+            'ban_signups' => env('NEGARIN_BOUNCER_BAN_CLOUD_SIGNUPS', false),
+            'ban_api' => env('NEGARIN_BOUNCER_BAN_CLOUD_API', false),
+            'ban_api_strict_mode' => env('NEGARIN_BOUNCER_BAN_CLOUD_API_STRICT_MODE', false),
         ],
     ],
 
@@ -281,16 +281,16 @@ return [
     | using S3 urls (if enabled). Default: off
     |
     */
-    'media_fast_process' => env('PF_MEDIA_FAST_PROCESS', true),
+    'media_fast_process' => env('NEGARIN_MEDIA_FAST_PROCESS', true),
 
-    'max_altext_length' => env('PF_MEDIA_MAX_ALTTEXT_LENGTH', 1000),
+    'max_altext_length' => env('NEGARIN_MEDIA_MAX_ALTTEXT_LENGTH', 1000),
 
-    'allow_app_registration' => env('PF_ALLOW_APP_REGISTRATION', true),
+    'allow_app_registration' => env('NEGARIN_ALLOW_APP_REGISTRATION', true),
 
-    'app_registration_rate_limit_attempts' => env('PF_IAR_RL_ATTEMPTS', 3),
-    'app_registration_rate_limit_decay' => env('PF_IAR_RL_DECAY', 1800),
-    'app_registration_confirm_rate_limit_attempts' => env('PF_IARC_RL_ATTEMPTS', 20),
-    'app_registration_confirm_rate_limit_decay' => env('PF_IARC_RL_ATTEMPTS', 1800),
+    'app_registration_rate_limit_attempts' => env('NEGARIN_IAR_RL_ATTEMPTS', 3),
+    'app_registration_rate_limit_decay' => env('NEGARIN_IAR_RL_DECAY', 1800),
+    'app_registration_confirm_rate_limit_attempts' => env('NEGARIN_IARC_RL_ATTEMPTS', 20),
+    'app_registration_confirm_rate_limit_decay' => env('NEGARIN_IARC_RL_ATTEMPTS', 1800),
 ];
 
 

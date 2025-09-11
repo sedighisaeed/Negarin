@@ -50,8 +50,8 @@ return [
         'enabled' => env('WEBFINGER', true)
     ],
 
-    'network_timeline' => env('PF_NETWORK_TIMELINE', true),
-    'network_timeline_days_falloff' => env('PF_NETWORK_TIMELINE_DAYS_FALLOFF', 90),
+    'network_timeline' => env('NEGARIN_NETWORK_TIMELINE', true),
+    'network_timeline_days_falloff' => env('NEGARIN_NETWORK_TIMELINE_DAYS_FALLOFF', 90),
 
     'custom_emoji' => [
         'enabled' => env('CUSTOM_EMOJI', false),
@@ -60,7 +60,7 @@ return [
         'max_size' => env('CUSTOM_EMOJI_MAX_SIZE', 2000000),
     ],
 
-    'migration' => env('PF_ACCT_MIGRATION_ENABLED', true),
+    'migration' => env('NEGARIN_ACCT_MIGRATION_ENABLED', true),
 ];
 
 
