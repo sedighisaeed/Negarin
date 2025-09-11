@@ -107,11 +107,14 @@ sudo apt install -y unzip
 
 print_step "10. Fixing .env file format..."
 # Fix any malformed environment variables by removing and re-adding quotes properly
+# First, fix specific known variables
 sed -i 's/APP_NAME=.*/APP_NAME="Negarin Crafts"/' .env
 sed -i 's/APP_DOMAIN=.*/APP_DOMAIN="negarincrafts.com"/' .env
 sed -i 's/INSTANCE_CONTACT_EMAIL=.*/INSTANCE_CONTACT_EMAIL="admin@negarincrafts.com"/' .env
+sed -i 's/DB_PASSWORD=.*/DB_PASSWORD="negarin_secure_2024!"/' .env
 
-# Remove any problematic characters (smart quotes, etc.)
+# Then, fix all other quoted variables with a general approach
+# Replace any smart/curly quotes with straight quotes
 sed -i 's/[""]/"/g' .env
 
 print_step "11. Pulling Docker images..."

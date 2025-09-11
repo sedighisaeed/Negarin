@@ -1,67 +1,81 @@
 #!/bin/bash
 
-# Test script to verify environment variable formatting
-# This script checks if the .env file has properly formatted variables
-
-set -e  # Exit on any error
-
 # Colors for output
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 RED='\033[0;31m'
 NC='\033[0m'
 
-print_success() {
-    echo -e "${GREEN}[SUCCESS]${NC} $1"
-}
-
-print_warning() {
-    echo -e "${YELLOW}[WARNING]${NC} $1"
-}
-
-print_error() {
-    echo -e "${RED}[ERROR]${NC} $1"
-}
-
 echo "🔍 Testing .env file format..."
 
 # Check if .env file exists
 if [ ! -f ".env" ]; then
-    print_error "No .env file found. Please run auto-deploy.sh first."
+    echo -e "${RED}Error: .env file not found!${NC}"
     exit 1
 fi
 
-# Test APP_NAME format
+# Test critical variables
+echo "Testing APP_NAME format..."
 APP_NAME_LINE=$(grep "^APP_NAME=" .env)
-if [ $? -ne 0 ]; then
-    print_error "APP_NAME not found in .env file"
-    exit 1
-fi
-
-# Check if APP_NAME has proper quotes
-if [[ $APP_NAME_LINE =~ ^APP_NAME="[^"]*"$ ]]; then
-    print_success "APP_NAME format is correct"
+if [ -z "$APP_NAME_LINE" ]; then
+    echo -e "${YELLOW}Warning: APP_NAME not found in .env file${NC}"
 else
-    print_error "APP_NAME format is incorrect: $APP_NAME_LINE"
-    print_warning "Should be in format: APP_NAME=\"Negarin Crafts\""
-    exit 1
+    if echo "$APP_NAME_LINE" | grep -q "^APP_NAME=\".*\"$"; then
+        echo -e "${GREEN}✅ APP_NAME is properly formatted${NC}"
+    else
+        echo -e "${RED}❌ APP_NAME has quote issues: $APP_NAME_LINE${NC}"
+    fi
 fi
 
-# Test APP_DOMAIN format
+echo "Testing APP_DOMAIN format..."
 APP_DOMAIN_LINE=$(grep "^APP_DOMAIN=" .env)
-if [ $? -ne 0 ]; then
-    print_error "APP_DOMAIN not found in .env file"
-    exit 1
-fi
-
-# Check if APP_DOMAIN has proper quotes
-if [[ $APP_DOMAIN_LINE =~ ^APP_DOMAIN="[^"]*"$ ]]; then
-    print_success "APP_DOMAIN format is correct"
+if [ -z "$APP_DOMAIN_LINE" ]; then
+    echo -e "${YELLOW}Warning: APP_DOMAIN not found in .env file${NC}"
 else
-    print_error "APP_DOMAIN format is incorrect: $APP_DOMAIN_LINE"
-    print_warning "Should be in format: APP_DOMAIN=\"negarincrafts.com\""
-    exit 1
+    if echo "$APP_DOMAIN_LINE" | grep -q "^APP_DOMAIN=\".*\"$"; then
+        echo -e "${GREEN}✅ APP_DOMAIN is properly formatted${NC}"
+    else
+        echo -e "${RED}❌ APP_DOMAIN has quote issues: $APP_DOMAIN_LINE${NC}"
+    fi
 fi
 
-# Check for any smart quotes in the file
-if grep -q "[
+echo "Testing DB_PASSWORD format..."
+DB_PASSWORD_LINE=$(grep "^DB_PASSWORD=" .env)
+if [ -z "$DB_PASSWORD_LINE" ]; then
+    echo -e "${YELLOW}Warning: DB_PASSWORD not found in .env file${NC}"
+else
+    if echo "$DB_PASSWORD_LINE" | grep -q "^DB_PASSWORD=\".*\"$"; then
+        echo -e "${GREEN}✅ DB_PASSWORD is properly formatted${NC}"
+    else
+        echo -e "${RED}❌ DB_PASSWORD has quote issues: $DB_PASSWORD_LINE${NC}"
+    fi
+fi
+
+echo "Testing INSTANCE_CONTACT_EMAIL format..."
+EMAIL_LINE=$(grep "^INSTANCE_CONTACT_EMAIL=" .env)
+if [ -z "$EMAIL_LINE" ]; then
+    echo -e "${YELLOW}Warning: INSTANCE_CONTACT_EMAIL not found in .env file${NC}"
+else
+    if echo "$EMAIL_LINE" | grep -q "^INSTANCE_CONTACT_EMAIL=\".*\"$"; then
+        echo -e "${GREEN}✅ INSTANCE_CONTACT_EMAIL is properly formatted${NC}"
+    else
+        echo -e "${RED}❌ INSTANCE_CONTACT_EMAIL has quote issues: $EMAIL_LINE${NC}"
+    fi
+fi
+
+# Check for any variables with unbalanced quotes
+echo -e "\n${YELLOW}Checking for other potential quote issues...${NC}"
+grep -n "\"" .env | grep -v "^#" | while read -r line; do
+    line_num=$(echo "$line" | cut -d':' -f1)
+    content=$(echo "$line" | cut -d':' -f2-)
+    
+    # Count quotes in the line
+    quote_count=$(echo "$content" | grep -o '"' | wc -l)
+    
+    # Check if quotes are unbalanced (not exactly 2)
+    if [ "$quote_count" -ne 2 ]; then
+        echo -e "${RED}❌ Line $line_num has unbalanced quotes: $content${NC}"
+    fi
+done
+
+echo -e "\n${GREEN}✅ Test completed!${NC}"

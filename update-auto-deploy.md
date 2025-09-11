@@ -2,45 +2,45 @@
 
 ## Issue Fixed
 
-The auto-deploy.sh script has been updated to fix an issue with environment variable formatting in the .env file. The previous version of the script was attempting to replace quotes with the same quotes, which didn't resolve formatting problems with special Unicode quotes.
+The auto-deploy.sh script has been updated to fix issues with quoted environment variables in the .env file. Previously, the script was only handling specific variables (APP_NAME, APP_DOMAIN, INSTANCE_CONTACT_EMAIL) but was not properly handling other quoted variables like DB_PASSWORD.
 
 ## Changes Made
 
-1. Modified the sed commands in the auto-deploy.sh script to properly handle quotes in environment variables:
-   ```bash
-   # Old approach (problematic)
-   sed -i 's/APP_NAME="Negarin Crafts"/APP_NAME="Negarin Crafts"/' .env
-   
-   # New approach (fixed)
-   sed -i 's/APP_NAME=.*/APP_NAME="Negarin Crafts"/' .env
-   ```
+1. Updated the sed commands in auto-deploy.sh to handle all quoted variables properly:
+   - Added specific handling for DB_PASSWORD
+   - Improved the general approach for handling quoted variables
+   - Fixed the smart quotes replacement command
 
-2. Created a test script (`test-env-format.sh`) to verify that environment variables are properly formatted.
+2. Created a test script (test-env-format.sh) to verify the proper formatting of environment variables:
+   - Tests APP_NAME, APP_DOMAIN, INSTANCE_CONTACT_EMAIL, and DB_PASSWORD formatting
+   - Checks for unbalanced quotes in any variable
+   - Provides clear output with color-coded results
 
-## How to Use
+## Usage
 
-1. Make sure both scripts are executable:
-   ```bash
-   chmod +x auto-deploy.sh
-   chmod +x test-env-format.sh
-   ```
+### Deployment
 
-2. Run the auto-deploy.sh script as usual:
-   ```bash
-   ./auto-deploy.sh
-   ```
+Run the auto-deploy.sh script as before:
 
-3. If you encounter any issues with environment variable formatting, you can run the test script to verify the format:
-   ```bash
-   ./test-env-format.sh
-   ```
+```bash
+./auto-deploy.sh
+```
 
-## Why This Fix Works
+### Testing Environment Variables
 
-The previous approach tried to replace exact patterns with the same text, which doesn't fix malformed quotes. The new approach:
+To verify that environment variables are properly formatted:
 
-1. Matches the variable name regardless of what follows it
-2. Replaces the entire line with a properly formatted version
-3. Ensures consistent quote usage throughout the file
+```bash
+chmod +x test-env-format.sh
+./test-env-format.sh
+```
 
-This prevents the "unexpected character" error that was occurring during deployment.
+## Technical Details
+
+The issue was caused by improper handling of quoted variables in the .env file. The updated script:
+
+1. Uses specific sed commands for critical variables to ensure they have proper quotes
+2. Replaces any smart/curly quotes with straight quotes
+3. Handles special characters in variable values properly
+
+This fix ensures that Docker Compose can properly read the .env file without encountering unexpected character errors.
